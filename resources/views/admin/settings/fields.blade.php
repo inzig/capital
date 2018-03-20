@@ -1,4 +1,4 @@
-<div class="box box-primary">
+<!-- <div class="box box-primary">
     <div class="box-header with-border">
         <h3 class="box-title">Wallet Addresses</h3>
     </div>
@@ -26,13 +26,12 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="box-footer">
-        <!-- Submit Field -->
+    <div class="box-footer">        
         <div class="form-group col-sm-12">
             {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="box box-primary">
     <div class="box-header with-border">
@@ -41,7 +40,7 @@
     <div class="box-body">
         <div class="form-group">
             <div class="form-group col-sm-12 col-lg-12">
-                {!! Form::label('base_rate', 'VNG vs Ethereum:') !!}
+                {!! Form::label('base_rate', 'CAP vs Ethereum:') !!}
                 {!! Form::text('base_rate', isset($settings) && isset($settings['base_rate']) && !empty($settings['base_rate']->value) ? $settings['base_rate']->value : '', ['class' => 'form-control']) !!}
             </div>
 
@@ -52,8 +51,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="box-footer">
-        <!-- Submit Field -->
+    <div class="box-footer">        
         <div class="form-group col-sm-12">
             {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
         </div>

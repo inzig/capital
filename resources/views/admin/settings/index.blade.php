@@ -12,7 +12,7 @@
 
        @include('adminlte-templates::common.errors')
 
-       <div class="row">
+       <!-- <div class="row">
            <div class="col-md-12">
                {!! Form::model($settings, ['route' => ['settings.store'], 'method' => 'post']) !!}
 
@@ -33,6 +33,6 @@
                </div>
 
            </div>
-       </div>
+       </div> -->
    </div>
 @endsection
