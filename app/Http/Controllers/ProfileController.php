@@ -31,6 +31,12 @@ class ProfileController extends Controller
             ->with('user', $user);
     }
 
+    public function logout()
+    {
+        Auth::Logout();
+        return redirect('/');
+    }
+
     public function update(Request $request)
     {
         $user = Auth::user();

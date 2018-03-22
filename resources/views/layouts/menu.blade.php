@@ -23,9 +23,9 @@
     <a href="{!! route('users.index') !!}"><i class="fa fa-user"></i><span>Users</span></a>
 </li>
 
-<li class="{{ Request::is('admin/discounts*') ? 'active' : '' }}">
+<!-- <li class="{{ Request::is('admin/discounts*') ? 'active' : '' }}">
     <a href="{!! route('discounts.index') !!}"><i class="fa fa-gift"></i><span>Discounts</span></a>
-</li>
+</li> -->
 
 <li class="{{ Request::is('admin/settings*') ? 'active' : '' }}">
     <a href="{!! route('settings.index') !!}"><i class="fa fa-wrench"></i><span>Settings</span></a>

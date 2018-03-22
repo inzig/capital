@@ -84,6 +84,12 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="{!! url('/logout') !!}" class="btn btn-default btn-flat btn-blue"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Sign out
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -92,8 +98,8 @@
         <!-- Left side column. contains the logo and sidebar -->
         @include('layouts.sidebar')
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            @yield('content')
+        <div class="content-wrapper">            
+            @yield('content')            
             <div class="clearfix"></div>
         </div>
 

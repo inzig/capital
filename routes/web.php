@@ -61,6 +61,8 @@ Route::get('privacy-policy', function(){
 });
 
 Auth::routes();
+Route::get('logout', 'ProfileController@logout')->name('logout');
+
 Route::get('register/success', 'Auth\RegisterController@registerSuccess')->name('register-success');
 Route::get('email-verification/error', 'Auth\RegisterController@getVerificationError')->name('email-verification.error');
 Route::get('email-verification/check/{token}', 'Auth\RegisterController@getVerification')->name('email-verification.check');
