@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+	 	wallet =  $("#ethereum_wallet_1").val();
     if (typeof web3 !== 'undefined') {
         console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
         window.web3 = new Web3(web3.currentProvider);
@@ -7,9 +8,9 @@ window.addEventListener('load', function () {
         window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/3ZLq9hqx0kQcvzxJGMKd"));
 		CallContract();	
 		USDtoEth();		
-    }
+		}	
 });
-
+var wallet;
 function CallContract() {
 var abi = [
 	{
@@ -358,8 +359,7 @@ var abi = [
 }
 
 function getBalance(cap){
-	cap.balanceOf("0x282a3d1b787a39a8ac58451f3f247e429a5106e0", function(e, r){
-        // console.log(r.valueOf());
+	cap.balanceOf(wallet, function(e, r){
 		var val = r.valueOf();
 		val = val / 1000000000000000000;
 		$("#cap_coin_balance").html(val + " CAP");			
@@ -367,10 +367,10 @@ function getBalance(cap){
 }
 
 function getBalanceCapG(cap){
-	cap.balanceOf("0x282a3d1b787a39a8ac58451f3f247e429a5106e0", function(e, r){        
+	cap.balanceOf(wallet, function(e, r){        
 		var val = r.valueOf();
 		val = val / 1000000000000000000;
-		$("#capG_coin_balance").html(val + " CAP");			
+		$("#capG_coin_balance").html(val + " CAPG");			
 	});
 }
 
@@ -735,7 +735,7 @@ function FetchUSD(price){
 	price.USD(0, function(e, r){
 		ethUSD = r.valueOf();
 		toEth = web3.fromWei(ethUSD, 'ether');		
-		console.log(toEth);
+		// console.log(toEth);
 	});
 }
 
@@ -784,3 +784,26 @@ function FetchUSD(price){
 			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
 		});
 	});
+
+	$('.amount').change(function () {
+		var val = $(this).val();
+		var coin = $(this).data('coin');                
+		console.log(coin);
+		
+		var base_rate = toEth * 100;
+		var baseRate = $('#base_rate').val();
+		// console.log(baseRate);
+		
+		base_rate = base_rate	* baseRate;
+		// console.log(base_rate * baseRate);
+		
+		var tokens =  val / base_rate;
+		if(coin == 'bitcoin'){
+			tokens = tokens / rates.BTC;
+		} else if(coin == 'litecoin'){
+			tokens = tokens / rates.LTC;
+		}
+		
+		$(this).parents('form').find('#tokens').text(tokens.toFixed(0));
+		// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
+});

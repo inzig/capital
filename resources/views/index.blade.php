@@ -15,6 +15,23 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sections-style.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="background-color-body">
@@ -26,7 +43,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand site-logo" href="index.html"><img src="img/logos.png" ></a>
+                <a class="navbar-brand site-logo" href="{{ url('/') }}" ><img src="img/logos.png" ></a>
             </div>
             <div>
                 <div class="collapse navbar-collapse navbar-right" id="myNavbar">
@@ -49,7 +66,7 @@
                         <li><a href="#team" class="team_id trn">$nav-team</a></li>
                         <li><a href="#faq" class="faq trn">$nav-faq</a></li>
                         <!--<li><a href="#press_id" class="press_id trn">$nav-press</a></li>-->
-                        <li class="login-btn"><a class="login-btn" href="{{ url("login") }}"><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li>
+                        <li class="login-btn"><a class="login-btn" href=href="{{ url('login') }}"><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -66,6 +83,11 @@
             </div>
         </div>
     </div>
+	<div id="loader-wrapper">
+		<div id="loader" class="loading">LOADING...</div> 
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div> 
+	</div>
     <section id="main">
         <div id="particles-js">
             <div class="overlay">
@@ -104,39 +126,126 @@
 
                         </div>
                         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-                            <div class="banner-left-circle">
-                                <div class="countdown-padding margin-top-30">
-                                    <div class="wow fadeInUp " data-wow-delay="0.3s">
-                                        <div>
-                                            <h3 class="presale-heading">CROWDSALE STAGE<br> <small>PRIVATE SALE - 1%</small><br> <small style="color:mediumblue;">100% BONUS</small></h3>
-                                            <h5 style="margin-top: -25px;">For 150$ you get 100 CAP and 2000 CAPG</h5>
-                                            <div id="clockdiv">
-                                                <div class="timer">
-                                                    <span class="days"></span>
-                                                    <div class="smalltext">Days</div>
-                                                </div>
-                                                <span class="dot-size">:</span>
-                                                <div class="timer">
-                                                    <span class="hours"></span>
-                                                    <div class="smalltext">Hours</div>
-                                                </div>
-                                                <span class="dot-size">:</span>
-                                                <div class="timer">
-                                                    <span class="minutes"></span>
-                                                    <div class="smalltext">Min</div>
-                                                </div>
-                                                <span class="dot-size">:</span>
-                                                <div class="timer">
-                                                    <span class="seconds"></span>
-                                                    <div class="smalltext">Sec</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="circle-dvd-top-txt">CONTRIBUTE NOW</span>
-                                <span class="baner-lft-cont-btm-txt">WE ACCEPT BTC, ETH, LTC, AND OTHER</span>
-                            </div>
+                            <div class="right">
+   <div class="counter">
+      <p class="heading"><span>PRIVATE SALE</span></p>
+      <div class="content">
+         <div class="data">
+            <div class="timer-subtitle"><span>NEXT STAGE</span></div>
+            <div class="timer">
+				<div class="entity">
+                  <div class="digits">
+                     <div class="flip-digit ">
+                        <div class="item">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Hours</span></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item active">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Hours</span></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="entity">
+                  <div class="digits bold">
+                     <div class="flip-digit ">
+                        <div class="item">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Minutes</span></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item active">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Minutes</span></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="entity">
+                  <div class="digits bold">
+                     <div class="flip-digit play">
+                        <div class="item before">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Seconds</span></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item active">
+                           <div class="wrap">
+                              <div class="up">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                              </div>
+                              <div class="down">
+                                 <div class="shadow"></div>
+                                 <div class="inn">00</div>
+                                 <span class="label"><span>Seconds</span></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+			</div>
+            </div>
+            <div class="current-price">
+               <div class="compare">
+                  <div class="title"><span>Current price</span></div>
+                  <span class="currency">150<span class="symbol"> USD</span></span><span class="eq">=</span><span class="currency">100 CALL &<span class="symbol"> 20000 CALLG</span></span>
+               </div>
+            </div>
+         </div>
+         <div class="divider"></div>
+         <div class="button-wrap">
+            <div class="button-wrapper">
+               <div class="content"><button class="button blue undefined   " type="button"><span></span><span>Join token sale</span></button></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +291,7 @@
     </section>
     <section id="video-intro" class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
         <div class="container-fluid">
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/tdFbkP_MXuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="100%" height="680" src="https://www.youtube.com/embed/tdFbkP_MXuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </section>
     <section id="how-it-works" class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
@@ -264,7 +373,140 @@
             <h1 class="features-heading-2" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital Technologies & Research </strong>Roadmap</h1>
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-                    <img style="width:70%;" src="img/roadmap.png" class="margin-top-50" data-aos="zoom-in-right" data-aos-duration="1000">
+                    <img class="roadMagImgDesktop wow fadeInUp" style="width:70%;" src="img/roadmap.png" class="margin-top-50" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+                    
+                    <div id="timeline-cont1">
+                    
+                    
+                    <div class="time-text-cont orangeCode">
+                    	<div id="tblock2" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">April 15th 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Pre-ICO starts</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$2 (1 CALL and 200 CALLG)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont greenCode">
+                    	<div id="tblock6" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">August 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Proof of Work (PoW)</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Test Network</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont darkPurpleCode">
+                    	<div id="tblock8" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">December 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Test Network Testing</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">and Fixing</span>
+                        </div>
+                    </div>
+                    
+                    
+                      <div class="time-text-cont darkGreenCode">
+                    	<div id="tblock10" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">February 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Wallet Update</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">swap will become available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont grassCode">
+                    	<div id="tblock11" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">July 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Mass production and</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">of smartphones</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont voiletCode">
+                    	<div id="tblock12" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Sept. 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Alpha version of</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont liteOrangeCode">
+                    	<div id="tblock13" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January 2020</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Devices integration</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">with the blockchain</span>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                    <div id="timeline-cont2">
+                    	<img src="img/timefull.png">
+                    </div>
+                    
+                    <div id="timeline-cont3">
+                    <div class="time-text-cont blueCode">
+                    	<div id="tblock3" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">April 1st 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Private sale starts</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$1.5 (1 CALL and 200 CALLG)</span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="time-text-cont purpleCode">
+                    	<div id="tblock5" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">May 15th 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Main ICO starts</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$3 (1 CALL and 200 CALLG)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont liteblueCode">
+                    	<div id="tblock7" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">November 2018</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Integration of private text messages</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont redCode">
+                    	<div id="tblock9" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Users are invited to use the official wallet</span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="time-text-cont darkOrangeCode">
+                    	<div id="tblock14" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">March 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">The first smartphone</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">will become available</span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="time-text-cont liteGreenCode">
+                    	<div id="tblock15" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">August 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Development of</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">a private application</span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-text-cont pinkCode">
+                    	<div id="tblock16" class="time-content-sec pull-right">
+                        	<h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">December 2019</h3>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Final version of the</span>
+                            <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -330,20 +572,20 @@
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <table class="table">
                             <tr>
-                                <th>Capital Coin (CAP)</th>
+                                <th>Capital (CALL)</th>
                             </tr>
                             <tr>
-                                <td>105 000 000 CAP</td>
+                                <td>105 000 000 CALL</td>
                             </tr>
                         </table>
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <table class="table">
                             <tr>
-                                <th>CapitalGAS (CAPG)</th>
+                                <th>CapitalGAS (CALLG)</th>
                             </tr>
                             <tr>
-                                <td>21 000 000 000 CAPG</td>
+                                <td>21 000 000 000 CALLG</td>
                             </tr>
                         </table>
                     </div>
@@ -359,20 +601,20 @@
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <table class="table">
                             <tr>
-                                <th>Capital Coin (CAP)</th>
+                                <th>Capital (CALL)</th>
                             </tr>
                             <tr>
-                                <td>52 500 000 CAP</td>
+                                <td>52 500 000 CALL</td>
                             </tr>
                         </table>
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <table class="table">
                             <tr>
-                                <th>CapitalGAS (CAPG)</th>
+                                <th>CapitalGAS (CALLG)</th>
                             </tr>
                             <tr>
-                                <td>10 500 000 000 CAPG</td>
+                                <td>10 500 000 000 CALLG</td>
                             </tr>
                         </table>
                     </div>
@@ -655,14 +897,14 @@
                                         <div class="panel-heading" role="tab" id="headingThree">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        What is Capital Coin (CAP) and CapitalGAS (CAPG)?
+                                                        What is Capital (CALL) and CapitalGAS (CALLG)?
                                                     </a>
                                             </h4>
                                         </div>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                             <div class="panel-body">
-                                                <b>Capital Coin (CAP)</b> is the main currency used in the Capital Technologies & Research incorporated business. In the crowdsale it will be distributed as an Ethereum Token and when the main minable network launches every user will have to swap their tokens<br>
-                                                <b>CapitalGAS (CAPG)</b> is the fuel of the main network.
+                                                <b>Capital (CALL)</b> is the main currency used in the Capital Technologies & Research incorporated business. In the crowdsale it will be distributed as an Ethereum Token and when the main minable network launches every user will have to swap their tokens<br>
+                                                <b>CapitalGAS (CALLG)</b> is the fuel of the main network.
                                             </div>
                                         </div>
                                     </div>
@@ -699,10 +941,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -762,8 +1001,8 @@
                                 <a href="https://fb.me/capital.technologies.research"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                                 <a href="https://twitter.com/capital_company"><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
                                 <a href="https://www.youtube.com/channel/UCsw0ulVPOJKGkDeW9aRhCpg"><i class="fa fa-youtube fa-style fb" aria-hidden="true"></i></a>
-                                <a href="https://t.me/joinchat/D9NhyRIXIrWyYh2ojuWynA"><i class="fa fa-telegram fa-style telegram" aria-hidden="true"></i></a>
-                                <a href="https://www.reddit.com/user/capital-technologies/"><i class="fa fa-reddit fa-style reddit" aria-hidden="true"></i> </a>
+                                <a href="https://t.me/capital_technologies"><i class="fa fa-telegram fa-style telegram" aria-hidden="true"></i></a>
+                                <a href="https://www.reddit.com/r/CapitalTechnologies/"><i class="fa fa-reddit fa-style reddit" aria-hidden="true"></i> </a>
                                 <a href="https://www.linkedin.com/company/capital-tech/"><i class="fa fa-linkedin fa-style reddit" aria-hidden="true"></i> </a>
                                 <a href="https://github.com/capital-technologies"><i class="fa fa-github fa-style git" aria-hidden="true"></i></a>
                                 <!--<a href=""><i class="fa fa-bitcoin fa-style bitcoin" aria-hidden="true"></i> </a>-->
@@ -792,7 +1031,7 @@
                 <h2>Privacy Policy</h2>
             </div>
             <div class="modal-body">
-                <p>Capital Technologies & Research SRL established in Drobeta-Turnu-Severin (Romania; “we”, “us” or the “Company”) is committed to protecting and respecting your privacy according to the Romanian E-Privacy Law (also called the “Act”), to which reference should be made in full. This policy together with any documents relating to the sale of our Capital Coin (CAP), CapitalGAS (CAPG) and any other documents referred to in it sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.</p>
+                <p>Capital Technologies & Research SRL established in Drobeta-Turnu-Severin (Romania; “we”, “us” or the “Company”) is committed to protecting and respecting your privacy according to the Romanian E-Privacy Law (also called the “Act”), to which reference should be made in full. This policy together with any documents relating to the sale of our Capital (CALL), CapitalGAS (CALLG) and any other documents referred to in it sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.</p>
                 <p>Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By visiting <a href="https://www.mycapitalco.in/">https://www.mycapitalco.in/</a> (website) and <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a> (website) you are accepting and consenting to the practices described in this policy.</p>
                 <b>INFORMATION WE COLLECT FROM YOU</b>
                 <p>We will collect and process the following data about you:
@@ -852,7 +1091,7 @@
                             <ol>
                                 <li>In the event that we sell or buy any business or assets, in which case we will disclose your personal data to the prospective seller or buyer of such business or</li>
                                 <li>If the Company, or substantially all of its assets are acquired by a third party, in which case personal data held by it about its customers will be one of the transferred</li>
-                                <li>If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply CAP/CAPG Token Sale Terms and Conditions and other agreements; or to protect the rights, property, or safety of the Company, our customers, or This includes exchanging information with other companies and organisations for the purposes of fraud protection money laundering prevention and credit risk reduction.</li>
+                                <li>If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply CALL/CALLG Token Sale Terms and Conditions and other agreements; or to protect the rights, property, or safety of the Company, our customers, or This includes exchanging information with other companies and organisations for the purposes of fraud protection money laundering prevention and credit risk reduction.</li>
                                 <li>To ensure that we can successfully seek to complete our Token Sale and to meet our legal and contractual obligations to you related to the Token</li>
                                 <li>To avoid crime, money laundering</li>
                                 <li>To ensure that we have relevant information on persons wishing to contribute to our Token</li>
@@ -884,38 +1123,38 @@
                 <h2>Terms and Conditions</h2>
             </div>
             <div class="modal-body">
-                <p>The following Terms (“Terms”) govern the investment procedure (“Investments” collectively, and “Investment” individually) to Capital Technologies & Research SRL (publicly known as “Capital Coin (CAP) and CapitalGAS (CAPG)”) by Investors (“Investors” collectively, and “Investor” individually) and the subsequent genesis allocation of transferable cryptographic blockchain-based digital information units called CAPs and CAPGs (“CAP”, “CAPG”) to Investors. This document is not a solicitation for investment and does not pertain in any way to an offering of securities in any jurisdiction. This document describes the ICO in which the tokens: CAP and CAPG are sold.</p>
+                <p>The following Terms (“Terms”) govern the investment procedure (“Investments” collectively, and “Investment” individually) to Capital Technologies & Research SRL (publicly known as “Capital (CALL) and CapitalGAS (CALLG)”) by Investors (“Investors” collectively, and “Investor” individually) and the subsequent genesis allocation of transferable cryptographic blockchain-based digital information units called CALLs and CALLGs (“CALL”, “CALLG”) to Investors. This document is not a solicitation for investment and does not pertain in any way to an offering of securities in any jurisdiction. This document describes the ICO in which the tokens: CALL and CALLG are sold.</p>
                 <b>IMPORTANT</b>
-                <p>Ownership of CAP or CAPG during the ICO carry no rights express or implied. Investments in the crowdsale are non-refundable. Investors should have no expectation of mandatory influence over governance of the platform. By participating in the sale of CAP and CAPG, you expressly acknowledge and represent that you have carefully reviewed the Terms and fully understand the costs, and benefits of contributing in the crowdsale and agree to be bound by these Terms. As set forth below, you further represent and warrant that, to the extent permitted by law, you are authorized to invest in the crowdsale in your relevant jurisdiction, are of a legal age to be bound by these Terms, and will not hold CAP/CAPG, its parent and affiliates, and the officers, directors, agents, joint ventures, employees and suppliers of CAP/CAPG or our parent or affiliates, now or in the future and any other member of the Capital Technologies & Research SRL Team (collectively the “Capital Team & Parties”) liable for any losses or any special, incidental, or consequential damages arising out of, or in any way connected to the sale of CAP/CAPG.</p>
+                <p>Ownership of CALL or CALLG during the ICO carry no rights express or implied. Investments in the crowdsale are non-refundable. Investors should have no expectation of mandatory influence over governance of the platform. By participating in the sale of CALL and CALLG, you expressly acknowledge and represent that you have carefully reviewed the Terms and fully understand the costs, and benefits of contributing in the crowdsale and agree to be bound by these Terms. As set forth below, you further represent and warrant that, to the extent permitted by law, you are authorized to invest in the crowdsale in your relevant jurisdiction, are of a legal age to be bound by these Terms, and will not hold CALL/CALLG, its parent and affiliates, and the officers, directors, agents, joint ventures, employees and suppliers of CALL/CALLG or our parent or affiliates, now or in the future and any other member of the Capital Technologies & Research SRL Team (collectively the “Capital Team & Parties”) liable for any losses or any special, incidental, or consequential damages arising out of, or in any way connected to the sale of CALL/CALLG.</p>
                 <b>DO NOT INVEST IN THE CROWDSALE IF YOU ARE NOT AN EXPERT IN DEALING WITH CRYPTOGRAPHIC TOKENS AND BLOCKCHAIN-BASED SOFTWARE SYSTEMS</b>
-                <p>Investments in the crowdsale should be undertaken only by individuals, entities, or companies that have significant experience with, and understanding of, the usage and intricacies of cryptographic tokens, like Bitcoin (“BTC”), Ethereum (“ETH”) and blockchain based software systems. Investors should have functional understanding of storage and transmission mechanisms associated with other cryptographic tokens. While the Capital Technologies & Research SRL Team will be available to assist Investors of CAP/CAPG during the sale, the Capital Technologies & Research SRL Team will not be responsible in any way for loss of BTC, ETH, Fiat or CAP, CAPG resulting from actions taken by, or omitted by Investors. If you do not have such experience or expertise, then you should not invest CAP/CAPG or participate in the sale of CAP/CAPG.</p>
+                <p>Investments in the crowdsale should be undertaken only by individuals, entities, or companies that have significant experience with, and understanding of, the usage and intricacies of cryptographic tokens, like Bitcoin (“BTC”), Ethereum (“ETH”) and blockchain based software systems. Investors should have functional understanding of storage and transmission mechanisms associated with other cryptographic tokens. While the Capital Technologies & Research SRL Team will be available to assist Investors of CALL/CALLG during the sale, the Capital Technologies & Research SRL Team will not be responsible in any way for loss of BTC, ETH, Fiat or CALL, CALLG resulting from actions taken by, or omitted by Investors. If you do not have such experience or expertise, then you should not invest CALL/CALLG or participate in the sale of CALL/CALLG.</p>
                 <b>WARNING: INVESTORS IN THE CROWDSALE MUST BE MADE AWARE OF CERTAIN FACTORS</b>
-                <p>Prior to contributing the crowdsale, you should carefully consider the terms listed below and, to the extent necessary, consult an appropriate lawyer, accountant, or tax professional. If any of the following terms are unacceptable to you, you should not invest in the sale. By contributing in the crowdsale, and to the extent permitted by law, you are agreeing not to hold any of the Capital Technologies & Research SRL Team & Parties liable for any losses or any special, incidental, or consequential damages arising from, or in any way connected, to the sale of CAP/CAPG, including losses associated with the terms set forth below.</p>
+                <p>Prior to contributing the crowdsale, you should carefully consider the terms listed below and, to the extent necessary, consult an appropriate lawyer, accountant, or tax professional. If any of the following terms are unacceptable to you, you should not invest in the sale. By contributing in the crowdsale, and to the extent permitted by law, you are agreeing not to hold any of the Capital Technologies & Research SRL Team & Parties liable for any losses or any special, incidental, or consequential damages arising from, or in any way connected, to the sale of CALL/CALLG, including losses associated with the terms set forth below.</p>
                 <b>TERMS AND CONDITIONS</b>
                 <ol>
                     <li>
-                        <p>Total Number of tokens to be Sold, Capital Technologies & Research has created 10,500,000 CAP and 10,500,000,000 CAPG, a certain percentage of which will be sold during the Sale Period according to the specifications below.</p>
+                        <p>Total Number of tokens to be Sold, Capital Technologies & Research has created 52,500,000 CALL and 10,500,000,000 CALLG, a certain percentage of which will be sold during the Sale Period according to the specifications below.</p>
                     </li>
                     <li>Commencement and Duration of Token Sale<br>
-                        <p>The sale begin and end dates will be published on the official Capital Coin ICO website <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>. The sale will finish at the designated end date published, or when all CAP tokens have been sold. Though it does not currently anticipate doing so, the Capital Technologies & Research SRL Team also reserves the right to shorten the sale duration for any alternative reason.</p>
+                        <p>The sale begin and end dates will be published on the official Capital ICO website <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>. The sale will finish at the designated end date published, or when all CALL tokens have been sold. Though it does not currently anticipate doing so, the Capital Technologies & Research SRL Team also reserves the right to shorten the sale duration for any alternative reason.</p>
                     </li>
-                    <li>CAP/CAPG Pricing & Issuance<br>
-                        <p>The exact conversions for CAP tokens will be published on the official Capital Coin ICO website <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>. After the designated end date or following the sale of all tokens in the crowdsale no future tokens will be issued and surplus tokens will be burned.</p>
+                    <li>CALL/CALLG Pricing & Issuance<br>
+                        <p>The exact conversions for CALL tokens will be published on the official Capital ICO website <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>. After the designated end date or following the sale of all tokens in the crowdsale no future tokens will be issued and surplus tokens will be burned.</p>
                     </li>
                     <li>Capital Technologies & Research SRL Team Will Not Make Investments During ICO<br>
-                        <p>The Capital Technologies & Research SRL Team warrants that it will not invest in its own sale. Furthermore, The Capital Technologies & Research SRL Team warrants that it will not invest through any third party, or acquire CAP/CAPG in any manner, or acquire future control of CAP/CAPG, during the period of the ICO.</p>
+                        <p>The Capital Technologies & Research SRL Team warrants that it will not invest in its own sale. Furthermore, The Capital Technologies & Research SRL Team warrants that it will not invest through any third party, or acquire CALL/CALLG in any manner, or acquire future control of CALL/CALLG, during the period of the ICO.</p>
                     </li>
                     <li>Refunds<br>
-                        <p>ALL Investments IN THE CROWDSALE ARE FINAL. Investments IN THE CROWDSALE ARE NON-REFUNDABLE. BY CONTRIBUTING IN THE SALE, THE INVESTOR ACKNOWLEDGES THAT THE CAPITAL TECHNOLOGIES TEAM& PARTIES ARE NOT REQUIRED TO PROVIDE A REFUND FOR ANY REASON, AND THAT THE INVESTOR WILL NOT RECEIVE MONEY OR OTHER COMPENSATION FOR ANY CAP/CAPG THAT IS NOT USED OR REMAINS UNUSED.</p>
+                        <p>ALL Investments IN THE CROWDSALE ARE FINAL. Investments IN THE CROWDSALE ARE NON-REFUNDABLE. BY CONTRIBUTING IN THE SALE, THE INVESTOR ACKNOWLEDGES THAT THE CAPITAL TECHNOLOGIES TEAM& PARTIES ARE NOT REQUIRED TO PROVIDE A REFUND FOR ANY REASON, AND THAT THE INVESTOR WILL NOT RECEIVE MONEY OR OTHER COMPENSATION FOR ANY CALL/CALLG THAT IS NOT USED OR REMAINS UNUSED.</p>
                     </li>
-                    <li>Taxation of CAP/CAPG and Taxation Related to the ICO<br>
-                        <p>The Investor bears the sole responsibility to determine if the investment of CAP/CAPG with BTC or the potential appreciation or depreciation in the value of CAP/CAPG over time has tax implications for the Investor in the Investor’s home jurisdiction. By purchasing CAP/CAPG, and to the extent permitted by law, the Investor agrees not to hold any of the Capital Technologies Team & Parties liable for any tax liability associated with or arising from investment in the crowdsale.</p>
+                    <li>Taxation of CALL/CALLG and Taxation Related to the ICO<br>
+                        <p>The Investor bears the sole responsibility to determine if the investment of CALL/CALLG with BTC or the potential appreciation or depreciation in the value of CALL/CALLG over time has tax implications for the Investor in the Investor’s home jurisdiction. By purchasing CALL/CALLG, and to the extent permitted by law, the Investor agrees not to hold any of the Capital Technologies Team & Parties liable for any tax liability associated with or arising from investment in the crowdsale.</p>
                     </li>
                     <li>Disclaimer of Warranties<br>
-                        <p>THE INVESTOR EXPRESSLY AGREES THAT THE INVESTOR IS CONTRIBUTING IN THE CROWDSALE AT THE INVESTOR’S SOLE RISK AND THAT CAP/CAPG IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE (EXCEPT ONLY TO THE EXTENT PROHIBITED UNDER APPLICABLE LAW WITH ANY LEGALLY REQUIRED WARRANTY PERIOD TO THE SHORTER OF THIRTY DAYS FROM FIRST USE OR THE MINIMUM PERIOD REQUIRED). WITHOUT LIMITING THE FOREGOING, NONE OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES WARRANT THAT THE PROCESS FOR CONTRIBUTING IN THE CROWDSALE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
+                        <p>THE INVESTOR EXPRESSLY AGREES THAT THE INVESTOR IS CONTRIBUTING IN THE CROWDSALE AT THE INVESTOR’S SOLE RISK AND THAT CALL/CALLG IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE (EXCEPT ONLY TO THE EXTENT PROHIBITED UNDER APPLICABLE LAW WITH ANY LEGALLY REQUIRED WARRANTY PERIOD TO THE SHORTER OF THIRTY DAYS FROM FIRST USE OR THE MINIMUM PERIOD REQUIRED). WITHOUT LIMITING THE FOREGOING, NONE OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES WARRANT THAT THE PROCESS FOR CONTRIBUTING IN THE CROWDSALE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
                     </li>
                     <li>Limitations Waiver of Liability<br>
-                        <p>THE INVESTOR ACKNOWLEDGES AND AGREES THAT, TO THE FULLEST EXTENT PERMITTED BY ANY APPLICABLE LAW, THE DISCLAIMERS OF LIABILITY CONTAINED HEREIN APPLY TO ANY AND ALL DAMAGES OR INJURY WHATSOEVER CAUSED BY OR RELATED TO USE OF, OR INABILITY TO USE, CAP/CAPG OR THE CAPITAL TECHNOLOGIES TEAM & PARTIES UNDER ANY CAUSE OR ACTION WHATSOEVER OF ANY KIND IN ANY JURISDICTION, INCLUDING, WITHOUT LIMITATION, ACTIONS FOR BREACH OF WARRANTY, BREACH OF CONTRACT OR TORT (INCLUDING NEGLIGENCE) AND THAT NONE OF THE CAPITAL TECHNOLOGIES TEAM PARTIES SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING FOR LOSS OF PROFITS, GOODWILL OR DATA, IN ANY WAY WHATSOEVER ARISING OUT OF THE USE OF, OR INABILITY TO USE, OR INVEST OF, OR INABILITY TO INVEST IN THE CROWDSALE. THE INVESTOR FURTHER SPECIFICALLY ACKNOWLEDGES THAT THE CAPITAL TECHNOLOGIES TEAM & PARTIES ARE NOT LIABLE FOR THE CONDUCT OF THIRD PARTIES, INCLUDING OTHER INVESTORS IN THE CROWDSALE, AND THAT THE RISK OF CONTRIBUTING IN THE CROWDSALE AND USING CAP/CAPG RESTS ENTIRELY WITH THE INVESTOR. TO THE EXTENT PERMISSIBLE UNDER APPLICABLE LAWS, UNDER NO CIRCUMSTANCES WILL ANY OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES BE LIABLE TO ANY INVESTOR FOR MORE THAN THE AMOUNT THE INVESTOR HAS PAID TO CROWDSALE INVESTMENT. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR CERTAIN TYPES OF DAMAGES. THEREFORE, SOME OF THE ABOVE LIMITATIONS IN THIS SECTION AND ELSEWHERE IN THE TERMS MAY NOT APPLY TO A INVESTOR. IN PARTICULAR, NOTHING IN THESE TERMS SHALL AFFECT THE STATUTORY RIGHTS OF ANY INVESTOR OR EXCLUDE INJURY ARISING FROM ANY WILFUL MISCONDUCT OR FRAUD OF THE CAPITAL TECHNOLOGIES TEAM</p>
+                        <p>THE INVESTOR ACKNOWLEDGES AND AGREES THAT, TO THE FULLEST EXTENT PERMITTED BY ANY APPLICABLE LAW, THE DISCLAIMERS OF LIABILITY CONTAINED HEREIN APPLY TO ANY AND ALL DAMAGES OR INJURY WHATSOEVER CAUSED BY OR RELATED TO USE OF, OR INABILITY TO USE, CALL/CALLG OR THE CAPITAL TECHNOLOGIES TEAM & PARTIES UNDER ANY CAUSE OR ACTION WHATSOEVER OF ANY KIND IN ANY JURISDICTION, INCLUDING, WITHOUT LIMITATION, ACTIONS FOR BREACH OF WARRANTY, BREACH OF CONTRACT OR TORT (INCLUDING NEGLIGENCE) AND THAT NONE OF THE CAPITAL TECHNOLOGIES TEAM PARTIES SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING FOR LOSS OF PROFITS, GOODWILL OR DATA, IN ANY WAY WHATSOEVER ARISING OUT OF THE USE OF, OR INABILITY TO USE, OR INVEST OF, OR INABILITY TO INVEST IN THE CROWDSALE. THE INVESTOR FURTHER SPECIFICALLY ACKNOWLEDGES THAT THE CAPITAL TECHNOLOGIES TEAM & PARTIES ARE NOT LIABLE FOR THE CONDUCT OF THIRD PARTIES, INCLUDING OTHER INVESTORS IN THE CROWDSALE, AND THAT THE RISK OF CONTRIBUTING IN THE CROWDSALE AND USING CALL/CALLG RESTS ENTIRELY WITH THE INVESTOR. TO THE EXTENT PERMISSIBLE UNDER APPLICABLE LAWS, UNDER NO CIRCUMSTANCES WILL ANY OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES BE LIABLE TO ANY INVESTOR FOR MORE THAN THE AMOUNT THE INVESTOR HAS PAID TO CROWDSALE INVESTMENT. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR CERTAIN TYPES OF DAMAGES. THEREFORE, SOME OF THE ABOVE LIMITATIONS IN THIS SECTION AND ELSEWHERE IN THE TERMS MAY NOT APPLY TO A INVESTOR. IN PARTICULAR, NOTHING IN THESE TERMS SHALL AFFECT THE STATUTORY RIGHTS OF ANY INVESTOR OR EXCLUDE INJURY ARISING FROM ANY WILFUL MISCONDUCT OR FRAUD OF THE CAPITAL TECHNOLOGIES TEAM</p>
                     </li>
                     <li>Force Majeure<br>
                         <p>The Capital Technologies & Research Team is not liable for failure to perform solely caused by:
@@ -932,7 +1171,7 @@
                         </p>
                     </li>
                     <li>Complete Agreement<br>
-                        <p>These Terms set forth the entire understanding between each Investor and The Capital Technologies & Research Team with respect to the sale of CAP/CAPG. For facts relating to the sale and Investments, the Investor agrees to rely only on these two documents in determining investment decisions and understands that these documents govern the sale of CAP/CAPG and supersede any public statements about the ICO made by third parties or by the Capital Technologies & Research Team or individuals associated with any of the Capital Technologies Team & Parties, past and present and during the ICO.</p>
+                        <p>These Terms set forth the entire understanding between each Investor and The Capital Technologies & Research Team with respect to the sale of CALL/CALLG. For facts relating to the sale and Investments, the Investor agrees to rely only on these two documents in determining investment decisions and understands that these documents govern the sale of CALL/CALLG and supersede any public statements about the ICO made by third parties or by the Capital Technologies & Research Team or individuals associated with any of the Capital Technologies Team & Parties, past and present and during the ICO.</p>
                     </li>
                     <li>Severability<br>
                         <p>The Investor and the Capital Technologies & Research Team agree that if any portion of these Terms is found illegal or unenforceable, in whole or in part, such provision shall, as to such jurisdiction, be ineffective solely to the extent of such determination of invalidity or unenforceability without affecting the validity or enforceability thereof in any other manner or jurisdiction and without affecting the remaining provisions of the Terms, which shall continue to be in full force and effect.</p>
@@ -940,21 +1179,23 @@
                     <li>No Waiver<br>
                         <p>The failure of the Capital Technologies & Research Team to require or enforce strict performance by the Investor of any provision of these Terms or the Capital Technologies & Research Team’s failure to exercise any right under these agreements shall not be construed as a waiver or relinquishment of the Capital Technologies & Research Team's right to assert or rely upon any such provision or right in that or any other instance. The express waiver by the Capital Technologies & Research Team of any provision, condition, or requirement of these Terms shall not constitute a waiver of any future obligation to comply with such provision, condition or requirement. Except as expressly and specifically set forth in this these Terms, no representations, statements, consents, waivers, or other acts or omissions by the Capital Technologies & Research Team shall be deemed a modification of these Terms nor be legally binding.</p>
                     </li>
-                    <li>Updates to the Terms and Conditions of the CAP/CAPG ICO<br>
-                        <p>The Capital Technologies & Research Team reserves the right, at its sole discretion, to change, modify, add, or remove portions of the Terms at any time during the sale by posting the amended Terms on the Capital Technologies website (<a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>). Any Investor will be deemed to have accepted such changes by purchasing CAP/CAPG. The Terms may not be otherwise amended except in a signed writing executed by both the Investor and the Capital Technologies & Research Team. For purposes of this agreement, "writing" does not include an e-mail message and a signature does not include an electronic signature. If at any point you do not agree to any portion of the then-current version of the Terms, you should not invest CAP/CAPG.</p>
+                    <li>Updates to the Terms and Conditions of the CALL/CALLG ICO<br>
+                        <p>The Capital Technologies & Research Team reserves the right, at its sole discretion, to change, modify, add, or remove portions of the Terms at any time during the sale by posting the amended Terms on the Capital Technologies website (<a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a>). Any Investor will be deemed to have accepted such changes by purchasing CALL/CALLG. The Terms may not be otherwise amended except in a signed writing executed by both the Investor and the Capital Technologies & Research Team. For purposes of this agreement, "writing" does not include an e-mail message and a signature does not include an electronic signature. If at any point you do not agree to any portion of the then-current version of the Terms, you should not invest CALL/CALLG.</p>
                     </li>
                     <li>Cooperation with Legal Authorities<br>
                         <p>The Capital Technologies & Research Team will cooperate with all law enforcement enquiries, subpoenas, or requests provided they are fully supported and documented by the law in the relevant jurisdictions. In accord with one of the core principles of the Capital Technologies project — transparency — the Capital Technologies Team will endeavor to publish any legal enquiries upon receipt.</p>
                     </li>
                     <li>Further Information<br>
-                        <p>For further information regarding the CAP/CAPG sale, please contact <a href="mailto:office@mycapitalco.in">office@mycapitalco.in</a></p>
+                        <p>For further information regarding the CALL/CALLG sale, please contact <a href="mailto:office@mycapitalco.in">office@mycapitalco.in</a></p>
                     </li>
                 </ol>
             </div>
         </div>
     </div>
-    <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>
+    <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" type="text/javascript"></script>
+	<script src="js/loader.js"></script>
     <script src="js/jquery.translate.js"></script>
     <script src="js/content-trn.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -963,6 +1204,7 @@
     <script src="js/aos.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbhI4xxzbScSpeh81B0OII278B5Z5ADKI&sensor=false"></script>
+	<script src="js/flipclock.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

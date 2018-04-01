@@ -115,8 +115,14 @@ class DashboardController extends Controller
 
         $wallets = collect($items)->keyBy('type');
         $stripe_key = config('services.stripe')['key'];
+        $base_rate = $this->settingRepository->findByField('field', 'base_rate')->first();
+        $base_rate_value = 0;
 
-        return view('dashboard.contribute', compact('wallets', 'discountRates', 'tokenBaseRate', 'stripe_key', 'userEthereumWallet'));
+        if ($base_rate) {
+            $base_rate_value = $base_rate->value;
+        }
+        $base_rate  = $base_rate_value;
+        return view('dashboard.contribute', compact('wallets', 'base_rate' , 'discountRates', 'tokenBaseRate', 'stripe_key', 'userEthereumWallet'));
     }
 
     public function recordTransaction(Request $request)
@@ -132,19 +138,19 @@ class DashboardController extends Controller
         $data['dated'] = Carbon::now();
         $user = Auth::user();
         $transaction = $user->transactions()->create($data);
-
+        $wallets = $this->walletRepository->findByField('user_id', Auth::id())->keyBy('type')->all();
         return response()->json([
             'status' => 'success',
             'transaction' => $transaction->id
-        ]);
+        ])->with('wallets' , $wallets);
     }
 
     public function transactions()
     {
         $user = Auth::user();
         $transactions = $user->transactions;
-
-        return view('dashboard.transactions', compact('transactions'));
+        $wallets = $this->walletRepository->findByField('user_id', Auth::id())->keyBy('type')->all();
+        return view('dashboard.transactions', compact('wallets' , 'transactions'));
     }
 
     public function calculator()
@@ -155,9 +161,9 @@ class DashboardController extends Controller
         if ($base_rate) {
             $base_rate_value = $base_rate->value;
         }
-
+        $wallets = $this->walletRepository->findByField('user_id', Auth::id())->keyBy('type')->all();
         return view('dashboard.calculator')
-            ->with('base_rate', $base_rate_value);
+            ->with('base_rate', $base_rate_value)->with('wallets' , $wallets);
     }
 
     public function charge(Request $request)

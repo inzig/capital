@@ -26,10 +26,10 @@ function drawChart() {
         ['Marketing', 35],
     ]);
     var optionscap = {
-        title: 'Capital Coin (CAP) token allocation'
+        title: 'Capital (CALL) token allocation'
     };
     var optionscapg = {
-        title: 'CapitalGAS (CAPG) token allocation'
+        title: 'CapitalGAS (CALLG) token allocation'
     };
     var optionsfund = {
         title: 'Funds distribution'
@@ -41,6 +41,11 @@ function drawChart() {
     chartcapg.draw(datacapg, optionscapg);
     fundchart.draw(datafunds, optionsfund);
 }
+
+$(window).resize(function(){
+  drawChart();
+ // drawChart();
+});
 
 function initialise() {
     var myLatlng = new google.maps.LatLng(44.63339701548197, 22.656206641441372);
@@ -89,17 +94,6 @@ $('.map').click(function() {
 $('#close-img').click(function() {
     $('.modal-img').modal('hide');
 });
-var _dcq = _dcq || [];
-var _dcs = _dcs || {};
-_dcs.account = '2643053';
-(function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript';
-    dc.async = true;
-    dc.src = '//tag.getdrip.com/2643053.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-})();
 var modalprivacy = document.getElementById('privacyModal');
 var modalterms = document.getElementById('termsModal');
 var btnprivacy = document.getElementById("privacy");
@@ -137,52 +131,6 @@ function changeVideo(vId) {
     iframe.src = "https://www.youtube.com/embed/" + vId;
     $("#myModal").modal("show");
 }
-
-function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-    };
-}
-
-function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-
-    function updateClock() {
-        var t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        if (t.total <= 0) {
-            clearInterval(timeinterval);
-        }
-    }
-
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 34 * 36 * 40 * 60 * 1000);
-initializeClock('clockdiv', deadline);
-$('.panel-collapse').on('show.bs.collapse', function() {
-    $(this).siblings('.panel-heading').addClass('active');
-});
-
 $('.panel-collapse').on('hide.bs.collapse', function() {
     $(this).siblings('.panel-heading').removeClass('active');
 });

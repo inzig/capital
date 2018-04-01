@@ -105,9 +105,9 @@ var dict = {
 		fr: "3 $"		
 	},
 	"$main-progress-bar-c4": {
-		en: "Last week ~ 4 $",
-		ro: "Ultima săptămână ~ 4 $",
-		fr: "Dernière semaine ~ 4 $"		
+		en: "Last week 4 $",
+		ro: "Ultima săptămână 4 $",
+		fr: "Dernière semaine 4 $"		
 	},
 	"$main-total-raised": {
 		en: "Total raised",

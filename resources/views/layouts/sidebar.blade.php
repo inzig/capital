@@ -18,8 +18,7 @@
                 <!-- Status -->
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
-        </div>
-
+        </div>        
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu" data-widget="tree">
             @include('layouts.menu')

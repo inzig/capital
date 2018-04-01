@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.11/css/skins/_all-skins.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
+    
     <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap3-wysihtml5.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">    
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
     @yield('css')     
 </head>
 
@@ -105,9 +105,8 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright &copy; {{ date('Y') }} <a href="#">{{ config('app.name') }}</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; {{ date('Y') }} <a href="#">{{ config('app.name') }}</a>.</strong> All rights reserved.   
         </footer>
-
     </div>
 @else
     <nav class="navbar navbar-default navbar-static-top">
@@ -160,7 +159,9 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>  
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-   
+    
+    <input type="hidden" value="{!! $base_rate or '0' !!}" id="base_rate"> 
+    <input type="hidden" id="ethereum_wallet_1" value="@if(isset($wallets['ethereum'])){{ $wallets['ethereum']->address }}@endif">
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/web3.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
@@ -187,7 +188,7 @@
     </script>
 
     @if(!empty($userWalletAddress))
-        <script>
+        <!-- <script>
             $(function () {
                 $.ajax({
                     url: 'https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress={!! $smartContractAddress->value or '' !!}&address={!! $userWalletAddress !!}&tag=latest&apikey=freekey',
@@ -201,7 +202,7 @@
                     }
                 });
             });
-        </script>
+        </script> -->
     @endif
 
     @yield('scripts')

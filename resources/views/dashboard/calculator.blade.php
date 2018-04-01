@@ -9,8 +9,7 @@
             <div class="box-body">
                 <div class="col-md-12">
                     <div class="col-sm-11">
-                        <input type="number" class="form-control" id="amount" placeholder="{!! config('app.token_name') !!}" disabled="disabled">
-                        <input type="hidden" value="{!! $base_rate or '0' !!}" id="base_rate">                                  
+                        <input type="number" class="form-control" id="amount" placeholder="{!! config('app.token_name') !!}" disabled="disabled">                                                         
                     </div>
                     
                     <div class="col-sm-11">
