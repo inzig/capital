@@ -43,7 +43,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand site-logo" href="{{ url('/') }}" ><img src="img/logos.png" ></a>
+                <a class="navbar-brand site-logo" href={{ url('/') }} ><img src="img/logos.png" ></a>
             </div>
             <div>
                 <div class="collapse navbar-collapse navbar-right" id="myNavbar">
@@ -66,7 +66,7 @@
                         <li><a href="#team" class="team_id trn">$nav-team</a></li>
                         <li><a href="#faq" class="faq trn">$nav-faq</a></li>
                         <!--<li><a href="#press_id" class="press_id trn">$nav-press</a></li>-->
-                        <li class="login-btn"><a class="login-btn" href=href="{{ url('login') }}"><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li>
+                        <li class="login-btn"><a class="login-btn" href={{ url('login') }} ><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li>
                     </ul>
                 </div>
             </div>
