@@ -94,6 +94,110 @@ $('.map').click(function() {
 $('#close-img').click(function() {
     $('.modal-img').modal('hide');
 });
+function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    };
+}
+
+function initializeClock(endtime) {
+	var d0 = document.getElementById('clk_days');
+	var d1 = document.getElementById('clk_day');
+	var da0 = document.getElementById('clk_days_up');
+    var da1 = document.getElementById('clk_days_down');	
+	var db0 = document.getElementById('clk_day_up');
+	var db1 = document.getElementById('clk_day_down');
+	
+	var h0 = document.getElementById('clk_hours');
+	var h1 = document.getElementById('clk_hour');
+	var ha0 = document.getElementById('clk_hours_up');
+    var ha1 = document.getElementById('clk_hours_down');	
+	var hb0 = document.getElementById('clk_hour_up');
+	var hb1 = document.getElementById('clk_hour_down');
+	
+	var m0 = document.getElementById('clk_minutes');
+	var m1 = document.getElementById('clk_minute');
+    var ma0 = document.getElementById('clk_minutes_up');
+	var ma1 = document.getElementById('clk_minutes_down');	
+	var mb0 = document.getElementById('clk_minute_up');
+	var mb1 = document.getElementById('clk_minute_down');
+	
+	var s0 = document.getElementById('clk_seconds');
+	var s1 = document.getElementById('clk_second');
+	var sa0 = document.getElementById('clk_seconds_up');
+	var sa1 = document.getElementById('clk_seconds_down');	
+	var sb0 = document.getElementById('clk_second_up');
+	var sb1 = document.getElementById('clk_second_down');
+	
+    function updateClock() {	
+        var t = getTimeRemaining(endtime);
+		//setInterval(flipsecond, 1);
+		d0.classList.remove("play");
+		d1.classList.remove("before");
+		m0.classList.remove("play");
+		m1.classList.remove("before");
+		h0.classList.remove("play");
+		h1.classList.remove("before");
+		s0.classList.remove("play");
+		s1.classList.remove("before");	
+		da0.innerHTML = ('0' + t.days).slice(-2);
+		da1.innerHTML = ('0' + t.days).slice(-2);
+		db0.innerHTML = ('0' + t.days).slice(-2);
+		db1.innerHTML = ('0' + t.days).slice(-2);		
+        ha0.innerHTML = ('0' + t.hours).slice(-2);
+		ha1.innerHTML = ('0' + t.hours).slice(-2);
+		hb0.innerHTML = ('0' + t.hours).slice(-2);
+		hb1.innerHTML = ('0' + t.hours).slice(-2);
+        ma0.innerHTML = ('0' + t.minutes).slice(-2);
+		ma1.innerHTML = ('0' + t.minutes).slice(-2);
+		mb0.innerHTML = ('0' + t.minutes).slice(-2);
+		mb1.innerHTML = ('0' + t.minutes).slice(-2);	
+		sa0.innerHTML = ('0' + t.seconds).slice(-2);
+		sb0.innerHTML = ('0' + t.seconds).slice(-2);
+		sa1.innerHTML = ('0' + t.seconds).slice(-2);
+		sb1.innerHTML = ('0' + t.seconds).slice(-2);
+		if(t.seconds == 0 ){
+			flipminute();
+			fliphour();
+			flipday();
+		}
+		if (t.total <= 0) {
+            clearInterval(timeinterval);
+        }		
+    }
+	function flipday() {
+		d0.classList.add("play");	
+		d1.classList.add("before");
+	}
+	function fliphour() {
+		h0.classList.add("play");	
+		h1.classList.add("before");
+	}
+	function flipminute() {
+		m0.classList.add("play");	
+		m1.classList.add("before");
+	}	
+	function flipsecond() {
+		s0.classList.add("play");	
+		s1.classList.add("before");			
+	}
+    updateClock();
+	var s = setInterval(flipsecond, 25);
+    var timeinterval = setInterval(updateClock, 1000);
+		
+}
+
+var deadline = new Date("April 9, 2018 12:00:00");
+initializeClock(deadline);
 var modalprivacy = document.getElementById('privacyModal');
 var modalterms = document.getElementById('termsModal');
 var btnprivacy = document.getElementById("privacy");
