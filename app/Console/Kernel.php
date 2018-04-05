@@ -22,12 +22,16 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
-    protected function schedule(Schedule $schedule)
-    {
-        // $schedule->command('inspire')
-        //          ->hourly();
+    // protected function schedule(Schedule $schedule)
+    // {
+    //     // $schedule->command('inspire')
+    //     //          ->hourly();
+    // }
+    protected function schedule(Schedule $schedule) {
+        // The processed data will be sent to the webhook
+         $schedule->command('coinpayment:transaction-check')
+            ->everyFiveMinutes();
     }
-
     /**
      * Register the commands for the application.
      *

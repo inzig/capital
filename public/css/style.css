@@ -4642,11 +4642,9 @@
     background: #0a2acc radial-gradient(farthest-side at 50% 0,#0a2acc 0,#0083c7 100%);
 }
 .right{
-    width:360px;
+    width:420px;
     position:absolute;
-    top:140px;
-    right:54px
-	margin: 9em auto 0;
+	margin: 10em auto 0;
 }
 @media (min-width:768px) and (max-width:1023px){
     .right{
@@ -4781,7 +4779,7 @@
 }
 .timer .entity{
     background-color:#eaeaea;
-    width:30%;
+    width:25%;
     border-radius:5px;
     text-align:center;
     line-height:1;
@@ -4790,6 +4788,9 @@
 }
 .timer .entity:nth-child(2){
     margin:0 3.33333%
+}
+.timer .entity:nth-child(3){
+    margin-right:3.33333%; 
 }
 .timer .entity .digits{
     margin-bottom:8px

@@ -44,7 +44,7 @@
         <div class="col-sm-12">
             <label class="col-sm-3 control-label text-left">Tokens: </label>
             <div class="col-sm-9">
-                <p class="form-control">Including discount (<span id="discount">0</span>%) <span id="tokens">0</span> Tokens</p>
+                <p class="form-control"><span id="tokens">0</span> Tokens</p>
             </div>
             <p class="info pull-right margin-aligned">This is estimated amount of tokens you will receive.</p>
         </div>

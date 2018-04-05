@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1aed21ae2344d59444b35033041ce9ce",
+    "content-hash": "d14400e805257b26f2091b4c479bc114",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1147,6 +1147,49 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "hexters/coinpayment",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hexters/CoinPayment.git",
+                "reference": "1d6eb919e3edabcc68a3448df6eb7eb1cd6284fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hexters/CoinPayment/zipball/1d6eb919e3edabcc68a3448df6eb7eb1cd6284fb",
+                "reference": "1d6eb919e3edabcc68a3448df6eb7eb1cd6284fb",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hexters\\CoinPayment\\Providers\\CoinPaymentServiceProvider"
+                    ],
+                    "aliases": {
+                        "CoinPayment": "Hexters\\CoinPayment\\Providers\\CoinPaymentFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hexters\\CoinPayment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Saifullah Syahidin",
+                    "email": "hexters@gmail.com"
+                }
+            ],
+            "time": "2018-03-23T08:06:27+00:00"
         },
         {
             "name": "infyomlabs/adminlte-templates",

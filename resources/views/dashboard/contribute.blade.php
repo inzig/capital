@@ -86,6 +86,7 @@
         var discounts = @json($discountRates);
 
         $(function () {
+            $('.buy-tokens').removeAttr('disabled');
             // $.ajax({
             //     url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,USD',
             //     method: 'GET',

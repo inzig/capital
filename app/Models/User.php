@@ -6,13 +6,15 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
+use Hexters\CoinPayment\Entities\CoinPaymentuserRelation;
 
 class User extends Authenticatable
 {
     use Notifiable;
     use EntrustUserTrait { restore as private restoreEntrust; }
     use SoftDeletes { restore as private restoreSoftDeletes; }
-
+    use Notifiable, CoinPaymentuserRelation;
+    
     public function restore()
     {
         $this->restoreEntrust();
