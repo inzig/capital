@@ -1208,5 +1208,14 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbhI4xxzbScSpeh81B0OII278B5Z5ADKI&sensor=false"></script>
     <script src="js/flipclock.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114984542-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114984542-1');
+  </script>
   </body>
 </html>
