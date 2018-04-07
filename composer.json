@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.2.*",
         "anhskohbo/no-captcha": "^3.0",
         "cartalyst/stripe-laravel": "7.0.*",
         "dimsav/laravel-translatable": "^8.0",
