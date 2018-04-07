@@ -972,14 +972,15 @@
               <div class="col-md-7 col-lg-7 pull-right col-sm-12 col-xs-12 margin-top-10 border-newsletter text-center contact-main-cont">
                 <h1 class="contact-us-h text-left"> <span>Subscribe</span> to receive updates</h1>
                 <div class="row">
-                  <form class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form">
-                    <div class="form-group no-padding">
+                  <form action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
+                     <?php echo Form::token(); ?>
+                    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
                       <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
+                    </div>                  
+                    <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                      <button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
                     </div>
-                  </form>
-                  <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                    <button type="button" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
-                  </div>
+                    </form>
                 </div>
                 <div class="follow-us-line-height text-left">
                   <a href="https://fb.me/capital.technologies.research"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
