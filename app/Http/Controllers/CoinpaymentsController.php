@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 class CoinpaymentsController extends Controller
 {
-    const ITEM_CURRENCY = 'BTC';
-    const ITEM_PRICE    = 0.01;
+    const ITEM_CURRENCY = 'USD';
+    const ITEM_PRICE    = 1.5;
 
     /**
      * Purchase items using coinpayments payment processor
@@ -52,7 +52,7 @@ class CoinpaymentsController extends Controller
         //         ]
         //     ];
 
-        $transaction = \Coinpayments::createTransactionSimple($cost, "USD", $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
+        $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
 
         // return ['transaction' => $transaction];
         return view('dashboard.confirmation', compact('transaction'));
