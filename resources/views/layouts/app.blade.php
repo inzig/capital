@@ -40,8 +40,8 @@
 
                 <div class="navbar-custom-menu" style="float: left;">
                     <ul class="nav navbar-nav">
-                        <li><a>{!! config('app.token_name') !!} Wallet: <strong class="nav-wallet" id="cap_coin_balance">0.0</strong></a></li>
-                        <li><a>{!! config('app.token_name') !!}G Wallet: <strong class="nav-wallet" id="capG_coin_balance">0.0</strong></a></li>
+                        <li><a>CALL Wallet: <strong class="nav-wallet" id="cap_coin_balance">0.0</strong></a></li>
+                        <li><a>CALLG Wallet: <strong class="nav-wallet" id="capG_coin_balance">0.0</strong></a></li>
                     </ul>
                 </div>
 

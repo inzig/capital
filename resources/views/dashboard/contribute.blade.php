@@ -23,7 +23,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Buy {!! config('app.token_name') !!} Coins</h3>
+                <h3 class="box-title">Buy CALL Coins</h3>
             </div>
             <div class="box-body">
                 @if($wallets->isNotEmpty())
