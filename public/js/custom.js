@@ -865,10 +865,13 @@ function CapitalTechCrowdsale() {
 	}
 	function Rate(contract) {
 		contract.calculateRate(1000000000000000000, function(e, r){
-			var ethUSD = r.valueOf();
-			console.log("ethUSD : "+ethUSD);
+			var ethUSD = r.valueOf();			
+			var tokens = web3.fromWei(ethUSD, 'ether');
+			console.log("token price: " + tokens);
+			console.log();
 			
-			var toEth = web3.fromWei(ethUSD, 'ether');
-			$("#call").html(toEth + " CALL");
+			// $("#call").html(toEth + " CALL");
+
 		});	
 	}
+	CapitalTechCrowdsale();

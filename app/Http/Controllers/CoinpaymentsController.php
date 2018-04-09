@@ -41,13 +41,13 @@ class CoinpaymentsController extends Controller
         /*
          * Calculate the price of the item (qty * ppu)
          */
-        $cost = $amount * $rate;
+        // $cost = $amount;
 
         /** @var Transaction $transaction */
         // $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency);
        
 
-        $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
+        $transaction = \Coinpayments::createTransactionSimple($amount, $currency, $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
 
         // return ['transaction' => $transaction];
         return view('dashboard.confirmation', compact('transaction'));

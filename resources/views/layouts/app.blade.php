@@ -153,7 +153,8 @@
             </div>
         </div>
     </div>
-    @endif   
+    @endif 
+    <script src={{ asset('js/particles.js') }}></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <!-- <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
