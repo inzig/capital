@@ -160,7 +160,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>   -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.0.2/particles.min.js"></script>
     <input type="hidden" value="{!! $base_rate or '0' !!}" id="base_rate"> 
     <input type="hidden" id="ethereum_wallet_1" value="@if(isset($wallets['ethereum'])){{ $wallets['ethereum']->address }}@endif">
     <script src="{{ asset('js/app.js') }}"></script>

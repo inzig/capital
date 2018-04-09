@@ -30,7 +30,7 @@ class CoinpaymentsController extends Controller
         // $amount   = $request->get('amount');
         // $currency = $request->get('currency');
         $amount = 1;
-        $currency = 1;
+        $currency = 'BTC';
         /*
          * Calculate the price of the item (qty * ppu)
          */
