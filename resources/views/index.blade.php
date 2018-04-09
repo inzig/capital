@@ -269,7 +269,7 @@
                       <div class="divider"></div>
                       <div class="button-wrap">
                         <div class="button-wrapper">
-                          <div class="content"><button class="button blue undefined   " type="button"><span></span><span>Join token sale</span></button></div>
+                          <div class="content"><a class="button blue undefined" href={{url('dashboard')}} type="button"><span></span><span>Join token sale</span></a></div>
                         </div>
                       </div>
                     </div>
