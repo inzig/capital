@@ -354,8 +354,8 @@ var abi = [
 	}
 ];
 	var capContract = web3.eth.contract(abi);
-	var cap = capContract.at('0x3a55a8b3760b85b1113433cd1514306bd87475c2');
-	var capG = capContract.at('0x83021cda6268338ba3193b885e46d8a1f1aa6d9a');	
+	var cap = capContract.at('0xaa9695bdacc70dc849e3d96769649e9eb349ced5');
+	var capG = capContract.at('0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682');	
 	getBalance(cap);
 	getBalanceCapG(capG);
 }
