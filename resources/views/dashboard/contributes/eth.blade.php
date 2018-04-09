@@ -36,6 +36,7 @@
             <p class="info pull-right margin-aligned">This is estimated amount of tokens you will receive.</p>
         </div>
         <input type="hidden" name="currency" value="ETH">
+        <input type="hidden" name="single_rate" value="0.004848">
         <div class="col-sm-12">
             <button type="submit" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
         </div>

@@ -33,24 +33,19 @@ class CoinpaymentsController extends Controller
         $amount   = $request->get('amount');
         $currency = $request->get('currency');
         $ethereum_wallet = $request->get('ethereum_wallet');
-        
+        $rate = $request->get('single_rate');
+
         $user = Auth::user();
         // return $user;
         $custom = $user->email . '|' .  $ethereum_wallet;
         /*
          * Calculate the price of the item (qty * ppu)
          */
-        $cost = $amount * self::ITEM_PRICE;
+        $cost = $amount * $rate;
 
         /** @var Transaction $transaction */
         // $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency);
        
-        //     $transaction = [
-        //         "transaction" => [
-        //             "amount" => 1 ,
-        //             "curreny1" => "BTC"                   
-        //         ]
-        //     ];
 
         $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
 

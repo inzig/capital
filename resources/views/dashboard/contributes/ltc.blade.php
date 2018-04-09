@@ -49,6 +49,7 @@
             <p class="info pull-right margin-aligned">This is estimated amount of tokens you will receive.</p>
         </div>
         <input type="hidden" name="currency" value="LTC">
+        <input type="hidden" name="single_rate" value="0.0168">
         <div class="col-sm-12">
             <button type="submit" type="button" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
         </div>
