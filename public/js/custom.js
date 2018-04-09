@@ -5,11 +5,12 @@ window.addEventListener('load', function () {
         window.web3 = new Web3(web3.currentProvider);
     } else {
         console.log('No Web3 Detected... using HTTP Provider')
-        window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/sLE5jxRI7tVRLdNNLqtW"));
+        window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/sLE5jxRI7tVRLdNNLqtW"));		
+		}	
+
 		// CallContract();	
 		// USDtoEth();
-		CapitalTechCrowdsale();		
-		}	
+		CapitalTechCrowdsale();
 });
 var wallet;
 function CallContract() {
@@ -740,75 +741,11 @@ function FetchUSD(price){
 	});
 }
 
-	var rates = {"BTC":0,"LTC":0,"DASH":0};
+	
 
 	function isNumber(n) {
 		return !isNaN(parseFloat(n)) && isFinite(n);
 	}
-
-	$(function () {
-		$.ajax({
-			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH',
-			method: 'GET',
-			dataType: 'json',
-			success: function (response) {
-				rates = response;
-				$('#amount').removeAttr('disabled');
-				$('#calculate').removeAttr('disabled');
-			},
-			error: function (error) {
-				console.error(error);
-			}
-		});
-
-		$('#calculate').on('click', function () {
-			var amount = $('#amount').val();
-
-			if(!isNumber(amount)) {
-				alert('Amount is not a number');
-				return;
-			}
-
-			var base_rate = $('#base_rate').val();
-			
-			base_rate = toEth * base_rate;
-			base_rate = base_rate * 100;
-			var eth = amount * base_rate;
-			
-			var btc = eth * rates.BTC;
-			var ltc = eth * rates.LTC;
-			var dash = eth * rates.DASH;
-
-			$('#btc .info-box-number').text(parseFloat(btc).toFixed(4));
-			$('#eth .info-box-number').text(parseFloat(eth).toFixed(4));
-			$('#ltc .info-box-number').text(parseFloat(ltc).toFixed(4));
-			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
-		});
-	});
-
-	$('.amount').change(function () {
-		var val = $(this).val();
-		var coin = $(this).data('coin');                
-		console.log(coin);
-		
-		var base_rate = toEth * 100;
-		var baseRate = $('#base_rate').val();
-		// console.log(baseRate);
-		
-		base_rate = base_rate	* baseRate;
-		// console.log(base_rate * baseRate);
-		
-		var tokens =  val / base_rate;
-		if(coin == 'bitcoin'){
-			tokens = tokens / rates.BTC;
-		} else if(coin == 'litecoin'){
-			tokens = tokens / rates.LTC;
-		}
-		
-		$(this).parents('form').find('#tokens').text(tokens.toFixed(0));
-		// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
-});
-
 
 function CapitalTechCrowdsale() {
 	var abi = [
@@ -863,15 +800,81 @@ function CapitalTechCrowdsale() {
 	var contract = web3.eth.contract(abi).at('0xa9979471b5175522ab2e77d4f893bdc8fc649dad');
 	Rate(contract);
 	}
+	var ethTokens;
+	var tokenInETH;
 	function Rate(contract) {
 		contract.calculateRate(1000000000000000000, function(e, r){
 			var ethUSD = r.valueOf();			
-			var tokens = web3.fromWei(ethUSD, 'ether');
-			console.log("token price: " + tokens);
-			console.log();
-			
-			// $("#call").html(toEth + " CALL");
-
+			ethTokens = web3.fromWei(ethUSD, 'ether');
+			tokenInETH = 1 / ethTokens;
+			console.log("token price: " + ethTokens);		
+			console.log("single token rate : " + tokenInETH);
+			console.log(rates);			
 		});	
 	}
-	CapitalTechCrowdsale();
+
+	var rates = {"BTC":0,"LTC":0,"DASH":0};
+	$(function () {
+		$.ajax({
+			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH',
+			method: 'GET',
+			dataType: 'json',
+			success: function (response) {
+				rates = response;
+				$('#amount').removeAttr('disabled');
+				$('#calculate').removeAttr('disabled');
+			},
+			error: function (error) {
+				console.error(error);
+			}
+		});
+
+		$('#calculate').on('click', function () {
+			var amount = $('#amount').val();
+
+			if(!isNumber(amount)) {
+				alert('Amount is not a number');
+				return;
+			}
+
+			// var base_rate = $('#base_rate').val();
+			
+			// base_rate = toEth * base_rate;
+			// base_rate = base_rate * 100;
+
+			var eth = tokenInETH * amount;
+			
+			var btc = eth * rates.BTC;
+			var ltc = eth * rates.LTC;
+			var dash = eth * rates.DASH;
+
+			$('#btc .info-box-number').text(parseFloat(btc).toFixed(4));
+			$('#eth .info-box-number').text(parseFloat(eth).toFixed(4));
+			$('#ltc .info-box-number').text(parseFloat(ltc).toFixed(4));
+			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
+		});
+		
+		$('.amount').change(function () {
+				var val = $(this).val();
+				var coin = $(this).data('coin');                
+				console.log(coin);
+				
+				// var base_rate = toEth * 100;
+				// var baseRate = $('#base_rate').val();
+				// console.log(baseRate);
+				
+				// base_rate = base_rate	* baseRate;
+				// console.log(base_rate * baseRate);
+				
+				var tokens =  val / tokenInETH;
+				if(coin == 'bitcoin'){
+					tokens = tokens / rates.BTC;
+				} else if(coin == 'litecoin'){
+					tokens = tokens / rates.LTC;
+				}
+				
+				$(this).parents('form').find('#tokens').text(tokens.toFixed(0));
+				// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
+		});
+	});
+	
