@@ -51,7 +51,8 @@
                                 <span class="info-box-icon dark-purple-box"><i class="fa fa-star"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Coins</span>
-                                    <span class="info-box-number" id="invested_total">0.0</span>
+                                    <!-- <span class="info-box-number" id="invested_total">0.0</span> -->
+                                    <span class="info-box-number" >0.0</span>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +62,8 @@
                                 <span class="info-box-icon dark-purple-box"><i class="fa fa-usd"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">USD</span>
-                                    <span class="info-box-number" id="invested_usd">0.0</span>
+                                    <!-- <span class="info-box-number" id="invested_usd">0.0</span> -->
+                                    <span class="info-box-number" >0.0</span>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +91,8 @@
                                 <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/BTC.svg') !!}" alt="Bitcoin"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Bitcoin</span>
-                                    <span class="info-box-number" id="invested_btc">0.0</span>
+                                    <!-- <span class="info-box-number" id="invested_btc">0.0</span> -->
+                                    <span class="info-box-number" >0.0</span>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +102,8 @@
                                 <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/ETH.svg') !!}" alt="Bitcoin"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Ethereum</span>
-                                    <span class="info-box-number" id="invested_eth">0.0</span>
+                                    <!-- <span class="info-box-number" id="invested_eth">0.0</span> -->
+                                    <span class="info-box-number" >0.0</span>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +113,8 @@
                                 <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/LTC.svg') !!}" alt="Bitcoin"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Litecoin</span>
-                                    <span class="info-box-number" id="invested_ltc">0.0</span>
+                                    <!-- <span class="info-box-number" id="invested_ltc">0.0</span> -->
+                                    <span class="info-box-number" >0.0</span>
                                 </div>
                             </div>
                         </div>
