@@ -21,7 +21,7 @@
                     @foreach ($transaction as $key => $value)
                     <tr>
                     <td>{{$key}}</td>
-                    <td>{{$value}}</td>                     
+                    <td>{{--$value--}}</td>                     
                     </tr>                       
                     @endforeach
                 @endif
