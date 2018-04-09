@@ -48,7 +48,7 @@ class CoinpaymentsController extends Controller
        
 
         $transaction = \Coinpayments::createTransactionSimple($amount, $currency, $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
-        $transaction = json_encode($transaction, true);
+        return $transaction = json_encode($transaction, true);
         // return ['transaction' => $transaction];
         return view('dashboard.confirmation', compact('transaction'));
     }
