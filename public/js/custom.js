@@ -364,7 +364,7 @@ function getBalance(cap){
 	cap.balanceOf(wallet, function(e, r){
 		var val = r.valueOf();
 		val = val / 1000000000000000000;
-		$("#cap_coin_balance").html(val + "CALL");			
+		$("#cap_coin_balance").html(val + " CALL");			
 	});
 }
 
@@ -855,17 +855,30 @@ function CapitalTechCrowdsale() {
 				var val = $(this).val();
 				var coin = $(this).data('coin');                
 				// console.log(coin);
-				
+				$('.buy-tokens').prop('disabled', false);
 				var tokens =  val / tokenInETH;
 				if(coin == 'bitcoin'){
 					tokens = tokens / rates.BTC;
+					if(val < 0.7497713){
+						alert("minimum contribution is BTC : 0.7497713");
+						$('.buy-tokens').addAttr('disabled');
+					}
 				} else if(coin == 'litecoin'){
 					tokens = tokens / rates.LTC;
+					if(val < 44){
+						alert("minimum contribution is LTC : 44");		
+						$('.buy-tokens').addAttr('disabled');										
+					}
 				} else {
-
+					if(val < 12.75){
+						$('.buy-tokens').prop('disabled', true);
+						alert("minimum contribution is ETH : 12.75");
+					}
 				}
-				
-				$(this).parents('form').find('#tokens').text(tokens.toFixed(0));
+				var call = tokens.toFixed(0);
+				var callg = call * 200;
+				var tok = call + " CALL , " + callg + " CALLG";
+				$(this).parents('form').find('#tokens').text(tok);
 				// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
 		});
 	});
