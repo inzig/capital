@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Stripe;
 
-class DashboardController extends Controller
+class MyDashboardController extends Controller
 {
     /** @var  SortableContentRepository */
     private $sortableContentRepository;

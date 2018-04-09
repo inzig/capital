@@ -85,13 +85,13 @@ Route::group(['middleware' => ['isVerified', 'auth']], function() {
 });
 
 Route::group(['middleware' => ['isVerified', 'auth'], 'prefix' => 'dashboard'], function() {
-    Route::get('/', 'DashboardController@index')->name('dashboard');
-    Route::post('/', 'DashboardController@update');
-    Route::get('buy-tokens', 'DashboardController@contribute')->name('buy-tokens');
-    Route::post('buy-tokens', 'DashboardController@recordTransaction');
-    Route::post('pay', 'DashboardController@charge')->name('stripe-pay');
-    Route::get('token-calculator', 'DashboardController@calculator')->name('token-calculator');
-    Route::get('transactions-history', 'DashboardController@transactions')->name('transactions-history');
+    Route::get('/', 'MyDashboardController@index')->name('dashboard');
+    Route::post('/', 'MyDashboardController@update');
+    Route::get('buy-tokens', 'MyDashboardController@contribute')->name('buy-tokens');
+    Route::post('buy-tokens', 'MyDashboardController@recordTransaction');
+    Route::post('pay', 'MyDashboardController@charge')->name('stripe-pay');
+    Route::get('token-calculator', 'MyDashboardController@calculator')->name('token-calculator');
+    Route::get('transactions-history', 'MyDashboardController@transactions')->name('transactions-history');
 });
 
 Route::group(['middleware' => ['role:admin', 'auth'], 'prefix' => 'admin'], function() {
