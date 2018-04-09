@@ -18,7 +18,7 @@
                       {{$transaction}}
                       
                 @if($transaction)
-                    @foreach ($transaction->filLable as $key => $value)
+                    @foreach ($transaction->fillable as $key => $value)
                     <tr>
                     <td>{{$key}}</td>
                     <td>{{--$value--}}</td>                     
