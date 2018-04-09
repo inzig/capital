@@ -26,7 +26,7 @@ return [
         'pre-sale' => 'Pre Sale',
         'main-sale' => 'Main Sale',
     ],
-    'token_name' => 'CAP',
+    'token_name' => 'CALL',
 
     /*
     |--------------------------------------------------------------------------

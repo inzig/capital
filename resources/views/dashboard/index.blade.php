@@ -129,7 +129,7 @@
             </div>
             <div class="box-body">
                 <div class="form-group">
-                    <p class="panel-heading">Enter your Ethereum address below to receive {!! config('app.token_name') !!} Coin:</p>
+                    <p class="panel-heading">Enter your Ethereum address below to receive and check the Capital (CALL) and Capital GAS Tokens: </p>
                     <form class="form-horizontal" method="post">
                         {{ csrf_field() }}
                         <label for="ethereum_wallet" class="col-sm-3 control-label">Ethereum Wallet Address: </label>

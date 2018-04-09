@@ -368,9 +368,7 @@
      border: 1px solid #6a5775;
 }
  .top-right-col {
-     margin: 7em auto 0;
-    /*float: none;
-     */
+     margin: 10em auto 0;
 }
  .progress-bar.progress-bar-first {
      background-color: #fcb810;
@@ -2229,6 +2227,7 @@ background: #428bca;
      font-weight: 700;
 }
  .c4 .btn.bnr-left-bns-btn {
+	 font-size:110%;
      background-image: url(../img/banner-btn-bg.png);
      width: 100%;
     /*height: 62px;
@@ -2441,12 +2440,6 @@ background: #428bca;
 	#timeline-cont1 {
 		width: 29%;
 	}
-     .navbar-collapse.collapse {
-         display: none;
-    }
-     .navbar-toggle {
-         display: block;
-    }
      .navbar-toggle:hover .icon-bar {
          background: #fff !important;
     }
@@ -3309,7 +3302,8 @@ background: #428bca;
     }
      #roadmap {
          padding: 40px 50px;
-    }
+    }	
+	
      .roadmap-p {
          font-size: 14px;
          line-height: 16px;
@@ -3502,6 +3496,9 @@ background: #428bca;
     }
 }
  @media(max-width:767px) {
+	 #myNavbar .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+     background-color:white;
+	}
 	 #timeline-cont1 {
 		width: 38%;
 	    margin-top: 129px;
@@ -3962,7 +3959,7 @@ background: #428bca;
          padding: 6px 0;
     }
      .top-right-col {
-         margin-top: 1em;
+         margin-top: 3em;
          padding: 0 0px !important;
     }
      .overlay {
@@ -3995,7 +3992,6 @@ background: #428bca;
     }
      #roadmap {
          padding: 0px 10px;
-         background-image: url(../img/roadmap-mobile-bg.png);
          background-repeat: repeat-x;
          background-position: 0px 162px;
          margin: 0 5%;
