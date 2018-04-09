@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
         window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/sLE5jxRI7tVRLdNNLqtW"));		
 		}	
 
-		// CallContract();	
+		CallContract();	
 		// USDtoEth();
 		CapitalTechCrowdsale();
 });

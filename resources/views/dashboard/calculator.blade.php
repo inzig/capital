@@ -13,7 +13,8 @@
                     </div>
                     
                     <div class="col-sm-5">
-                    <input type="number" class="form-control" placeholder="CALLG" id="capG">
+                    <!-- <input type="number" class="form-control" placeholder="CALLG" id="capG"> -->
+                    <p class="form-control"><span id="capG">0</span> CALLG</p>
                     </div>
                     <div class="col-sm-2">                        
                         <button type="submit" id="calculate" class="btn btn-primary pull-right" disabled="disabled">Calculate</button>
@@ -94,7 +95,8 @@
     $(function () {
         $("#amount").on("keyup", function() {
             var cap = $("#amount").val();
-            $("#capG").val(cap * 200);            
+            // $("#capG").val(cap * 200);  
+            $("#capG").text(cap * 200);            
         });
     });
         // $.getJSON('https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x3a55a8b3760b85b1113433cd1514306bd87475c2', function (data) {
