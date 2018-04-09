@@ -6,7 +6,7 @@
         <div class="col-sm-12 margin-bottom-field has-feedback{{ $errors->has('amount') ? ' has-error' : '' }}">
             <label for="amount" class="col-sm-3 control-label text-left">Amount: </label>
             <div class="col-sm-9">
-                <input required type="text" class="form-control amount" data-coin="bitcoin" name="amount" id="amount" value="{{ old('amount') }}" placeholder="Amount in BTC">
+                <input required type="number" class="form-control amount" data-coin="bitcoin" name="amount" id="amount" value="{{ old('amount') }}" placeholder="Amount in BTC">
             </div>
 
             @if ($errors->has('amount'))
