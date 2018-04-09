@@ -16,15 +16,14 @@
                     <th>Value</th>                    
                 </tr>          
                       
-               
-                    
-                    {{--  --}}
                 @if($transaction)
                     @foreach ($transaction as $key => $value)
-                    <tr>
-                    <td>{{$key}}</td>
-                    <td>{{$value}}</td>                     
-                    </tr>                       
+                        @if($key == 'amount' || $key == 'currency1' || $key == 'item_name' || $key == 'confirms_needed' || $key == 'address' || $key == 'timeout')
+                            <tr>
+                            <td>{{$key}}</td>
+                            <td>{{$value}}</td>                     
+                            </tr>   
+                        @endif                    
                     @endforeach
                 @endif
                  
