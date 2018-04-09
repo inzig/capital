@@ -8,7 +8,7 @@
     <meta name="keywords" content="capital, technology, research, mobile, android, ios, ico, sale, presale, crowdfunding, decentralization">
     <meta name="description" content="Capital Technologies & Research ICO">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
@@ -63,8 +63,12 @@
               <li><a class="tokensale trn" href="#tokensale">$nav-token</a></li>
               <li><a href="#team" class="team_id trn">$nav-team</a></li>
               <li><a href="#faq" class="faq trn">$nav-faq</a></li>
+<<<<<<< HEAD
               <!--<li><a href="#press_id" class="press_id trn">$nav-press</a></li>-->
               
+=======
+              <li><a href="#press_id" class="press_id trn">$nav-press</a></li>
+>>>>>>> newsletter
             </ul>
           </div>
         </div>
@@ -122,7 +126,11 @@
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+=======
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeIn padding-col-md-6 top-right-col" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+>>>>>>> newsletter
                 <div class="right">
                   <div class="counter">
                     <p class="heading"><span>CROWDSALE STARTS</span></p>
@@ -138,12 +146,21 @@
                                     <div class="up">
                                       <div class="shadow"></div>
                                       <div class="inn" id="clk_days_up">00</div>
+<<<<<<< HEAD
                                     </div>
                                     <div class="down">
                                       <div class="shadow"></div>
                                       <div class="inn" id="clk_days_down">00</div>
                                       <span class="label"><span>Days</span></span>
                                     </div>
+=======
+                                    </div>
+                                    <div class="down">
+                                      <div class="shadow"></div>
+                                      <div class="inn" id="clk_days_down">00</div>
+                                      <span class="label"><span>Days</span></span>
+                                    </div>
+>>>>>>> newsletter
                                   </div>
                                 </div>
                                 <div class="item active">
@@ -389,7 +406,11 @@
         <h1 class="features-heading-2" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital Technologies & Research </strong>Roadmap</h1>
         <div class="row">
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+<<<<<<< HEAD
             <img class="roadMagImgDesktop wow fadeInUp" style="width:70%;" src="img/roadmap.png" class="margin-top-50" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+=======
+            <img class="roadMagImgDesktop wow fadeInUp margin-top-50" style="width:70%;" src="img/roadmap.png" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
+>>>>>>> newsletter
             <div id="timeline-cont1">
               <div class="time-text-cont orangeCode">
                 <div id="tblock2" class="time-content-sec pull-right">
@@ -424,6 +445,7 @@
                   <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">July</h3>
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Mass production and</span>
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">of smartphones</span>
+<<<<<<< HEAD
                 </div>
               </div>
               <div class="time-text-cont voiletCode">
@@ -494,6 +516,78 @@
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
                 </div>
               </div>
+=======
+                </div>
+              </div>
+              <div class="time-text-cont voiletCode">
+                <div id="tblock12" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">September</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Alpha version of</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
+                </div>
+              </div>
+              <div class="time-text-cont liteOrangeCode">
+                <div id="tblock13" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Devices integration</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">with the blockchain</span>
+                </div>
+              </div>
+            </div>
+            <div id="timeline-cont2">
+              <img src="img/timefull.png">
+            </div>
+            <div id="timeline-cont3">
+              <div class="time-text-cont blueCode">
+                <div id="tblock3" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">April 9th 2018</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Private sale starts</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$1.5 (1 CALL and 200 CALLG)</span>
+                </div>
+              </div>
+              <div class="time-text-cont purpleCode">
+                <div id="tblock5" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">May 24th 2018</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Main ICO starts</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$3 (1 CALL and 200 CALLG)</span>
+                </div>
+              </div>
+              <div class="time-text-cont liteblueCode">
+                <div id="tblock7" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">November</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Integration of private communications</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
+                </div>
+              </div>
+              <div class="time-text-cont redCode">
+                <div id="tblock9" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Users are invited to use the official wallet</span>
+                </div>
+              </div>
+              <div class="time-text-cont darkOrangeCode">
+                <div id="tblock14" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">March</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">The first smartphone</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">will become available</span>
+                </div>
+              </div>
+              <div class="time-text-cont liteGreenCode">
+                <div id="tblock15" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">August</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Development of</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">a private application</span>
+                </div>
+              </div>
+              <div class="time-text-cont pinkCode">
+                <div id="tblock16" class="time-content-sec pull-right">
+                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">December</h3>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Final version of the</span>
+                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
+                </div>
+              </div>
+>>>>>>> newsletter
             </div>
           </div>
         </div>
@@ -651,6 +745,7 @@
                       <img src="img/team-pictures/marinescu-adrian.png" class="img-responsive" alt="Image">
                       <span class="img-overlay"></span>
                       <a href="https://www.linkedin.com/in/adrian-marinescu/"><span class="img-ovly-txt">in</span></a>
+<<<<<<< HEAD
                     </div>
                     <p>Marinescu Adrian (CEO)</p>
                     <p id="justify">Adrian is an entrepreneur also a cryptocurrency trader and with over 4 years of experience in programming, 2 years of experience in network administration at SCAND SA, reputed to be the biggest IT company in South West of Romania. He is also cofounder of many cryptocurrencies projects, and an active developer and contributor in the blockchain projects.</p>
@@ -658,6 +753,15 @@
                       <a href="https://web.facebook.com/marinescu.adrian.crypto"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                       <a href="https://twitter.com/marinescuadi "><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
                     </div>
+=======
+                    </div>
+                    <p>Marinescu Adrian (CEO)</p>
+                    <p id="justify">Adrian is an entrepreneur also a cryptocurrency trader and with over 4 years of experience in programming, 2 years of experience in network administration at SCAND SA, reputed to be the biggest IT company in South West of Romania. He is also cofounder of many cryptocurrencies projects, and an active developer and contributor in the blockchain projects.</p>
+                    <div class="text-left">
+                      <a href="https://web.facebook.com/marinescu.adrian.crypto"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
+                      <a href="https://twitter.com/marinescuadi "><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
+                    </div>
+>>>>>>> newsletter
                   </div>
                   <div class="col-md-4 col-sm-4 staff-main-col">
                     <div class="img-overlay-main">
@@ -711,6 +815,7 @@
                     <div class="text-left">
                       <a href="https://web.facebook.com/profile.php?id=100011561677849"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                       <a href="https://twitter.com/Bogdan_Dinel"><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
+<<<<<<< HEAD
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-4 staff-main-col">
@@ -725,6 +830,22 @@
                       <a href="https://web.facebook.com/claudiualexandru.dinu"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                     </div>
                   </div>
+=======
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 staff-main-col">
+                    <div class="img-overlay-main">
+                      <img src="img/team-pictures/dinu-claudiu.png" class="img-responsive" alt="Image">
+                      <span class="img-overlay"></span>
+                      <a href="https://www.linkedin.com/in/dinu-claudiu-20767815a/"><span class="img-ovly-txt">in</span></a>
+                    </div>
+                    <p>Dinu Claudiu (Community Manager)</p>
+                    <p id="justify">Claudiu is an Intercultural Communication graduate with a deep knowledge of 2 foreign languages. He is responsible for customer support, content management, and public relations.</p>
+                    <div class="text-left">
+                      <a href="https://web.facebook.com/claudiualexandru.dinu"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+>>>>>>> newsletter
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-4 staff-main-col">
@@ -770,6 +891,7 @@
                       <img src="img/team-pictures/attique-baig.png" class="img-responsive" alt="Image">
                       <span class="img-overlay"></span>
                       <a href="https://www.linkedin.com/in/attique-baig-08a10282/"><span class="img-ovly-txt">in</span></a>
+<<<<<<< HEAD
                     </div>
                     <p>Attique Baig (Senior UI/UX designer)</p>
                     <p id="justify">Attique Baig is a professional UI-UX designer and business owner at Expertions. As an expert in designing, he has designed a number of mobile & web applications. He has more than 8 year experience and provided his services to more than 500 customers with 100% success rate</p>
@@ -788,6 +910,26 @@
                     <div class="text-left">
                       <a href="https://github.com/inzig"><i class="fa fa-github fa-style fb" aria-hidden="true"></i></a>
                     </div>
+=======
+                    </div>
+                    <p>Attique Baig (Senior UI/UX designer)</p>
+                    <p id="justify">Attique Baig is a professional UI-UX designer and business owner at Expertions. As an expert in designing, he has designed a number of mobile & web applications. He has more than 8 year experience and provided his services to more than 500 customers with 100% success rate</p>
+                    <div class="text-left">
+                      <a href="https://www.facebook.com/ateeq.baig.98"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 staff-main-col">
+                    <div class="img-overlay-main">
+                      <img src="img/team-pictures/inzmam.png" class="img-responsive" alt="Image">
+                      <span class="img-overlay"></span>
+                      <a href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/"><span class="img-ovly-txt">in</span></a>
+                    </div>
+                    <p>Inzmam UI Hassan (Software Engineer)</p>
+                    <p id="justify">Inzmam is a full stack web&amp;blockchain developer. He has diverse software engineering experience in web technologies including PHP, MEAN Stack with multiple JS frameworks and libraries, Ethereum Solidity and HyperLedger Fabric and Sawtooth Expert</p>
+                    <div class="text-left">
+                      <a href="https://github.com/inzig"><i class="fa fa-github fa-style fb" aria-hidden="true"></i></a>
+                    </div>
+>>>>>>> newsletter
                   </div>
                   <div class="col-md-3 col-sm-3 staff-main-col">
                     <div class="img-overlay-main">
@@ -933,6 +1075,7 @@
         </div>
       </div>
     </section>
+<<<<<<< HEAD
     <!--
       <section id="press-release" class="margin-20" data-aos="zoom-in-right" data-aos-duration="1000">
           <div class="container">
@@ -962,6 +1105,192 @@
           <h4>Drobeta-Turnu-Severin, Mehedinti, Romania</h4>
           <h4>37 Plevnei Street</h4>
           <h4><a href="mailto:office@mycapitalco.in">office@mycapitalco.in</a></h4>
+=======
+    <section id="press-release" class="margin-20" data-aos="zoom-in-right" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="press-release-title"><span></span>PUBLICATIONS</h2>
+        <div class="row">
+          <div class="col-md-12 margin-top-70">
+            <div id="press-1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#press-1" data-slide-to="0" class="active"></li>
+                <li data-target="#press-1" data-slide-to="1"></li>
+                <li data-target="#press-1" data-slide-to="2"></li>
+				<li data-target="#press-1" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.nbcrightnow.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/prorlbbpt/nbcrightnow.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.760kfmb.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/6y2yoo8gh/760kfmb.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://allindiabulletin.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/k28j1d881/allindiabulletin.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://atltimes.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/gvdzhr37l/atltimes.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://aussieheadlines.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/ee28ahyqp/aussieheadlines.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://business-prnews.com/business_articles/2018/04/capital-technologies-research-will-revolutionise-our-means-of-communication-452491.htm" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/up2c6u63l/Business_PR_News.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://business-newsarticles.com/business_articles/2018/04/capital-technologies-research-will-revolutionise-our-means-of-communication-452491.htm" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/hyy3t6su9/business-newsarticles.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://business.bentoncourier.com/bentoncourier/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/ahowehqlt/business.bentoncourier.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://business.bigspringherald.com/bigspringherald/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/ri7sn6yi9/business.bigspringherald.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://business.borgernewsherald.com/borgernewsherald/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/vel4j6429/business.borgernewsherald.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://business.dailytimesleader.com/dailytimesleader/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/hxo60bgw1/business.dailytimesleader.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://business.decaturdailydemocrat.com/decaturdailydemocrat/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/c9hv9fk9d/business.decaturdailydemocrat.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://business.dptribune.com/dptribune/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/m6sw2i7ap/business.dptribune.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.cbs8.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/4tilnnjpd/cbs8.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.cleveland19.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/5kbbsutm9/cleveland19.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://clevelandpulse.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/4usjghdn5/clevelandpulse.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://columbusnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/fudqs3bs1/columbusnewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.digitaljournal.com/pr/3725287" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/vfv2c2avl/digitaljournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.doublet973.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/kt196nag1/doublet973.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://englandheadlines.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/pexdf03ox/englandheadlines.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://finance.azcentral.com/azcentral/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/xkffd5znl/finance.azcentral.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://finance.dailyherald.com/dailyherald/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/4i15acl3l/finance.dailyherald.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://markets.financialcontent.com/presstelegram/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/lik1j15up/financialcontent.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://markets.financialcontent.com/franklincredit/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/ocn6whngh/franklincredit.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#press-1" class="left carousel-control">‹</a>
+              <a data-slide="next" href="#press-1" class="right carousel-control">›</a>
+            </div>
+          </div>
+        </div>
+		<div class="row">
+          <div class="col-md-12">
+            <div id="press-2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#press-2" data-slide-to="0" class="active"></li>
+                <li data-target="#press-2" data-slide-to="1"></li>
+                <li data-target="#press-2" data-slide-to="2"></li>
+				<li data-target="#press-2" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.hawaiinewsnow.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/w5duoglpt/hawaiinewsnow.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://markets.financialcontent.com/investplace/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/mxlm7ru35/investorplace.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://business.inyoregister.com/inyoregister/news/read/36082154/Capital_Technologies_&_Research_Will_Revolutionise_Our_Means_of_Communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/8r5vcjqxt/inyoregister.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.kait8.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/57jxmqvxt/kait8.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.kcbd.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/w5duohoap/kcbd.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.kctv5.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/h9fbgwklt/kctv5.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.kfbb.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/7c4anukpt/kfbb.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.kfmbfm.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/93x9irr81/kfmbfm.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.kfvs12.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/dd1zkxmrl/kfvs12.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.khq.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/es3k9ng4x/khq.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.kitv.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/x7o172hep/kitv.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.kltv.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/6zcwhq7lt/kltv.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.kplctv.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/jqr2o7mip/kplctv.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.kptv.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/gwnxars29/kptv.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://markets.financialcontent.com/1discountbrokerage/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/zc8e86dwh/markets.financialcontent.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://markets.financialcontent.com/dowtheoryletters/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/aiyu7j2lt/markets.financialcontent.com1.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://news-chicago.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/5x2pz7jnl/news-chicago.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.newschannel10.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/dptdr6hwx/newschannel10.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.newschannel6now.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/j18abvw9t/newschannel6now.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.noticiasetx.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/81n30at01/noticiasetx.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://quotes.fatpitchfinancials.com/fatpitch.financials/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/hyy3td8bl/quotes.fatpitchfinancials.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://theatlnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/r6qca2n3l/theatlnewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://thebaltimorenewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/f4uyfxlkx/thebaltimorenewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://thechicagonewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/lvbfpdggh/thechicagonewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#press-2" class="left carousel-control">‹</a>
+              <a data-slide="next" href="#press-2" class="right carousel-control">›</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="press-3" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#press-3" data-slide-to="0" class="active"></li>
+                <li data-target="#press-3" data-slide-to="1"></li>
+                <li data-target="#press-3" data-slide-to="2"></li>
+				<li data-target="#press-3" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://thedenverjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/57jxmvtep/thedenverjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thedenvernewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/dd1zl1pdd/thedenvernewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thenumbers.marketplace.org/publicradio/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/y9y7ppv41/thenumbers.marketplace.org.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.tucsonnewsnow.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/gwnxav7ip/tucsonnewsnow.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.wafb.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/j18abyokx/wafb.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://www.wbrc.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/xkffdda01/wbrc.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://www.wtol.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/d0alew9oh/wtol.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://markets.financialcontent.com/bostonherald/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/4i15akavl/www.bostonherald.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://www.abcfoxmontana.com/story/37901379/capital-technologies-research-will-revolutionise-our-means-of-communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/8weojduap/abcfoxmontana.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://markets.siliconinvestor.com/siliconinvestor/news/read/36082154" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/v8chcs8u9/markets.siliconinvestor.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://minneapolisnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/abg986vep/minneapolisnewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://southafricabulletin.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/8jnad7jqp/southafricabulletin.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://switzerlandposts.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/uitp0fnq9/switzerlandposts.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://technologyprnews.com/technology_articles/2018/04/capital-technologies-research-will-revolutionise-our-means-of-communication-452491.htm" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/yf70wf101/technologyprnews.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thelajournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/501cnfbw1/thelajournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thelanewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/fzmjz1a0x/thelanewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://thelondonnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/t3s4bq9sh/thelondonnewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://themiaminewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/abg985l41/themiaminewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-2"><a href="http://thenjnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/9yov1zak1/thenjnewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thenyjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/igyb6bosh/thenyjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thenynewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/vxv9p7ejl/thenynewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                    <div class="col-md-2"><a href="http://thephiladelphiajournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/q9oyyb2hd/thephiladelphiajournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://thephiladelphianewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication" target="_blank" class="thumbnail"><img src="https://s14.postimg.org/gp5cbfskx/thephiladelphianewsjournal.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+					<div class="col-md-2"><a href="http://thesanfranciscopost.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication " target="_blank" class="thumbnail"><img src="https://s14.postimg.org/e7tl46o41/thesanfranciscopost.com.png" alt="Image" style="width:250px; height:100%;"></a></div>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#press-3" class="left carousel-control">‹</a>
+              <a data-slide="next" href="#press-3" class="right carousel-control">›</a>
+            </div>
+          </div>
+        </div>
+>>>>>>> newsletter
+        </div>
+      </div>
+    </section>
+    <section id="map">
+      <div class="container-fluid">
+        <div id="map-canvas" style="height: 700px; width: 100%;"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+          <h2>Capital Technologies & Research SRL</h2>
+          <h4>Drobeta-Turnu-Severin, Mehedinti, Romania</h4>
+          <h4>37 Plevnei Street</h4>
+          <h4><a href="mailto:office@mycapitalco.in">office@mycapitalco.in</a></h4>
         </div>
       </div>
     </section>
@@ -973,14 +1302,15 @@
               <div class="col-md-7 col-lg-7 pull-right col-sm-12 col-xs-12 margin-top-10 border-newsletter text-center contact-main-cont">
                 <h1 class="contact-us-h text-left"> <span>Subscribe</span> to receive updates</h1>
                 <div class="row">
-                  <form class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form">
-                    <div class="form-group no-padding">
-                      <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
-                    </div>
-                  </form>
-                  <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                    <button type="button" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
-                  </div>
+                  <form action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
+                    <?php echo Form::token(); ?>
+                   <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
+                     <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
+                   </div>                  
+                   <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                     <button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
+                   </div>
+                 </form>
                 </div>
                 <div class="follow-us-line-height text-left">
                   <a href="https://fb.me/capital.technologies.research"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
@@ -1197,11 +1527,18 @@
     </div>
     <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114984542-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-114984542-1');
+    </script>	
     <script src="js/loader.js"></script>
-    <script src="js/jquery.translate.js"></script>
-    <script src="js/content-trn.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.translate.js"></script>
+    <script src="js/content-trn.js"></script>    
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/aos.js"></script>

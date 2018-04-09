@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use InfyOm\Generator\Utils\ResponseUtil;
 use Response;
+use Illuminate\Http\Request;
+use Newsletter;
 
 /**
  * @SWG\Swagger(
@@ -26,5 +28,12 @@ class AppBaseController extends Controller
     public function sendError($error, $code = 404)
     {
         return Response::json(ResponseUtil::makeError($error), $code);
+    }
+    
+    public function save(Request $request)
+    {
+         $email =  $request->newsletter;
+         Newsletter::subscribe($email);
+         return redirect('/');
     }
 }
