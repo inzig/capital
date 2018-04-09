@@ -16,7 +16,8 @@
                     <th>Value</th>                    
                 </tr>                
                       {{$transaction}}
-                      
+               
+                {{--
                 @if($transaction)
                     @foreach ($transaction as $key)
                     <tr>
@@ -25,7 +26,7 @@
                     </tr>                       
                     @endforeach
                 @endif
-                
+                --}}
                 </table>
             </div>
         </div>

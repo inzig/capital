@@ -503,6 +503,7 @@ calculateRate(contract);
 function parseContract(contract) {
 	return '{"privateSale": "'+new Date(contract.startTime()*1000)+'","preSale": "'+new Date(new Date(contract.startTime()*1000).setDate(new Date(contract.startTime()*1000).getDate() + 15))+'","mainSale": "'+new Date(new Date(contract.startTime()*1000).setDate(new Date(contract.startTime()*1000).getDate() + 45))+'","mainSaleWeek1": "'+new Date(new Date(contract.startTime()*1000).setDate(new Date(contract.startTime()*1000).getDate() + 52))+'","mainSaleWeek2": "'+new Date(new Date(contract.startTime()*1000).setDate(new Date(contract.startTime()*1000).getDate() + 59))+'","mainSaleWeek3": "'+new Date(new Date(contract.startTime()*1000).setDate(new Date(contract.startTime()*1000).getDate() + 66))+'","mainSaleWeek4": "'+new Date(contract.endTime())+'","sale_state": '+contract.sale_state()+'}';
 }
+
 function calculateRate(contract) {
 	contract.calculateRate(1000000000000000000, function(e, r){
 		var ethUSD = r.valueOf();
@@ -511,7 +512,6 @@ function calculateRate(contract) {
 		$("#callgeth").html(toEth*200 + " CALLG");
 	});	
 }
-
 
 
 

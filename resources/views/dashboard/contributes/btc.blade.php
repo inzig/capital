@@ -53,7 +53,7 @@
         <div class="col-sm-12">
             <button type="submit" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
         </div>
-
+    
         <div class="modal fade" id="qr_{{ $wallet->type }}" tabindex="-1" role="dialog" aria-labelledby="{{ ucwords($wallet->type) }}">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

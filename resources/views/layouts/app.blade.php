@@ -187,7 +187,8 @@
             placement: 'bottom-right'
         });
     </script>
-
+    <!-- <script src={{ asset('js/particles.js') }}></script>
+    <script src={{ asset('js/eth.js') }}></script> -->
     @if(!empty($userWalletAddress))
         <!-- <script>
             $(function () {

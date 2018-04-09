@@ -305,8 +305,8 @@
                 <div class="about-us-content">
                   <p>After years and years of evolution, the Internet has revolutionized the computer and communications world like nothing before, we became capable to interact with anyone despite the long distance between us. It's true that this made our way of life easier, but with what cost?</p>
                 </div>
-                <a href="#" class="read-more-btn">Read our Technical White Paper</a>
-                <a href="#" class="read-more-btn">Read our Crowdsale White Paper</a>
+                <a href="https://drive.google.com/file/d/1-5JB2vs9T3oYm3gXsXXvJp0zVRUu94Pd/view" class="read-more-btn">Read our Technical White Paper</a>
+                <a href="https://drive.google.com/file/d/1HPgHL_a_uduJny7TgjJPuNtAKLXDojCX/view" class="read-more-btn">Read our Crowdsale White Paper</a>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-4 text-align-right margin-top-30">
                 <img id="phone-img" class="margin-top-0 iphone-img" src="img/iphone.png" data-aos="zoom-in-right" data-aos-duration="1000">
