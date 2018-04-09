@@ -47,14 +47,17 @@
     right: 0;
 }
 #loader {
+  width:40%;
   z-index: 99999;
+  transform: translateY(-50%);
   color: #fff;
   font-size: 2.5em;
   height: 2.5em;
   left: 0;
   line-height: 2.5em;
-  margin-top: 20%;
-  margin-left: 42%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20%;
   right: 0;
   position: absolute;
   text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
@@ -1779,22 +1782,39 @@
  .padding-10-150{
      padding: 10px 150px;
 }
- #media .carousel-control{
-     background: transparent;
-     font-size: 96px;
-     border: none;
-     color: #fff !important;
-     line-height: 96px;
-     font-weight: 100;
-     margin-top: 10%;
+
+#press-release .carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
 }
- #media > a.left.carousel-control{
-     left: -150px;
-     color: #fff;
+#press-release .carousel-control{
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 50px;
 }
- #media > a.right.carousel-control{
-     right: -150px;
-     color: #fff;
+#press-release .carousel-control.right {
+	right: -12px;
+	z-index:999999999;
+}
+#press-release .carousel-control.left {
+	left: -12px;
+	z-index:999999999;
+}
+#press-release .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 5px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+#press-release .carousel-indicators li {
+	background: #cecece;
+}
+#press-release .carousel-indicators .active {
+background: #428bca;
 }
 /* end roadmap */
 /* start crowdsale */
@@ -4428,12 +4448,6 @@
      #particles-js button.btn.btn-info.btn-crowdsale img {
          margin-right: 0px;
     }
-     #team-carousel > div.carousel-inner > div.item > div > div{
-         margin-bottom: 20px;
-    }
-     #team-carousel1 > div.carousel-inner > div.item > div > div{
-         margin-bottom: 20px;
-    }
      #team > div > div > div.col-md-12.col-lg-12.col-sm-12.col-xs-12.padding-token-sale.margin-top-50 > div > div.col-md-12.padding-none > ul > li {
          display: inline;
          float: left;
@@ -4640,27 +4654,6 @@
 }
 .button.blue{
     background: #0a2acc radial-gradient(farthest-side at 50% 0,#0a2acc 0,#0083c7 100%);
-}
-.right{
-    width:420px;
-    position:absolute;
-	margin: 10em auto 0;
-}
-@media (min-width:768px) and (max-width:1023px){
-    .right{
-        top:170px;
-        right:0;
-        width:330px;
-		margin-top: 3em;
-    }
-}
-@media (min-width:320px) and (max-width:767px){
-    .right{
-        width:auto;
-        order:2;
-        position:static;
-		margin-top: 3em;
-    }
 }
 .counter{
     color:#fff;

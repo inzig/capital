@@ -63,12 +63,8 @@
               <li><a class="tokensale trn" href="#tokensale">$nav-token</a></li>
               <li><a href="#team" class="team_id trn">$nav-team</a></li>
               <li><a href="#faq" class="faq trn">$nav-faq</a></li>
-<<<<<<< HEAD
-              <!--<li><a href="#press_id" class="press_id trn">$nav-press</a></li>-->
-              
-=======
               <li><a href="#press_id" class="press_id trn">$nav-press</a></li>
->>>>>>> newsletter
+              <li class="login-btn"><a class="login-btn" href="login.html"><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li>
             </ul>
           </div>
         </div>
@@ -126,11 +122,7 @@
                   </div>
                 </div>
               </div>
-<<<<<<< HEAD
-              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-=======
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeIn padding-col-md-6 top-right-col" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
->>>>>>> newsletter
                 <div class="right">
                   <div class="counter">
                     <p class="heading"><span>CROWDSALE STARTS</span></p>
@@ -146,21 +138,12 @@
                                     <div class="up">
                                       <div class="shadow"></div>
                                       <div class="inn" id="clk_days_up">00</div>
-<<<<<<< HEAD
                                     </div>
                                     <div class="down">
                                       <div class="shadow"></div>
                                       <div class="inn" id="clk_days_down">00</div>
                                       <span class="label"><span>Days</span></span>
                                     </div>
-=======
-                                    </div>
-                                    <div class="down">
-                                      <div class="shadow"></div>
-                                      <div class="inn" id="clk_days_down">00</div>
-                                      <span class="label"><span>Days</span></span>
-                                    </div>
->>>>>>> newsletter
                                   </div>
                                 </div>
                                 <div class="item active">
@@ -279,7 +262,7 @@
                         <div class="current-price">
                           <div class="compare">
                             <div class="title"><span>Start price</span></div>
-                            <span class="currency">150<span class="symbol"> USD</span></span><span class="eq">=</span><span class="currency">100 CALL &<span class="symbol"> 20000 CALLG</span></span>
+                            <span class="currency">1<span class="symbol"> ETH</span></span><span class="eq">=</span><span class="currency"><span id="calleth"></span> <span class="symbol"><span id="callgeth"></span></span></span>
                           </div>
                         </div>
                       </div>
@@ -406,11 +389,7 @@
         <h1 class="features-heading-2" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital Technologies & Research </strong>Roadmap</h1>
         <div class="row">
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-<<<<<<< HEAD
-            <img class="roadMagImgDesktop wow fadeInUp" style="width:70%;" src="img/roadmap.png" class="margin-top-50" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-=======
             <img class="roadMagImgDesktop wow fadeInUp margin-top-50" style="width:70%;" src="img/roadmap.png" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
->>>>>>> newsletter
             <div id="timeline-cont1">
               <div class="time-text-cont orangeCode">
                 <div id="tblock2" class="time-content-sec pull-right">
@@ -445,7 +424,6 @@
                   <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">July</h3>
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Mass production and</span>
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">of smartphones</span>
-<<<<<<< HEAD
                 </div>
               </div>
               <div class="time-text-cont voiletCode">
@@ -516,78 +494,6 @@
                   <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
                 </div>
               </div>
-=======
-                </div>
-              </div>
-              <div class="time-text-cont voiletCode">
-                <div id="tblock12" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">September</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Alpha version of</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
-                </div>
-              </div>
-              <div class="time-text-cont liteOrangeCode">
-                <div id="tblock13" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Devices integration</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">with the blockchain</span>
-                </div>
-              </div>
-            </div>
-            <div id="timeline-cont2">
-              <img src="img/timefull.png">
-            </div>
-            <div id="timeline-cont3">
-              <div class="time-text-cont blueCode">
-                <div id="tblock3" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">April 9th 2018</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Private sale starts</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$1.5 (1 CALL and 200 CALLG)</span>
-                </div>
-              </div>
-              <div class="time-text-cont purpleCode">
-                <div id="tblock5" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">May 24th 2018</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Main ICO starts</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">$3 (1 CALL and 200 CALLG)</span>
-                </div>
-              </div>
-              <div class="time-text-cont liteblueCode">
-                <div id="tblock7" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">November</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Integration of private communications</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
-                </div>
-              </div>
-              <div class="time-text-cont redCode">
-                <div id="tblock9" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">January</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"></span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Users are invited to use the official wallet</span>
-                </div>
-              </div>
-              <div class="time-text-cont darkOrangeCode">
-                <div id="tblock14" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">March</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">The first smartphone</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">will become available</span>
-                </div>
-              </div>
-              <div class="time-text-cont liteGreenCode">
-                <div id="tblock15" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">August</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Development of</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">a private application</span>
-                </div>
-              </div>
-              <div class="time-text-cont pinkCode">
-                <div id="tblock16" class="time-content-sec pull-right">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">December</h3>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">Final version of the</span>
-                  <span class="wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">app. will be available</span>
-                </div>
-              </div>
->>>>>>> newsletter
             </div>
           </div>
         </div>
@@ -745,7 +651,6 @@
                       <img src="img/team-pictures/marinescu-adrian.png" class="img-responsive" alt="Image">
                       <span class="img-overlay"></span>
                       <a href="https://www.linkedin.com/in/adrian-marinescu/"><span class="img-ovly-txt">in</span></a>
-<<<<<<< HEAD
                     </div>
                     <p>Marinescu Adrian (CEO)</p>
                     <p id="justify">Adrian is an entrepreneur also a cryptocurrency trader and with over 4 years of experience in programming, 2 years of experience in network administration at SCAND SA, reputed to be the biggest IT company in South West of Romania. He is also cofounder of many cryptocurrencies projects, and an active developer and contributor in the blockchain projects.</p>
@@ -753,15 +658,6 @@
                       <a href="https://web.facebook.com/marinescu.adrian.crypto"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                       <a href="https://twitter.com/marinescuadi "><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
                     </div>
-=======
-                    </div>
-                    <p>Marinescu Adrian (CEO)</p>
-                    <p id="justify">Adrian is an entrepreneur also a cryptocurrency trader and with over 4 years of experience in programming, 2 years of experience in network administration at SCAND SA, reputed to be the biggest IT company in South West of Romania. He is also cofounder of many cryptocurrencies projects, and an active developer and contributor in the blockchain projects.</p>
-                    <div class="text-left">
-                      <a href="https://web.facebook.com/marinescu.adrian.crypto"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
-                      <a href="https://twitter.com/marinescuadi "><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
-                    </div>
->>>>>>> newsletter
                   </div>
                   <div class="col-md-4 col-sm-4 staff-main-col">
                     <div class="img-overlay-main">
@@ -815,7 +711,6 @@
                     <div class="text-left">
                       <a href="https://web.facebook.com/profile.php?id=100011561677849"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                       <a href="https://twitter.com/Bogdan_Dinel"><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
-<<<<<<< HEAD
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-4 staff-main-col">
@@ -830,22 +725,6 @@
                       <a href="https://web.facebook.com/claudiualexandru.dinu"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
                     </div>
                   </div>
-=======
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 staff-main-col">
-                    <div class="img-overlay-main">
-                      <img src="img/team-pictures/dinu-claudiu.png" class="img-responsive" alt="Image">
-                      <span class="img-overlay"></span>
-                      <a href="https://www.linkedin.com/in/dinu-claudiu-20767815a/"><span class="img-ovly-txt">in</span></a>
-                    </div>
-                    <p>Dinu Claudiu (Community Manager)</p>
-                    <p id="justify">Claudiu is an Intercultural Communication graduate with a deep knowledge of 2 foreign languages. He is responsible for customer support, content management, and public relations.</p>
-                    <div class="text-left">
-                      <a href="https://web.facebook.com/claudiualexandru.dinu"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
->>>>>>> newsletter
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-4 staff-main-col">
@@ -891,7 +770,6 @@
                       <img src="img/team-pictures/attique-baig.png" class="img-responsive" alt="Image">
                       <span class="img-overlay"></span>
                       <a href="https://www.linkedin.com/in/attique-baig-08a10282/"><span class="img-ovly-txt">in</span></a>
-<<<<<<< HEAD
                     </div>
                     <p>Attique Baig (Senior UI/UX designer)</p>
                     <p id="justify">Attique Baig is a professional UI-UX designer and business owner at Expertions. As an expert in designing, he has designed a number of mobile & web applications. He has more than 8 year experience and provided his services to more than 500 customers with 100% success rate</p>
@@ -910,26 +788,6 @@
                     <div class="text-left">
                       <a href="https://github.com/inzig"><i class="fa fa-github fa-style fb" aria-hidden="true"></i></a>
                     </div>
-=======
-                    </div>
-                    <p>Attique Baig (Senior UI/UX designer)</p>
-                    <p id="justify">Attique Baig is a professional UI-UX designer and business owner at Expertions. As an expert in designing, he has designed a number of mobile & web applications. He has more than 8 year experience and provided his services to more than 500 customers with 100% success rate</p>
-                    <div class="text-left">
-                      <a href="https://www.facebook.com/ateeq.baig.98"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 staff-main-col">
-                    <div class="img-overlay-main">
-                      <img src="img/team-pictures/inzmam.png" class="img-responsive" alt="Image">
-                      <span class="img-overlay"></span>
-                      <a href="https://www.linkedin.com/in/inzmam-ul-hassan-45bb32b8/"><span class="img-ovly-txt">in</span></a>
-                    </div>
-                    <p>Inzmam UI Hassan (Software Engineer)</p>
-                    <p id="justify">Inzmam is a full stack web&amp;blockchain developer. He has diverse software engineering experience in web technologies including PHP, MEAN Stack with multiple JS frameworks and libraries, Ethereum Solidity and HyperLedger Fabric and Sawtooth Expert</p>
-                    <div class="text-left">
-                      <a href="https://github.com/inzig"><i class="fa fa-github fa-style fb" aria-hidden="true"></i></a>
-                    </div>
->>>>>>> newsletter
                   </div>
                   <div class="col-md-3 col-sm-3 staff-main-col">
                     <div class="img-overlay-main">
@@ -1075,37 +933,6 @@
         </div>
       </div>
     </section>
-<<<<<<< HEAD
-    <!--
-      <section id="press-release" class="margin-20" data-aos="zoom-in-right" data-aos-duration="1000">
-          <div class="container">
-              <h2 class="press-release-title"><span>Press</span>Release</h2>
-              <div class="row margin-top-70">
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr1.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr2.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr3.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr4.png"></div>
-              </div>
-              <div class="row margin-top-70">
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr5.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr6.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr7.png"></div>
-                  <div class="col-sm-3 col-xs-3"><img src="img/pr8.png"></div>
-              </div>
-          </div>
-      </section>
-      -->
-    <section id="map">
-      <div class="container-fluid">
-        <div id="map-canvas" style="height: 700px; width: 100%;"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-          <h2>Capital Technologies & Research SRL</h2>
-          <h4>Drobeta-Turnu-Severin, Mehedinti, Romania</h4>
-          <h4>37 Plevnei Street</h4>
-          <h4><a href="mailto:office@mycapitalco.in">office@mycapitalco.in</a></h4>
-=======
     <section id="press-release" class="margin-20" data-aos="zoom-in-right" data-aos-duration="1000">
       <div class="container">
         <h2 class="press-release-title"><span></span>PUBLICATIONS</h2>
@@ -1277,9 +1104,7 @@
             </div>
           </div>
         </div>
->>>>>>> newsletter
         </div>
-      </div>
     </section>
     <section id="map">
       <div class="container-fluid">
@@ -1303,14 +1128,14 @@
                 <h1 class="contact-us-h text-left"> <span>Subscribe</span> to receive updates</h1>
                 <div class="row">
                   <form action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
-                    <?php echo Form::token(); ?>
-                   <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
-                     <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
-                   </div>                  
-                   <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                     <button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
-                   </div>
-                 </form>
+                      <?php echo Form::token(); ?>
+                    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
+                      <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
+                    </div>                  
+                    <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                      <button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                  </form>
                 </div>
                 <div class="follow-us-line-height text-left">
                   <a href="https://fb.me/capital.technologies.research"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
@@ -1528,8 +1353,10 @@
     <a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" type="text/javascript"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114984542-1"></script>
+	<script src="js/eth.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}

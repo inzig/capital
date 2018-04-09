@@ -1,3 +1,4 @@
+
 <div class="form-group">
     <form action={{ url('purchase') }} class="form-horizontal" id="contribute_form" method="post">
         {{ csrf_field() }}
