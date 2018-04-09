@@ -807,16 +807,16 @@ function CapitalTechCrowdsale() {
 			var ethUSD = r.valueOf();			
 			ethTokens = web3.fromWei(ethUSD, 'ether');
 			tokenInETH = 1 / ethTokens;
-			console.log("token price: " + ethTokens);		
-			console.log("single token rate : " + tokenInETH);
-			console.log(rates);			
+			// console.log("token price: " + ethTokens);		
+			// console.log("single token rate : " + tokenInETH);
+			// console.log(rates);			
 		});	
 	}
 
-	var rates = {"BTC":0,"LTC":0,"DASH":0};
+	var rates = {"BTC":0,"LTC":0,"DASH":0 , "ZEC":0};
 	$(function () {
 		$.ajax({
-			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH',
+			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH,ZEC',
 			method: 'GET',
 			dataType: 'json',
 			success: function (response) {
@@ -837,40 +837,32 @@ function CapitalTechCrowdsale() {
 				return;
 			}
 
-			// var base_rate = $('#base_rate').val();
-			
-			// base_rate = toEth * base_rate;
-			// base_rate = base_rate * 100;
-
 			var eth = tokenInETH * amount;
 			
 			var btc = eth * rates.BTC;
 			var ltc = eth * rates.LTC;
 			var dash = eth * rates.DASH;
+			var zec = eth * rates.ZEC;
 
 			$('#btc .info-box-number').text(parseFloat(btc).toFixed(4));
 			$('#eth .info-box-number').text(parseFloat(eth).toFixed(4));
 			$('#ltc .info-box-number').text(parseFloat(ltc).toFixed(4));
 			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
+			$('#zec .info-box-number').text(parseFloat(zec).toFixed(4));
 		});
 		
 		$('.amount').change(function () {
 				var val = $(this).val();
 				var coin = $(this).data('coin');                
-				console.log(coin);
-				
-				// var base_rate = toEth * 100;
-				// var baseRate = $('#base_rate').val();
-				// console.log(baseRate);
-				
-				// base_rate = base_rate	* baseRate;
-				// console.log(base_rate * baseRate);
+				// console.log(coin);
 				
 				var tokens =  val / tokenInETH;
 				if(coin == 'bitcoin'){
 					tokens = tokens / rates.BTC;
 				} else if(coin == 'litecoin'){
 					tokens = tokens / rates.LTC;
+				} else {
+
 				}
 				
 				$(this).parents('form').find('#tokens').text(tokens.toFixed(0));

@@ -4,18 +4,18 @@
     <div class="col-md-12" style="margin-top: 1.5em;">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">{!! config('app.token_name') !!} Calculator</h3>
+                <h3 class="box-title">CALL and CALLG Calculator</h3>
             </div>
             <div class="box-body">
                 <div class="col-md-12">
-                    <div class="col-sm-11">
-                        <input type="number" class="form-control" id="amount" placeholder="{!! config('app.token_name') !!}" disabled="disabled">                                                         
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" id="amount" placeholder="CALL" disabled="disabled">                                                         
                     </div>
                     
-                    <div class="col-sm-11">
-                    <input type="number" class="form-control" placeholder="CAPG" id="capG">
+                    <div class="col-sm-5">
+                    <input type="number" class="form-control" placeholder="CALLG" id="capG">
                     </div>
-                    <div class="col-sm-1">                        
+                    <div class="col-sm-2">                        
                         <button type="submit" id="calculate" class="btn btn-primary pull-right" disabled="disabled">Calculate</button>
                     </div>
                 </div>
@@ -51,6 +51,39 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-12" style="margin-top: 2em;">
+                    <div class="col-md-4 col-sm-12 col-xs-12" id="dash">
+                        <div class="info-box">
+                            <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/DASH.svg') !!}" alt="Bitcoin"></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">DASH</span>
+                                <span class="info-box-number"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 col-xs-12" id="zec">
+                        <div class="info-box">
+                            <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/ZEC.svg') !!}" alt="Ethereum"></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">ZCASH</span>
+                                <span class="info-box-number"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-4 col-sm-12 col-xs-12" id="ltc">
+                        <div class="info-box">
+                            <span class="info-box-icon purple-box"><img class="crypto-icon" src="{!! asset('crypto-icons/LTC.svg') !!}" alt="Litecoin"></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Litecoin</span>
+                                <span class="info-box-number"></span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
             </div>
         </div>
     </div>
@@ -61,7 +94,7 @@
     $(function () {
         $("#amount").on("keyup", function() {
             var cap = $("#amount").val();
-            $("#capG").val(cap * 1000);            
+            $("#capG").val(cap * 200);            
         });
     });
         // $.getJSON('https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x3a55a8b3760b85b1113433cd1514306bd87475c2', function (data) {
