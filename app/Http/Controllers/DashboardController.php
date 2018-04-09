@@ -43,12 +43,7 @@ class DashboardController extends Controller
         $this->sortableContentRepository = $sortableContentRepository;
         $this->discountRepository = $discountRepository;
     }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $wallets = $this->walletRepository->findByField('user_id', Auth::id())->keyBy('type')->all();

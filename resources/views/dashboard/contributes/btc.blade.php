@@ -1,5 +1,5 @@
 <div class="form-group">
-    <form class="form-horizontal" id="contribute_form" method="post">
+    <form action={{ url('purchase') }} class="form-horizontal" id="contribute_form" method="post">
         {{ csrf_field() }}
 
         <div class="col-sm-12 margin-bottom-field has-feedback{{ $errors->has('amount') ? ' has-error' : '' }}">
@@ -50,7 +50,7 @@
         </div>
 
         <div class="col-sm-12">
-            <button disabled type="button" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
+            <button type="submit" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
         </div>
 
         <div class="modal fade" id="qr_{{ $wallet->type }}" tabindex="-1" role="dialog" aria-labelledby="{{ ucwords($wallet->type) }}">

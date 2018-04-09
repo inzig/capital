@@ -36,7 +36,6 @@
                     )
 
                     <div class="alert alert-error" id="error-box" style="display: none;">
-
                     </div>
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">

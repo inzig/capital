@@ -15,6 +15,8 @@
  * @var \Illuminate\Support\Facades\Route Route
  */
 
+Route::post('purchase', 'CoinpaymentsController@purchaseItems');
+
 Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');
 

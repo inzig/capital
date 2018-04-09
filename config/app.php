@@ -199,6 +199,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
 
+        // Other Service Providers
+        \Kevupton\LaravelCoinpayments\Providers\LaravelCoinpaymentsServiceProvider::class,
     ],
 
     /*
