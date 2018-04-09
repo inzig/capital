@@ -48,9 +48,9 @@
                             <li>
                                 <a href="#" class="tab_class" data-toggle="tab_ltc" aria-expanded="true">Litecoin</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" class="tab_class" data-toggle="tab_cash" aria-expanded="true">Card</a>
-                            </li>
+                            </li> -->
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab_eth">

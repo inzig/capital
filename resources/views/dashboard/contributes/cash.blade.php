@@ -32,15 +32,15 @@
         <div class='form-row' style="margin-top: 15px;">
             <label class="col-sm-3 control-label text-left">Tokens: </label>
             <div class="col-sm-9">
-                <p class="form-control">Including discount (<span id="discount">0</span>%) <span id="tokens">0</span> Tokens</p>
+                <p class="form-control"><span id="tokens">0</span> Tokens</p>
             </div>
             <p class="info pull-right margin-aligned">This is estimated amount of tokens you will receive.</p>
             <div class="clearfix"></div>
         </div>
-
+        <!-- <input type="hidden" name="currency" value="DASH"> -->
         <div class='form-row'>
             <div class='col-md-3 form-group pull-right'>
-                <button class='form-control btn btn-primary submit-button' type='submit'>Continue</button>
+                <button  class='form-control btn btn-primary submit-button' type='submit'>Continue</button>
             </div>
         </div>
     </form>

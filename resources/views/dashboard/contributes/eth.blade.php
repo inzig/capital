@@ -1,11 +1,11 @@
 <div class="form-group">
-    <form class="form-horizontal" id="contribute_form" method="post">
+    <form  action={{ url('purchase') }} class="form-horizontal" id="contribute_form" method="post">
         {{ csrf_field() }}
 
         <div class="col-sm-12 margin-bottom-field has-feedback{{ $errors->has('amount') ? ' has-error' : '' }}">
             <label for="amount" class="col-sm-3 control-label text-left">Amount: </label>
             <div class="col-sm-9">
-                <input type="text" class="form-control amount" data-coin="ethereum" name="amount" id="amount" value="{{ old('amount') }}" placeholder="Amount in ETH">
+                <input required type="text" class="form-control amount" data-coin="ethereum" name="amount" id="amount" value="{{ old('amount') }}" placeholder="Amount in ETH">
             </div>
 
             @if ($errors->has('amount'))
@@ -18,7 +18,7 @@
         <div class="col-sm-12 margin-bottom-field has-feedback{{ $errors->has('ethereum_wallet') ? ' has-error' : '' }}">
             <label for="ethereum_wallet" class="col-sm-3 control-label text-left">Ethereum Wallet Address: </label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="ethereum_wallet" id="ethereum_wallet" value="{{ $userEthereumWallet->address or old('ethereum_wallet') }}" placeholder="Ethereum Wallet Address">
+                <input required type="text" class="form-control" name="ethereum_wallet" id="ethereum_wallet" value="{{ $userEthereumWallet->address or old('ethereum_wallet') }}" placeholder="Ethereum Wallet Address">
             </div>
 
             @if ($errors->has('ethereum_wallet'))
@@ -35,9 +35,9 @@
             </div>
             <p class="info pull-right margin-aligned">This is estimated amount of tokens you will receive.</p>
         </div>
-
+        <input type="hidden" name="currency" value="ETH">
         <div class="col-sm-12">
-            <button disabled type="button" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
+            <button type="submit" class="btn btn-primary pull-right margin-aligned buy-tokens" data-currency="{{ $wallet->type }}" style="margin-bottom: 1em;" data-toggle="modal" data-target="#qr_{{ $wallet->type }}">Continue</button>
         </div>
 
         <div class="modal fade" id="qr_{{ $wallet->type }}" tabindex="-1" role="dialog" aria-labelledby="{{ ucwords($wallet->type) }}">

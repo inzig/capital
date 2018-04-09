@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Kevupton\LaravelCoinpayments\Exceptions\IpnIncompleteException;
 use Kevupton\LaravelCoinpayments\Models\Ipn;
 use Kevupton\LaravelCoinpayments\Models\Transaction;
+use Illuminate\Support\Facades\Auth;
 
 class CoinpaymentsController extends Controller
 {
@@ -20,26 +21,41 @@ class CoinpaymentsController extends Controller
      */
     public function purchaseItems (Request $request)
     {
+        
         // validate that the request has the appropriate values
-        // $this->validate($request, [
-        //     'currency' => 'required|string',
-        //     'amount'   => 'required|integer|min:1',
-        // ]);
+        $this->validate($request, [
+            'currency' => 'required|string',
+            'amount'   => 'required|integer|min:1',
+            'ethereum_wallet' => 'required|string',
+        ]);
+        
 
-
-        // $amount   = $request->get('amount');
-        // $currency = $request->get('currency');
-        $amount = 1;
-        $currency = 'BTC';
+        $amount   = $request->get('amount');
+        $currency = $request->get('currency');
+        $ethereum_wallet = $request->get('ethereum_wallet');
+        
+        $user = Auth::user();
+        // return $user;
+        $custom = $user->email . '|' .  $ethereum_wallet;
         /*
          * Calculate the price of the item (qty * ppu)
          */
         $cost = $amount * self::ITEM_PRICE;
 
         /** @var Transaction $transaction */
-        $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency);
+        // $transaction = \Coinpayments::createTransactionSimple($cost, self::ITEM_CURRENCY, $currency);
+       
+        //     $transaction = [
+        //         "transaction" => [
+        //             "amount" => 1 ,
+        //             "curreny1" => "BTC"                   
+        //         ]
+        //     ];
 
-        return ['transaction' => $transaction];
+        $transaction = \Coinpayments::createTransactionSimple($cost, "USD", $currency , array("buyer_email"=> $user->email, "buyer_name"=> $user->name, "item_name"=>"private_sale", "item_number"=>"1", "custom"=> $custom, "ipn_url"=>"https://www.mycapitalco.in/api/ipn"));
+
+        // return ['transaction' => $transaction];
+        return view('dashboard.confirmation', compact('transaction'));
     }
 
     /**
