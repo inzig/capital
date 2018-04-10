@@ -143,6 +143,40 @@
 
                     </div>
                 </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="panel-heading">Token Details</p>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="info-box dark-purple-box-border">
+                                <span class="info-box-icon dark-purple-box"><i class="fa fa-star"></i></span>
+                                <div class="info-box-content">
+                                <span class="info-box-text">Token Name: CAPITAL</span>
+                                    <span class="info-box-text">Token Symbol: CALL</span>
+                                    <span class="info-box-text">Token Decimals: 18</span>                                  
+                                    <span class="info-box-text" >0xaa9695bdacc70dc849e3d96769649e9eb349ced5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="info-box dark-purple-box-border">
+                                <span class="info-box-icon dark-purple-box"><i class="fa fa-star"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Token Name: CAPITAL GAS</span>
+                                    <span class="info-box-text">Token Symbol: CALLG</span>
+                                    <span class="info-box-text">Token Decimals: 18</span>                                  
+                                    <span class="info-box-text" >0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>   
+
+
             </div>
         </div>
 

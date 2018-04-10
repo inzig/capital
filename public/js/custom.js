@@ -856,18 +856,31 @@ function CapitalTechCrowdsale() {
 				var coin = $(this).data('coin');                
 				// console.log(coin);
 				$('.buy-tokens').prop('disabled', false);
+
 				var tokens =  val / tokenInETH;
 				if(coin == 'bitcoin'){
 					tokens = tokens / rates.BTC;
 					if(val < 0.7497713){
 						alert("minimum contribution is BTC : 0.7497713");
-						$('.buy-tokens').addAttr('disabled');
+						$('.buy-tokens').prop("disabled" , true);	
 					}
 				} else if(coin == 'litecoin'){
 					tokens = tokens / rates.LTC;
 					if(val < 44){
 						alert("minimum contribution is LTC : 44");		
-						$('.buy-tokens').addAttr('disabled');										
+						$('.buy-tokens').prop("disabled" , true);										
+					}
+				} else if(coin == 'dash'){
+					tokens = tokens / rates.DASH;
+					if(val < 44){
+						alert("minimum contribution is DASH : 44");		
+						$('.buy-tokens').prop("disabled" , true);											
+					}
+				} else if(coin == 'zcash'){
+					tokens = tokens / rates.ZEC;
+					if(val < 44){
+						alert("minimum contribution is ZEC : 44");		
+						$('.buy-tokens').prop("disabled" , true);											
 					}
 				} else {
 					if(val < 12.75){
