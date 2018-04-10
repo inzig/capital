@@ -23,7 +23,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Buy CALL Coins</h3>
+                <h3 class="box-title">Buy Capital (CALL) and Capital GAS (CALLG)</h3>
             </div>
             <div class="box-body">
                 @if($wallets->isNotEmpty())
@@ -32,6 +32,8 @@
                         'ethereum' => 'ETH.svg',
                         'bitcoin' => 'BTC.svg',
                         'litecoin' => 'LTC.svg',
+                        'dash' => 'DASH.svg',
+                        'zcash' => 'ZEC.svg',
                     ]
                     )
 
@@ -47,6 +49,12 @@
                             </li>
                             <li>
                                 <a href="#" class="tab_class" data-toggle="tab_ltc" aria-expanded="true">Litecoin</a>
+                            </li>
+                            <li>
+                                <a href="#" class="tab_class" data-toggle="tab_dash" aria-expanded="true">Dash</a>
+                            </li>
+                            <li>
+                                <a href="#" class="tab_class" data-toggle="tab_zec" aria-expanded="true">Zcash</a>
                             </li>
                             <!-- <li>
                                 <a href="#" class="tab_class" data-toggle="tab_cash" aria-expanded="true">Card</a>
@@ -65,9 +73,18 @@
                                 @include('dashboard.contributes.ltc', ['wallet' => $wallets['litecoin']])
                             </div>
 
+                            <div class="tab-pane" id="tab_dash">
+                                @include('dashboard.contributes.dash')
+                            </div>
+
+                            <div class="tab-pane" id="tab_zec">
+                                @include('dashboard.contributes.zcash')
+                            </div>
+
                             <div class="tab-pane" id="tab_cash">
                                 @include('dashboard.contributes.cash')
                             </div>
+
                             <div class="clearfix"></div>
                         </div>
                     </div>

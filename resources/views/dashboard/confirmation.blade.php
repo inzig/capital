@@ -7,7 +7,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Buy CALL Coins</h3>
+                <h3 class="box-title">Buy Capital (CALL) and Capital GAS (CALLG)</h3>
             </div>
             <div class="box-body">
                 <table style="width:100%">
