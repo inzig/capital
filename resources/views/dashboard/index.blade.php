@@ -156,7 +156,7 @@
                                 <span class="info-box-text">Token Name: CAPITAL</span>
                                     <span class="info-box-text">Token Symbol: CALL</span>
                                     <span class="info-box-text">Token Decimals: 18</span>                                  
-                                    <span class="info-box-text" >0xaa9695bdacc70dc849e3d96769649e9eb349ced5</span>
+                                    <a target="_blank" href="https://etherscan.io/token/0xaa9695bdacc70dc849e3d96769649e9eb349ced5"><span class="info-box-text" >0xaa9695bdacc70dc849e3d96769649e9eb349ced5</span></a>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                     <span class="info-box-text">Token Name: CAPITAL GAS</span>
                                     <span class="info-box-text">Token Symbol: CALLG</span>
                                     <span class="info-box-text">Token Decimals: 18</span>                                  
-                                    <span class="info-box-text" >0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682</span>
+                                    <a target="_blank" href="https://etherscan.io/token/0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682"><span class="info-box-text" >0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682</span></a>
                                 </div>
                             </div>
                         </div>

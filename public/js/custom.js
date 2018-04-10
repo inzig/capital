@@ -809,11 +809,11 @@ function CapitalTechCrowdsale() {
 			tokenInETH = 1 / ethTokens;
 			// console.log("token price: " + ethTokens);		
 			// console.log("single token rate : " + tokenInETH);
-			// console.log(rates);			
+			console.log(rates);			
 		});	
 	}
 
-	var rates = {"BTC":0,"LTC":0,"DASH":0 , "ZEC":0};
+	var rates = {"BTC":0,"LTC":0,"DASH":0,"ZEC":0};
 	$(function () {
 		$.ajax({
 			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH,ZEC',
