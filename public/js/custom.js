@@ -8,8 +8,7 @@ window.addEventListener('load', function () {
         window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/sLE5jxRI7tVRLdNNLqtW"));		
 		}	
 
-		CallContract();	
-		// USDtoEth();
+		CallContract();		
 		CapitalTechCrowdsale();
 });
 var wallet;
@@ -376,388 +375,105 @@ function getBalanceCapG(cap){
 	});
 }
 
-function USDtoEth() {
-var abi_1 = [
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "creator",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_id",
-        "type": "uint256"
-      }
-    ],
-    "name": "USD",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "id",
-        "type": "uint256"
-      },
-      {
-        "name": "_token",
-        "type": "string"
-      },
-      {
-        "name": "eth",
-        "type": "uint256"
-      },
-      {
-        "name": "usd",
-        "type": "uint256"
-      },
-      {
-        "name": "eur",
-        "type": "uint256"
-      },
-      {
-        "name": "gbp",
-        "type": "uint256"
-      }
-    ],
-    "name": "update",
-    "outputs": [],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokens",
-    "outputs": [
-      {
-        "name": "name",
-        "type": "string"
-      },
-      {
-        "name": "eth",
-        "type": "uint256"
-      },
-      {
-        "name": "usd",
-        "type": "uint256"
-      },
-      {
-        "name": "eur",
-        "type": "uint256"
-      },
-      {
-        "name": "gbp",
-        "type": "uint256"
-      },
-      {
-        "name": "block",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_id",
-        "type": "uint256"
-      }
-    ],
-    "name": "GBP",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "id",
-        "type": "uint256"
-      }
-    ],
-    "name": "deleteToken",
-    "outputs": [],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "sender",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_id",
-        "type": "uint256"
-      }
-    ],
-    "name": "ETH",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_creator",
-        "type": "address"
-      }
-    ],
-    "name": "changeCreator",
-    "outputs": [],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_sender",
-        "type": "address"
-      }
-    ],
-    "name": "changeSender",
-    "outputs": [],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_to",
-        "type": "address"
-      },
-      {
-        "name": "_value",
-        "type": "uint256"
-      },
-      {
-        "name": "_data",
-        "type": "bytes"
-      }
-    ],
-    "name": "execute",
-    "outputs": [
-      {
-        "name": "_r",
-        "type": "bytes32"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "id",
-        "type": "uint256"
-      }
-    ],
-    "name": "requestUpdate",
-    "outputs": [],
-    "payable": true,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_id",
-        "type": "uint256"
-      }
-    ],
-    "name": "updatedAt",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_id",
-        "type": "uint256"
-      }
-    ],
-    "name": "EUR",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "donate",
-    "outputs": [],
-    "payable": true,
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "payable": false,
-    "type": "constructor"
-  },
-  {
-    "payable": true,
-    "type": "fallback"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "name": "id",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "token",
-        "type": "string"
-      }
-    ],
-    "name": "NewPrice",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "name": "id",
-        "type": "uint256"
-      }
-    ],
-    "name": "DeletePrice",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "name": "id",
-        "type": "uint256"
-      }
-    ],
-    "name": "UpdatedPrice",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "name": "id",
-        "type": "uint256"
-      }
-    ],
-    "name": "RequestUpdate",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "name": "from",
-        "type": "address"
-      }
-    ],
-    "name": "Donation",
-    "type": "event"
-  }
-];
-	var fiatContract = web3.eth.contract(abi_1);
-	var price = fiatContract.at("0x2CDe56E5c8235D6360CCbb0c57Ce248Ca9C80909");
-	FetchUSD(price);
-}
-
-var toEth = 1;
-
-function FetchUSD(price){
-	price.USD(0, function(e, r){
-		ethUSD = r.valueOf();
-		toEth = web3.fromWei(ethUSD, 'ether');		
-		// console.log(toEth);
-	});
-}
-
-	
-
 	function isNumber(n) {
 		return !isNaN(parseFloat(n)) && isFinite(n);
 	}
 
-function CapitalTechCrowdsale() {
+	var rates = {"ETH":0,"BTC":0,"LTC":0,"DASH":0,"ZEC":0};
+	$(function () {
+		$.ajax({
+			url: 'https://min-api.cryptocompare.com/data/price?fsym=USD&tsyms=ETH,BTC,LTC,DASH,ZEC',
+			method: 'GET',
+			dataType: 'json',
+			success: function (response) {
+				rates = response;
+				$('#amount').removeAttr('disabled');
+				$('#calculate').removeAttr('disabled');
+				// console.log(rates);				
+			},
+			error: function (error) {
+				console.error(error);
+			}
+		});
+
+		$('#calculate').on('click', function () {
+			var amount = $('#amount').val();
+
+			if(!isNumber(amount)) {
+				alert('Amount is not a number');
+				return;
+			}
+			amount = amount * 1.5;
+			var eth = amount * rates.ETH;		
+			var btc = amount * rates.BTC;
+			var ltc = amount * rates.LTC;
+			var dash = amount * rates.DASH;
+			var zec = amount * rates.ZEC;
+
+			$('#btc .info-box-number').text(parseFloat(btc).toFixed(4));
+			$('#eth .info-box-number').text(parseFloat(eth).toFixed(4));
+			$('#ltc .info-box-number').text(parseFloat(ltc).toFixed(4));
+			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
+			$('#zec .info-box-number').text(parseFloat(zec).toFixed(4));
+		});
+		
+		$('.amount').change(function () {
+				var val = $(this).val();
+				var coin = $(this).data('coin');                
+				console.log(coin);
+				$('.buy-tokens').prop('disabled', false);
+
+				// var tokens =  val / tokenInETH;
+				var tokens;
+				// console.log(tokenRate * rates.BTC);
+				// console.log(val / (tokenRate * rates.BTC));
+
+				
+				if(coin == 'bitcoin'){
+					tokens = val / (tokenRate * rates.BTC);
+					if(val < 0.7497713){
+						alert("minimum contribution is BTC : 0.7497713");
+						$('.buy-tokens').prop("disabled" , true);	
+					}
+				} else if(coin == 'litecoin'){
+					tokens = val / (tokenRate * rates.LTC);
+					if(val < 44){
+						alert("minimum contribution is LTC : 44");		
+						$('.buy-tokens').prop("disabled" , true);										
+					}
+				} else if(coin == 'dash'){
+					tokens = val / (tokenRate * rates.DASH);
+					if(val < 44){
+						alert("minimum contribution is DASH : 44");		
+						$('.buy-tokens').prop("disabled" , true);											
+					}
+				} else if(coin == 'zcash'){
+					tokens = val / (tokenRate * rates.ZEC);
+					if(val < 44){
+						alert("minimum contribution is ZEC : 44");		
+						$('.buy-tokens').prop("disabled" , true);											
+					}
+				} else {
+					tokens = val / (tokenRate * rates.ETH);
+					if(val < 12.75){
+						$('.buy-tokens').prop('disabled', true);
+						alert("minimum contribution is ETH : 12.75");
+					}
+				}
+				var call = tokens.toFixed(0);
+				var callg = call * 200;
+				var tok = call + " CALL , " + callg + " CALLG";
+				$(this).parents('form').find('#tokens').text(tok);
+				// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
+		});
+	});
+	
+	function CapitalTechCrowdsale() {
 	var abi = [
 		{
 			"constant": true,
-			"inputs": [
-				{
-					"name": "_amount",
-					"type": "uint256"
-				}
-			],
-			"name": "calculateRate",
+			"inputs": [],
+			"name": "startTime",
 			"outputs": [
 				{
 					"name": "",
@@ -781,118 +497,77 @@ function CapitalTechCrowdsale() {
 			"payable": false,
 			"stateMutability": "view",
 			"type": "function"
-		},
-		{
-			"constant": true,
-			"inputs": [],
-			"name": "startTime",
-			"outputs": [
-				{
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"payable": false,
-			"stateMutability": "view",
-			"type": "function"
 		}
 	];
-	var contract = web3.eth.contract(abi).at('0xa9979471b5175522ab2e77d4f893bdc8fc649dad');
-	Rate(contract);
+	var crowdsaleContract = web3.eth.contract(abi);
+	var contract = crowdsaleContract.at('0x75fcb62bc45acdb14cf2f37a2bdd30184249a1eb');
+	var tokenRate;
+	parseContract(contract)
 	}
-	var ethTokens;
-	var tokenInETH;
-	function Rate(contract) {
-		contract.calculateRate(1000000000000000000, function(e, r){
-			var ethUSD = r.valueOf();			
-			ethTokens = web3.fromWei(ethUSD, 'ether');
-			tokenInETH = 1 / ethTokens;
-			// console.log("token price: " + ethTokens);		
-			// console.log("single token rate : " + tokenInETH);
-			console.log(rates);			
-		});	
-	}
+	function parseContract(contract) {
+		var startDate;
+		var endTime;
+	  contract.startTime(function(e , r){
+			if(r){				
+				startDate = r * 1000;
 
-	var rates = {"BTC":0,"LTC":0,"DASH":0,"ZEC":0};
-	$(function () {
-		$.ajax({
-			url: 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,LTC,DASH,ZEC',
-			method: 'GET',
-			dataType: 'json',
-			success: function (response) {
-				rates = response;
-				$('#amount').removeAttr('disabled');
-				$('#calculate').removeAttr('disabled');
-			},
-			error: function (error) {
-				console.error(error);
+				contract.endTime(function(e , r){
+					if(r){				
+						endTime = r * 1000;
+						// console.log(startDate);
+						// console.log(endTime);				
+						var currentDate = new Date();
+						var mainSaleW4 = new Array(new Date(new Date(startDate).setDate(new Date(startDate).getDate() + 66)), new Date(endTime), 4);
+						var mainSaleW3 = new Array(new Date(new Date(startDate).setDate(new Date(startDate).getDate() + 59)), mainSaleW4[0], 3.6); 
+						var mainSaleW2 = new Array(new Date(new Date(startDate).setDate(new Date(startDate).getDate() + 52)), mainSaleW3[0], 3.3);
+						var mainSaleW1 = new Array(new Date(new Date(startDate).setDate(new Date(startDate).getDate() + 45)), mainSaleW2[0], 3);
+						var preSale = new Array(new Date(new Date(startDate).setDate(new Date(startDate).getDate() + 15)), mainSaleW1[0], 2);
+						var privateSale = new Array(new Date(startDate), preSale[0], 1.5);
+						if (currentDate > mainSaleW4[1]) {
+							console.log("ICO ENDED");
+						} else if (currentDate.getTime() < mainSaleW4[1].getTime() && currentDate.getTime() > mainSaleW4[0].getTime()) {
+							// console.log(mainSaleW4);
+							tokenRate = mainSaleW4[2];
+						} else if (currentDate.getTime() < mainSaleW3[1].getTime() && currentDate.getTime() > mainSaleW3[0].getTime()) {
+							// console.log(mainSaleW3);
+							tokenRate = mainSaleW3[2];
+						} else if (currentDate.getTime() < mainSaleW2[1].getTime() && currentDate.getTime() > mainSaleW2[0].getTime()) {
+							// console.log(mainSaleW2);
+							tokenRate = mainSaleW2[2];
+						} else if (currentDate.getTime() < mainSaleW1[1].getTime() && currentDate.getTime() > mainSaleW1[0].getTime()) {
+							// console.log(mainSaleW1);
+							tokenRate = mainSaleW1[2]
+						} else if (currentDate.getTime() < preSale[1].getTime() && currentDate.getTime() > preSale[0].getTime()) {
+							// console.log(preSale);
+							tokenRate = preSale[2];
+						} else if (currentDate.getTime() < privateSale[1].getTime() && currentDate.getTime() > privateSale[0].getTime()) {
+							// console.log(privateSale[2]);
+							tokenRate = privateSale[2];
+						} else {
+							console.log("INVALID RANGE");
+						}
+						// console.log(tokenRate);										
+					}
+				});
+
 			}
-		});
-
-		$('#calculate').on('click', function () {
-			var amount = $('#amount').val();
-
-			if(!isNumber(amount)) {
-				alert('Amount is not a number');
-				return;
-			}
-
-			var eth = tokenInETH * amount;
-			
-			var btc = eth * rates.BTC;
-			var ltc = eth * rates.LTC;
-			var dash = eth * rates.DASH;
-			var zec = eth * rates.ZEC;
-
-			$('#btc .info-box-number').text(parseFloat(btc).toFixed(4));
-			$('#eth .info-box-number').text(parseFloat(eth).toFixed(4));
-			$('#ltc .info-box-number').text(parseFloat(ltc).toFixed(4));
-			$('#dash .info-box-number').text(parseFloat(dash).toFixed(4));
-			$('#zec .info-box-number').text(parseFloat(zec).toFixed(4));
 		});
 		
-		$('.amount').change(function () {
-				var val = $(this).val();
-				var coin = $(this).data('coin');                
-				// console.log(coin);
-				$('.buy-tokens').prop('disabled', false);
-
-				var tokens =  val / tokenInETH;
-				if(coin == 'bitcoin'){
-					tokens = tokens / rates.BTC;
-					if(val < 0.7497713){
-						alert("minimum contribution is BTC : 0.7497713");
-						$('.buy-tokens').prop("disabled" , true);	
-					}
-				} else if(coin == 'litecoin'){
-					tokens = tokens / rates.LTC;
-					if(val < 44){
-						alert("minimum contribution is LTC : 44");		
-						$('.buy-tokens').prop("disabled" , true);										
-					}
-				} else if(coin == 'dash'){
-					tokens = tokens / rates.DASH;
-					if(val < 44){
-						alert("minimum contribution is DASH : 44");		
-						$('.buy-tokens').prop("disabled" , true);											
-					}
-				} else if(coin == 'zcash'){
-					tokens = tokens / rates.ZEC;
-					if(val < 44){
-						alert("minimum contribution is ZEC : 44");		
-						$('.buy-tokens').prop("disabled" , true);											
-					}
-				} else {
-					if(val < 12.75){
-						$('.buy-tokens').prop('disabled', true);
-						alert("minimum contribution is ETH : 12.75");
-					}
-				}
-				var call = tokens.toFixed(0);
-				var callg = call * 200;
-				var tok = call + " CALL , " + callg + " CALLG";
-				$(this).parents('form').find('#tokens').text(tok);
-				// $(this).parents('form').find('#estimated_tokens').text(tokens.toFixed(4));
-		});
-	});
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
