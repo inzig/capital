@@ -420,7 +420,7 @@ function getBalanceCapG(cap){
 		$('.amount').change(function () {
 				var val = $(this).val();
 				var coin = $(this).data('coin');                
-				console.log(coin);
+				// console.log(coin);
 				$('.buy-tokens').prop('disabled', false);
 
 				// var tokens =  val / tokenInETH;
@@ -431,31 +431,31 @@ function getBalanceCapG(cap){
 				
 				if(coin == 'bitcoin'){
 					tokens = val / (tokenRate * rates.BTC);
-					if(val < 0.7497713){
+					if(val < 5000 * rates.BTC ){
 						alert("minimum contribution is BTC : 0.7497713");
 						$('.buy-tokens').prop("disabled" , true);	
 					}
 				} else if(coin == 'litecoin'){
 					tokens = val / (tokenRate * rates.LTC);
-					if(val < 44){
+					if(val < 5000 * rates.LTC ){
 						alert("minimum contribution is LTC : 44");		
 						$('.buy-tokens').prop("disabled" , true);										
 					}
 				} else if(coin == 'dash'){
 					tokens = val / (tokenRate * rates.DASH);
-					if(val < 44){
+					if(val < 5000 * rates.DASH ){
 						alert("minimum contribution is DASH : 44");		
 						$('.buy-tokens').prop("disabled" , true);											
 					}
 				} else if(coin == 'zcash'){
 					tokens = val / (tokenRate * rates.ZEC);
-					if(val < 44){
+					if(val < 5000 * rates.ZEC ){
 						alert("minimum contribution is ZEC : 44");		
 						$('.buy-tokens').prop("disabled" , true);											
 					}
 				} else {
 					tokens = val / (tokenRate * rates.ETH);
-					if(val < 12.75){
+					if(val < 5000 * rates.ETH ){
 						$('.buy-tokens').prop('disabled', true);
 						alert("minimum contribution is ETH : 12.75");
 					}

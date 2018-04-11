@@ -16,8 +16,14 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\Event' => [
             'App\Listeners\EventListener',
         ],
-        Kevupton\LarvelCoinpayments\Events\Deposit\DepositCompleted::class => [
-            App\Listeners\DoSomethingOnDepositListener::class, // your own class listener for when a deposit is created
+        Kevupton\LarvelCoinpayments\Events\Transaction\TransactionCreated::class => [
+            App\Listeners\DoSomethingOnTranscationCreation::class, // your own class listener for transaction creation
+        ],
+        Kevupton\LarvelCoinpayments\Events\Transaction\TransactionUpdated::class => [
+            App\Listeners\DoSomethingOnTranscationUpdate::class, // your own class listener for transaction update (more confirmations)
+        ],
+        Kevupton\LarvelCoinpayments\Events\Transaction\TransactionComplete::class => [
+            App\Listeners\DoSomethingOnTranscationComplete::class, // your own class listener for transaction finalization
         ],
     ];
    
