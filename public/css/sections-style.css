@@ -166,9 +166,13 @@
     background: #fff;
 }
 
-#tokensale p,
 #tokensale {
-    color: #fff;
+    background: url(../img/bg5.png);
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
 }
 
 #tokensale h3 {
