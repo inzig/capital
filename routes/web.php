@@ -16,6 +16,13 @@
  */
 
 Route::post('purchase', 'CoinpaymentsController@purchaseItems');
+Route::get('technichalwp', function() {
+    return redirect()->to('https://drive.google.com/file/d/1-5JB2vs9T3oYm3gXsXXvJp0zVRUu94Pd/view');
+});
+
+Route::get('crowdsalewp', function() {
+    return redirect()->to('https://drive.google.com/file/d/1HPgHL_a_uduJny7TgjJPuNtAKLXDojCX/view');
+});
 
 Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');

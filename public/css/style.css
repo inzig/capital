@@ -47,17 +47,14 @@
     right: 0;
 }
 #loader {
-  width:40%;
   z-index: 99999;
-  transform: translateY(-50%);
   color: #fff;
   font-size: 2.5em;
   height: 2.5em;
   left: 0;
   line-height: 2.5em;
-  margin-right:auto;
-  margin-left:auto;
-  margin-top:20%;
+  margin-top: 20%;
+  margin-left: 42%;
   right: 0;
   position: absolute;
   text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
@@ -368,7 +365,9 @@
      border: 1px solid #6a5775;
 }
  .top-right-col {
-     margin: 10em auto 0;
+     margin: 7em auto 0;
+    /*float: none;
+     */
 }
  .progress-bar.progress-bar-first {
      background-color: #fcb810;
@@ -1780,39 +1779,22 @@
  .padding-10-150{
      padding: 10px 150px;
 }
-
-#press-release .carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px;
+ #media .carousel-control{
+     background: transparent;
+     font-size: 96px;
+     border: none;
+     color: #fff !important;
+     line-height: 96px;
+     font-weight: 100;
+     margin-top: 10%;
 }
-#press-release .carousel-control{
-    height: 40px;
-	width: 40px;
-    background: none repeat scroll 0 0 #222222;
-    border: 4px solid #FFFFFF;
-    border-radius: 23px 23px 23px 23px;
-    margin-top: 50px;
+ #media > a.left.carousel-control{
+     left: -150px;
+     color: #fff;
 }
-#press-release .carousel-control.right {
-	right: -12px;
-	z-index:999999999;
-}
-#press-release .carousel-control.left {
-	left: -12px;
-	z-index:999999999;
-}
-#press-release .carousel-indicators {
-	right: 50%;
-	top: auto;
-	bottom: 5px;
-	margin-right: -19px;
-}
-/* The colour of the indicators */
-#press-release .carousel-indicators li {
-	background: #cecece;
-}
-#press-release .carousel-indicators .active {
-background: #428bca;
+ #media > a.right.carousel-control{
+     right: -150px;
+     color: #fff;
 }
 /* end roadmap */
 /* start crowdsale */
@@ -2227,7 +2209,6 @@ background: #428bca;
      font-weight: 700;
 }
  .c4 .btn.bnr-left-bns-btn {
-	 font-size:110%;
      background-image: url(../img/banner-btn-bg.png);
      width: 100%;
     /*height: 62px;
@@ -2440,6 +2421,12 @@ background: #428bca;
 	#timeline-cont1 {
 		width: 29%;
 	}
+     .navbar-collapse.collapse {
+         display: none;
+    }
+     .navbar-toggle {
+         display: block;
+    }
      .navbar-toggle:hover .icon-bar {
          background: #fff !important;
     }
@@ -3302,8 +3289,7 @@ background: #428bca;
     }
      #roadmap {
          padding: 40px 50px;
-    }	
-	
+    }
      .roadmap-p {
          font-size: 14px;
          line-height: 16px;
@@ -3496,9 +3482,6 @@ background: #428bca;
     }
 }
  @media(max-width:767px) {
-	 #myNavbar .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-     background-color:white;
-	}
 	 #timeline-cont1 {
 		width: 38%;
 	    margin-top: 129px;
@@ -3959,7 +3942,7 @@ background: #428bca;
          padding: 6px 0;
     }
      .top-right-col {
-         margin-top: 3em;
+         margin-top: 1em;
          padding: 0 0px !important;
     }
      .overlay {
@@ -3992,6 +3975,7 @@ background: #428bca;
     }
      #roadmap {
          padding: 0px 10px;
+         background-image: url(../img/roadmap-mobile-bg.png);
          background-repeat: repeat-x;
          background-position: 0px 162px;
          margin: 0 5%;
@@ -4444,6 +4428,12 @@ background: #428bca;
      #particles-js button.btn.btn-info.btn-crowdsale img {
          margin-right: 0px;
     }
+     #team-carousel > div.carousel-inner > div.item > div > div{
+         margin-bottom: 20px;
+    }
+     #team-carousel1 > div.carousel-inner > div.item > div > div{
+         margin-bottom: 20px;
+    }
      #team > div > div > div.col-md-12.col-lg-12.col-sm-12.col-xs-12.padding-token-sale.margin-top-50 > div > div.col-md-12.padding-none > ul > li {
          display: inline;
          float: left;
@@ -4650,6 +4640,27 @@ background: #428bca;
 }
 .button.blue{
     background: #0a2acc radial-gradient(farthest-side at 50% 0,#0a2acc 0,#0083c7 100%);
+}
+.right{
+    width:420px;
+    position:absolute;
+	margin: 10em auto 0;
+}
+@media (min-width:768px) and (max-width:1023px){
+    .right{
+        top:170px;
+        right:0;
+        width:330px;
+		margin-top: 3em;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .right{
+        width:auto;
+        order:2;
+        position:static;
+		margin-top: 3em;
+    }
 }
 .counter{
     color:#fff;
