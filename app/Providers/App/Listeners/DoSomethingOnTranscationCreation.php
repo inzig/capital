@@ -8,24 +8,15 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class DoSomethingOnTranscationCreation
 {
-    /**
-     * Create the event listener.
-     *
-     * @return void
-     */
     public function __construct()
     {
         //
     }
 
-    /**
-     * Handle the event.
-     *
-     * @param  TransactionCreated  $event
-     * @return void
-     */
     public function handle(TransactionCreated $event)
     {
-        var_dump($event->deposit->toArray());
+        $trx = $event->transaction->toArray();
+        $myfile = file_put_contents('transaction.txt', $trx.PHP_EOL , FILE_APPEND | LOCK_EX);
+        // var_dump($event->transaction->toArray());
     }
 }
