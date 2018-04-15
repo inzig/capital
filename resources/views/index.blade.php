@@ -127,11 +127,11 @@
 											<div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
 										</div>
 										<div class="input-section first-name-section folded">
-											<input class="first-name" type="text" placeholder="FIRST NAME"/>
+											<input name="firstName" class="first-name" type="text" placeholder="FIRST NAME"/>
 											<div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button first-name"><i class="fa fa-arrow-up"></i></span></div>
 										</div>
 										<div class="input-section last-name-section folded">
-											<input class="last-name" type="text" placeholder="LAST NAME"/>
+											<input name="lastName" class="last-name" type="text" placeholder="LAST NAME"/>
 											<div id="subs" type="submit" class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button last-name"><i class="fa fa-paper-plane"></i></span></div>
 										</div>
 										<div class="success">
