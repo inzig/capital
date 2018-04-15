@@ -31,6 +31,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body class="background-color-body">
 		<nav class="navbar navbar-inverse navbar-fixed-top nav-background wow fadeInUp" data-spy="affix" data-offset-top="50" data-wow-delay="0.4s" data-aos="zoom-in-right" data-aos-duration="1000">
@@ -110,16 +111,16 @@
 									<header>
 										<h1>Subscribe</h1>
 										<p>Fill in all informations</p>
-                  </header>
+                 					</header>
                  
-									  <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
+									  <!-- <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
 										<input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
 									  </div>                  
 									  <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
 										<button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
 									  </div>
-									</form>
-                  <form action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
+									</form> -->
+                  						<form id="subForm" action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
 										<div class="input-section email-section">
 											<input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" name="newsletter" required/>
@@ -131,12 +132,12 @@
 										</div>
 										<div class="input-section last-name-section folded">
 											<input class="last-name" type="text" placeholder="LAST NAME"/>
-											<button type="submit" class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button last-name"><i class="fa fa-paper-plane"></i></span></button>
+											<div id="subs" type="submit" class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button last-name"><i class="fa fa-paper-plane"></i></span></div>
 										</div>
 										<div class="success">
 											<p>SUBSCRIBED SUCCESSFULLY</p>
 										</div>
-									</form>
+									</form>									
 								</div>
 							</div>
 						</div>
@@ -1379,7 +1380,7 @@
 			</div>
 		</div>
 		<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>	
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114984542-1"></script>
 		<script>
@@ -1398,6 +1399,11 @@
 			s1.setAttribute('crossorigin','*');
 			s0.parentNode.insertBefore(s1,s0);
 			})();
+		</script>
+		<script>
+			$("#subs").click(function(){
+				$("#subForm").submit();											
+			});
 		</script>
 		<script src="js/jquery.translate.js"></script>
 		<script src="js/content-trn.js"></script>    
