@@ -109,15 +109,7 @@
 									<header>
 										<h1>Subscribe</h1>
 										<p>Fill in all informations</p>
-                 					</header>
-                 
-									  <!-- <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
-										<input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>
-									  </div>                  
-									  <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-										<button type="submit" id="submit" name="submit" class="btn btn-send col-sm-5">Subscribe <i class="fa fa-arrow-right"></i></button>
-									  </div>
-									</form> -->
+                 					</header>                 
                   						<form id="subForm" action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
 										<div class="input-section email-section">
@@ -483,19 +475,7 @@
 				</div>
 			</div>
 		</section>
-		<!--
-			<section id="our-partners" class="wow bounceIn"  data-wow-delay="0.2s" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="1000">
-			    <div class="container-fluid">
-			        <div class="row">
-			            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-			                <div class="logos-padding">
-			                    <h2 class="partners-heading">Our Patners</h2>
-			                    <span><img class="partners-img" src="img/patner1.png"></span><span><img class="partners-img" src="img/patner2.png"></span> <span><img class="partners-img" src="img/patner3.png"></span> <span><img class="partners-img" src="img/patner1.png"></span> <span><img class="partners-img" src="img/patner2.png"></span>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			</section>-->
+		
 		<section id="tokensale" class="tokensale-wraper">
 			<div class="container">
 				<div class="row tokensale-rgt-buttons">
