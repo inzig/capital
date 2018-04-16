@@ -42,7 +42,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand site-logo" href="==============="><img src="img/logos.png" ></a>
+					<a class="navbar-brand site-logo" href={{url("/")}} ><img src="img/logos.png" ></a>
 				</div>
 				<div>
 					<div class="collapse navbar-collapse navbar-right" id="myNavbar">
@@ -455,10 +455,10 @@
 						<h3 class="text">Check our documents for more details</h3>
 						<div class="row">
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href="https://drive.google.com/file/d/1-5JB2vs9T3oYm3gXsXXvJp0zVRUu94Pd/view">TECHNICAL&#x2004;WHITEPAPER</a>
+								<a class="btn-white" target="_blank" href={{ url("docs/technical") }}>TECHNICAL&#x2004;WHITEPAPER</a>
 							</div>
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href="https://drive.google.com/file/d/1HPgHL_a_uduJny7TgjJPuNtAKLXDojCX/view">CROWDSALE&#x2004;WHITEPAPER</a>
+								<a class="btn-white" target="_blank" href={{ url("docs/crowdsale") }} >CROWDSALE&#x2004;WHITEPAPER</a>
 							</div>
 						</div>
 					</div>
@@ -1130,7 +1130,7 @@
 						</div>
 					</div>
 				</div>
-				<a target="_blank" href="https://docs.google.com/document/d/1wXIMJRNXB6OBlSswI4HHU9TRzL-7i2ksCbKdZoi13gA/edit?usp=sharing">
+				<a target="_blank" href={{ url("docs/press-releases") }} >
 					<h2 id="partner-link">+ 200 more</h2>
 				</a>
 			</div>

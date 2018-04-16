@@ -19,9 +19,14 @@ Route::post('purchase', 'CoinpaymentsController@purchaseItems');
 Route::get('docs/technical', function() {
     return redirect()->to('https://drive.google.com/file/d/16qnLkfR6WxoITTlqs5IfHpXmlyyHpaP7/view');
 });
-
 Route::get('docs/crowdsale', function() {
     return redirect()->to('https://drive.google.com/file/d/1HPgHL_a_uduJny7TgjJPuNtAKLXDojCX/view');
+});
+Route::get('docs/press-releases', function() {
+    return redirect()->to('https://docs.google.com/document/d/1wXIMJRNXB6OBlSswI4HHU9TRzL-7i2ksCbKdZoi13gA/edit?usp=sharing');
+});
+Route::get('docs/en/one-pager', function() {
+    return redirect()->to('https://drive.google.com/file/d/1Yj-KVuzJO6qFSL3vCuAuecHyC7XWVa9v/view?usp=sharing');
 });
 Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');
