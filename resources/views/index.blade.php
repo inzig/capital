@@ -79,27 +79,17 @@
 									<h2 class="banner-left-title">
 										<span class="trn">First</span> <span class="blue-txt trn">Decentralized</span> <span class='orng-txt trn'>Private</span> <span class="trn">Communication Solution</span>
 									</h2>
-									<div class="col-md-12 text-center padding-progressbar margin-top-60">
-										<h2 class="progress-bar-title-inner trn">Crowdsale stages</h2>
-										<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 margin-top-15 bnr-left-prgres-bg">
-											<div class="c1"><span class="trn">Private sale</span><br>
-												<span class="trn">1.5 $</span>
-											</div>
-											<div class="c2"><span class="trn">Pre-sale</span><br>
-												<span class="trn">2 $</span>
-											</div>
-											<div class="c3"><span class="trn">Main sale</span><br>
-												<span class="trn">3 $</span>
-											</div>
-											<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">Last week 4 $</span></span>
-											</div>
-											<div class="progresss progress-bar-style">
-												<div class="progress-bar progress-bar-first" style="width: 20%"></div>
-												<div class="progress-bar progress-bar-second" style="width: 20%"></div>
-												<div class="progress-bar progress-bar-third" style="width: 30%"></div>
-												<div class="progress-bar progress-bar-four" style="width: 30%"></div>
-											</div>
+									<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 margin-top-15 bnr-left-prgres-bg">
+										<div class="c1"><span class="trn">Private sale</span><br>
+											<span>1.5 $</span>
 										</div>
+										<div class="c2"><span class="trn">Pre-sale</span><br>
+											<span>2 $</span>
+										</div>
+										<div class="c3"><span class="trn">Main sale</span><br>
+											<span>3 $</span>
+										</div>
+										<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">Last week</span> 4 $</span>
 									</div>
 								</div>
 							</div>

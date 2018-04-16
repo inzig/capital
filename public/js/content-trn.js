@@ -66,43 +66,28 @@ var dict = {
 	},
 	"Crowdsale stages": {
 		en: "Crowdsale stages",
-		ro: "Crowdsale stages",
-		fr: "Crowdsale stages"		
+		ro: "Perioadele vanzarii",
+		fr: "Périodes de vente"		
 	},
 	"Private sale": {
 		en: "Private sale",
 		ro: "Vânzare privată",
 		fr: "Vente privée"		
 	},
-	"1.5 $": {
-		en: "1.5 $",
-		ro: "1.5 $",
-		fr: "1.5 $"		
-	},
 	"Pre-sale": {
 		en: "Pre-sale",
 		ro: "Pre-vânzare",
 		fr: "Pré-vente"		
-	},
-	"2 $": {
-		en: "2 $",
-		ro: "2 $",
-		fr: "2 $"		
 	},
 	"Main sale": {
 		en: "Main sale",
 		ro: "Vânzare principală",
 		fr: "Vente principale"		
 	},
-	"3 $": {
-		en: "3 $",
-		ro: "3 $",
-		fr: "3 $"		
-	},
-	"Last week 4 $": {
-		en: "Last week 4 $",
-		ro: "Ultima săptămână 4 $",
-		fr: "Dernière semaine 4 $"		
+	"Last week": {
+		en: "Last week",
+		ro: "Ultima săptămână",
+		fr: "Dernière semaine"		
 	},
 	"Subscribe": {
 		en: "Subscribe",
