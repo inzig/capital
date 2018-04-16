@@ -455,10 +455,10 @@
 						<h3 class="text">Check our documents for more details</h3>
 						<div class="row">
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href={{ url("docs/technical") }}>TECHNICAL&#x2004;WHITEPAPER</a>
+								<a class="btn-white" target="_blank" href="{{ url('docs/technical') }}">TECHNICAL&#x2004;WHITEPAPER</a>
 							</div>
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href={{ url("docs/crowdsale") }} >CROWDSALE&#x2004;WHITEPAPER</a>
+								<a class="btn-white" target="_blank" href="{{ url('docs/crowdsale') }}" >CROWDSALE&#x2004;WHITEPAPER</a>
 							</div>
 						</div>
 					</div>
@@ -1130,7 +1130,7 @@
 						</div>
 					</div>
 				</div>
-				<a target="_blank" href={{ url("docs/press-releases") }} >
+				<a target="_blank" href="{{ url('docs/press-releases') }}" >
 					<h2 id="partner-link">+ 200 more</h2>
 				</a>
 			</div>
