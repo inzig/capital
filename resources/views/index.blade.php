@@ -65,8 +65,6 @@
 							<li><a href="#" class="team_id trn">$nav-team</a></li>
 							<li><a href="#" class="faq trn">$nav-faq</a></li>
 							<li><a href="#" class="press_id trn">$nav-press</a></li>
-							<!-- <li class="login-btn"><a class="login-btn" href={{ url('login')}} ><img src="img/lgn-btn.png"><span class="trn">$nav-login</span></a></li> -->
-            
 						</ul>
 					</div>
 				</div>
