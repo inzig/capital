@@ -2298,9 +2298,6 @@
  .c4 .btn.bnr-left-bns-btn {
      font-size:110%;
      background-image: url(../img/banner-btn-bg.png);
-     width: 100%;
-    /*height: 62px;
-     */
      padding-top: 16px;
      background-repeat: no-repeat;
      background-position: right;
@@ -5338,7 +5335,6 @@
     }
 }
  .road-map-block .road-map-card .road-map-card-inner #road-sale {
-     width: 70%;
      margin-left:auto;
      margin-right:auto;
 }

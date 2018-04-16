@@ -31,7 +31,6 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body class="background-color-body">
 		<nav class="navbar navbar-inverse navbar-fixed-top nav-background wow fadeInUp" data-spy="affix" data-offset-top="50" data-wow-delay="0.4s" data-aos="zoom-in-right" data-aos-duration="1000">
@@ -42,14 +41,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand site-logo" href={{url("/")}} ><img src="img/logos.png" ></a>
+					<a class="navbar-brand site-logo" href="#"><img src="img/logos.png" ></a>
 				</div>
 				<div>
 					<div class="collapse navbar-collapse navbar-right" id="myNavbar">
 						<ul class="nav navbar-nav pull-right">
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">
-								<span class="trn">$lang</span>
+								<span class="trn">EN</span>
 								<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-language">
@@ -58,13 +57,13 @@
 									<li><a class="change-fr" href="#">FR</a></li>
 								</ul>
 							</li>
-							<li><a id="back-home" href="#" class="main-banner trn">$nav-home</a></li>
-							<li><a class="feature trn" href="#">$nav-platform</a></li>
-							<li><a class="roadmap trn" href="#">$nav-roadmap</a></li>
-							<li><a class="tokensale trn" href="#">$nav-token</a></li>
-							<li><a href="#" class="team_id trn">$nav-team</a></li>
-							<li><a href="#" class="faq trn">$nav-faq</a></li>
-							<li><a href="#" class="press_id trn">$nav-press</a></li>
+							<li><a id="back-home" href="#" class="main-banner trn">Home</a></li>
+							<li><a class="feature trn" href="#">Vision</a></li>
+							<li><a class="roadmap trn" href="#">Roadmap</a></li>
+							<li><a class="tokensale trn" href="#">Crowdsale details</a></li>
+							<li><a href="#" class="team_id trn">Team</a></li>
+							<li><a href="#" class="faq trn">FAQ</a></li>
+							<li><a href="#" class="press_id trn">Press</a></li>
 						</ul>
 					</div>
 				</div>
@@ -78,21 +77,21 @@
 							<div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 padding-col-md-6 top-left-col">
 								<div class="row" id="main-left">
 									<h2 class="banner-left-title">
-										<span class="trn">$main-banner-line-1</span> <span class="blue-txt trn">$main-banner-line-2-left</span> <span class='orng-txt trn'>$main-banner-line-2-middle</span> <span class="trn">$main-banner-line-2-right</span>
+										<span class="trn">First</span> <span class="blue-txt trn">Decentralized</span> <span class='orng-txt trn'>Private</span> <span class="trn">Communication Solution</span>
 									</h2>
 									<div class="col-md-12 text-center padding-progressbar margin-top-60">
-										<h2 class="progress-bar-title-inner trn">$main-progress-bar-title</h2>
+										<h2 class="progress-bar-title-inner trn">Crowdsale stages</h2>
 										<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 margin-top-15 bnr-left-prgres-bg">
-											<div class="c1"><span class="trn">$main-progress-bar-c1</span><br>
-												<span class="trn">$main-progress-bar-c1-bonus</span>
+											<div class="c1"><span class="trn">Private sale</span><br>
+												<span class="trn">1.5 $</span>
 											</div>
-											<div class="c2"><span class="trn">$main-progress-bar-c2</span><br>
-												<span class="trn">$main-progress-bar-c2-bonus</span>
+											<div class="c2"><span class="trn">Pre-sale</span><br>
+												<span class="trn">2 $</span>
 											</div>
-											<div class="c3"><span class="trn">$main-progress-bar-c3</span><br>
-												<span class="trn">$main-progress-bar-c3-bonus</span>
+											<div class="c3"><span class="trn">Main sale</span><br>
+												<span class="trn">3 $</span>
 											</div>
-											<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">$main-progress-bar-c4</span></span>
+											<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">Last week 4 $</span></span>
 											</div>
 											<div class="progresss progress-bar-style">
 												<div class="progress-bar progress-bar-first" style="width: 20%"></div>
@@ -107,10 +106,10 @@
 							<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 padding-col-md-6 top-right-col">
 								<div class="subscription-form">
 									<header>
-										<h1>Subscribe</h1>
-										<p>Fill in all informations</p>
-                 					</header>                 
-                  						<form id="subForm" action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
+										<h1 class="trn">Subscribe</h1>
+										<p class="trn">Fill in all informations</p>
+									</header>
+									<form id="subForm" action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
 										<div class="input-section email-section">
 											<input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" name="newsletter" required/>
@@ -127,7 +126,7 @@
 										<div class="success">
 										<p>CHECK YOUR EMAIL</p>
 										</div>
-									</form>									
+									</form>	
 								</div>
 							</div>
 						</div>
@@ -142,7 +141,7 @@
 				<div class="row">
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
 						<div class="logos-padding">
-							<h2 class="partners-heading">AS <span class="about-heading-2">SEEN ON</span></h2>
+							<h2 class="partners-heading trn">They are talking about us</h2>
 							<span><a target="_blank" href="http://switzerlandposts.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication"><img class="partners-img" src="img/press/switzerlandposts.com.png"></a></span><span><a target="_blank" href="http://thesanfranciscopost.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication"><img class="partners-img" src="img/press/thesanfranciscopost.com.png"></a></span> <span><a target="_blank" href="http://southafricabulletin.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication"><img class="partners-img" src="img/press/southafricabulletin.com.png"></a></span> <span><a target="_blank" href="http://minneapolisnewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication"><img class="partners-img" src="img/press/minneapolisnewsjournal.com.png"></a></span> <span><a target="_blank" href="http://thenynewsjournal.com/Technology/capital-technologies-research-will-revolutionise-our-means-of-communication"><img class="partners-img" src="img/press/thenynewsjournal.com.png" alt="thenynewsjournal.com"></a></span>
 						</div>
 					</div>
@@ -156,10 +155,10 @@
 						<div class="row">
 							<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 text-align-left margin-top-30" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
 								<div class="margin-bottom-20 text-left">
-									<h1 class="about-heading">Our <span class="about-heading-2">Vision</span> </h1>
+									<h1 class="about-heading trn">Our <span class="about-heading-2">Vision</span></h1>
 								</div>
 								<div class="about-us-content">
-									<p>After years and years of evolution, the Internet has revolutionized the computer and communications world like nothing before, we became capable to interact with anyone despite the long distance between us. It's true that this made our way of life easier, but with what cost?</p>
+									<p class="trn">vision-text</p>
 								</div>
 								<a target="_blank" href={{ url("docs/technical")}} class="read-more-btn">Read our Technical White Paper</a>
 								<a target="_blank" href={{ url("docs/crowdsale")}} class="read-more-btn">Read our Crowdsale White Paper</a>
@@ -182,11 +181,11 @@
 				<div class="row mobile-margin-0">
 					<div class="col-md-12 col-lg-12 col-sm-12 mobile-padding-20 padding-how">
 						<div class="row text-center">
-							<h2 class="problem-stat-title features-heading-2 no-padding aos-init aos-animate col-md-6 col-sm-12" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital Investments </strong>- Privacy in your Hands</h2>
+							<h2 class="problem-stat-title features-heading-2 no-padding aos-init aos-animate col-md-6 col-sm-12 trn" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Privacy</strong> in your Hands</h2>
 						</div>
 						<div class="row text-left">
 							<div class="col-md-12 no-padding">
-								<p class="h1-content prb-stat-content margin-bottom-20 margin-top-20 no-padding">We value our users by providing them an All-in-One solution </p>
+								<p class="h1-content prb-stat-content margin-bottom-20 margin-top-20 no-padding trn">We value our users by providing them with an All-in-One solution</p>
 							</div>
 						</div>
 						<div class="no-padding cap-invest-inner col-md-12 col-lg-12 col-sm-12 col-xs-12 margin-top-30 mobile-text-center wow slideInLeft z-index-1 text-center" data-wow-delay="0.2s">
@@ -195,8 +194,8 @@
 									<div class="col-md-12 col-sm-12 padding-none" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 										<div class="ci-lft-icon col-md-3"><img src="img/features/app-security.png" style="max-width:100%"></div>
 										<div class="features-p col-md-9">
-											<div class="features-h"> Cross-Platform</div>
-											Our modular design, creates no scalabilities issues, leading way to multi-platform applications development.
+											<div class="features-h trn">Cross-Platform</div>
+											<p class="trn">Our modular design creates no scalabilities issues, leading way to multi-platform applications development.</p>
 										</div>
 									</div>
 								</div>
@@ -204,8 +203,8 @@
 									<div class="col-md-12 col-sm-12 padding-none" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 										<div class="ci-lft-icon col-md-3"><img src="img/features/ppl-guard.png" style="max-width:100%"></div>
 										<div class="features-p col-md-9">
-											<div class="features-h"> Protect your Identity</div>
-											Communication based on blockchain technology, shields your real identity by using multiple random nodes.
+											<div class="features-h trn">Protects your Identity</div>
+											<p class="trn">Communication based on blockchain technology, shields your real identity by using multiple random nodes.</p>
 										</div>
 									</div>
 								</div>
@@ -215,8 +214,8 @@
 									<div class="col-md-12 col-sm-12 padding-none" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 										<div class="ci-lft-icon col-md-3"><img src="img/features/speed.png" style="max-width:100%"></div>
 										<div class="features-p col-md-9">
-											<div class="features-h"> Real Time Communication</div>
-											Datas are encrypted, chunked into small different pieces distributed to nodes that relays them across the network, linked up and decrypted at destination.
+											<div class="features-h trn">Real-Time Communication</div>
+											<p class="trn">Datas are encrypted, chunked into small different pieces distributed to nodes that relays them across the network, linked up and decrypted at destination.</p>
 										</div>
 									</div>
 								</div>
@@ -224,8 +223,8 @@
 									<div class="col-md-12 col-sm-12 padding-none" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 										<div class="ci-lft-icon col-md-3"><img src="img/features/time-save.png" style="max-width:100%"></div>
 										<div class="features-p col-md-9">
-											<div class="features-h"> Smart Payment System</div>
-											Nodes have the freedom of choice, operators can set their price according to their hardware contribution.
+											<div class="features-h trn">Smart Payment System</div>
+											<p class="trn">Nodes have the freedom of choice; operators can set their price according to their hardware contribution.</p>
 										</div>
 									</div>
 								</div>
@@ -237,7 +236,7 @@
 		</section>
 		<section id="roadmap" class="section gray roadmap">
 			<div class="container">
-				<h1 class="features-heading-2" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Roadmap</strong></h1>
+				<h1 class="features-heading-2" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong class="trn">Roadmap</strong></h1>
 			</div>
 			<div class="road-map ready">
 				<div class="container">
@@ -245,13 +244,13 @@
 						<div class="road-map-card active">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>Private Sale</span></h2>
-									<div class="date"><span>TBD</span></div>
+									<h2 class="title"><span class="trn">Private Sale</span></h2>
+									<div class="date"><span class="trn">TBD</span></div>
 								</div>
 								<div id="road-sale" class="text">
-									<p>Minimum&#x2004;investment: 5000$</p>
-									<p>CALL&#x2004;Supply: 446,250.00</p>
-									<p>CALLG&#x2004;Supply: 89,250,000.00</p>
+									<p><b class="trn">Minimum investment</b>: 5000$</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 446,250.00</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 89,250,000.00</p>
 								</div>
 								<div class="note"><span>1.5 $ (1 CALL & 200 CALLG)</span></div>
 							</div>
@@ -261,13 +260,13 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>Pre-ICO Sale</span></h2>
-									<div class="date"><span>TBD</span></div>
+									<h2 class="title"><span class="trn">Pre-ICO Sale</span></h2>
+									<div class="date"><span class="trn">TBD</span></div>
 								</div>
 								<div id="road-sale" class="text">
-									<p>Minimum&#x2004;investment: 0.01&#x2004;ETH</p>
-									<p>CALL&#x2004;Supply: 1,785,000.00</p>
-									<p>CALLG&#x2004;Supply: 357,000,000.00</p>
+									<p><b class="trn">Minimum investment</b>: 0.01&#x2004;ETH</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 1,785,000.00</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 357,000,000.00</p>
 								</div>
 								<div class="note"><span>2 $ (1 CALL & 200 CALLG)</span></div>
 							</div>
@@ -277,17 +276,17 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>Main Sale</span></h2>
-									<div class="date"><span>TBD</span></div>
+									<h2 class="title"><span class="trn">Main Sale</span></h2>
+									<div class="date"><span class="trn">TBD</span></div>
 								</div>
 								<div id="road-sale" class="text">
-									<p>Minimum&#x2004;investment: 0.01&#x2004;ETH</p>
-									<p>CALL&#x2004;Supply: 42,393,750.00</p>
-									<p>CALLG&#x2004;Supply: 8,478,750,000.00</p>
-									<p>FIRST&#x2004;WEEK&#x2004;PRICE: 3.0&#x2004;$</p>
-									<p>SECOND&#x2004;WEEK&#x2004;PRICE: 3.3&#x2004;$</p>
-									<p>THIRD&#x2004;WEEK&#x2004;PRICE: 3.6&#x2004;$</p>
-									<p>LAST&#x2004;WEEK&#x2004;PRICE: 4.0&#x2004;$</p>
+									<p><b class="trn">Minimum investment</b>: 0.01&#x2004;ETH</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 42,393,750.00</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 8,478,750,000.00</p>
+									<p><b class="trn">FIRST WEEK PRICE</b>: 3.0&#x2004;$</p>
+									<p><b class="trn">SECOND WEEK PRICE</b>: 3.3&#x2004;$</p>
+									<p><b class="trn">THIRD WEEK PRICE</b>: 3.6&#x2004;$</p>
+									<p><b class="trn">LAST WEEK PRICE</b>: 4.0&#x2004;$</p>
 								</div>
 								<div class="note"><span>3 - 4 $ (1 CALL & 200 CALLG)</span></div>
 							</div>
@@ -297,10 +296,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>TEST NETWORK</span></h2>
-									<div class="date"><span>AUGUST 2018</span></div>
+									<h2 class="title"><span class="trn">TEST NETWORK</span></h2>
+									<div class="date"><span class="trn">AUGUST 2018</span></div>
 								</div>
-								<div class="text"><span>Proof of Work (PoW) Test Network</span></div>
+								<div class="text"><span class="trn">Proof of Work (PoW) Test Network</span></div>
 							</div>
 						</div>
 					</div>
@@ -308,10 +307,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>PRIVATE COMMUNICATIONS</span></h2>
-									<div class="date"><span>NOVEMBER 2018</span></div>
+									<h2 class="title"><span class="trn">PRIVATE COMMUNICATIONS</span></h2>
+									<div class="date"><span class="trn">NOVEMBER 2018</span></div>
 								</div>
-								<div class="text"><span>Integration of private text messages & voice communication into wallets.</span></div>
+								<div class="text"><span class="trn">Integration of private text messages & voice communication into wallets.</span></div>
 							</div>
 						</div>
 					</div>
@@ -319,10 +318,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>NETWORK FIXING</span></h2>
-									<div class="date"><span>DECEMBER 2018</span></div>
+									<h2 class="title"><span class="trn">NETWORK FIXING</span></h2>
+									<div class="date"><span class="trn">DECEMBER 2018</span></div>
 								</div>
-								<div class="text"><span>Network Testing & Fixing - users are going to write testimonials about their experience with the blockchain</span></div>
+								<div class="text"><span class="trn">Network Testing & Fixing - users are going to write testimonials about their experience with the blockchain</span></div>
 							</div>
 						</div>
 					</div>
@@ -330,10 +329,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>NETWORK LAUNCH</span></h2>
-									<div class="date"><span>JANUARY 2019</span></div>
+									<h2 class="title"><span class="trn">NETWORK LAUNCH</span></h2>
+									<div class="date"><span class="trn">JANUARY 2019</span></div>
 								</div>
-								<div class="text"><span>Main Network Launch - users are invited to use the official wallet of the application</span></div>
+								<div class="text"><span class="trn">Main Network Launch - users are invited to use the official wallet of the application</span></div>
 							</div>
 						</div>
 					</div>
@@ -341,10 +340,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>HARDFORK</span></h2>
-									<div class="date"><span>FEBRUARY 2019</span></div>
+									<h2 class="title"><span class="trn">HARDFORK</span></h2>
+									<div class="date"><span class="trn">FEBRUARY 2019</span></div>
 								</div>
-								<div class="text"><span>Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network). <br>Development of a private operating system for a new brand of smartphones, based on the Android Operating System.</span></div>
+								<div class="text"><span class="trn">Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network). <br>Development of a private operating system for a new brand of smartphones, based on the Android Operating System.</span></div>
 							</div>
 						</div>
 					</div>
@@ -352,10 +351,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>FIRST SMARTPHONE</span></h2>
-									<div class="date"><span>MARCH 2019</span></div>
+									<h2 class="title"><span class="trn">FIRST SMARTPHONE</span></h2>
+									<div class="date"><span class="trn">MARCH 2019</span></div>
 								</div>
-								<div class="text"><span>The first smartphone developed by Capital Technologies & Research will become available</span></div>
+								<div class="text"><span class="trn">The first smartphone developed by Capital Technologies & Research will become available</span></div>
 							</div>
 						</div>
 					</div>
@@ -363,10 +362,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>SMARTPHONE MASS PRODUCTION</span></h2>
-									<div class="date"><span>JULY 2019</span></div>
+									<h2 class="title"><span class="trn">SMARTPHONE MASS PRODUCTION</span></h2>
+									<div class="date"><span class="trn">JULY 2019</span></div>
 								</div>
-								<div class="text"><span>Mass production & distribution of smartphones will start</span></div>
+								<div class="text"><span class="trn">Mass production & distribution of smartphones will start</span></div>
 							</div>
 						</div>
 					</div>
@@ -374,10 +373,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>PRIVATE MARKETPLACE</span></h2>
-									<div class="date"><span>AUGUST 2019</span></div>
+									<h2 class="title"><span class="trn">PRIVATE MARKETPLACE</span></h2>
+									<div class="date"><span class="trn">AUGUST 2019</span></div>
 								</div>
-								<div class="text"><span>Development of a private application marketplace (replacement of Google Play marketplace) for our smartphone will start</span></div>
+								<div class="text"><span class="trn">Development of a private application marketplace (replacement of Google Play marketplace) for our smartphone will start</span></div>
 							</div>
 						</div>
 					</div>
@@ -385,10 +384,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>ALPHA MARKETPLACE</span></h2>
-									<div class="date"><span>SEPTEMBER 2019</span></div>
+									<h2 class="title"><span class="trn">ALPHA MARKETPLACE</span></h2>
+									<div class="date"><span class="trn">SEPTEMBER 2019</span></div>
 								</div>
-								<div class="text"><span>Alpha version of application marketplace will be available for alpha testers</span></div>
+								<div class="text"><span class="trn">Alpha version of application marketplace will be available for alpha testers</span></div>
 							</div>
 						</div>
 					</div>
@@ -396,10 +395,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>PUBLIC MARKETPLACE</span></h2>
-									<div class="date"><span>DECEMBER 2019</span></div>
+									<h2 class="title"><span class="trn">PUBLIC MARKETPLACE</span></h2>
+									<div class="date"><span class="trn">DECEMBER 2019</span></div>
 								</div>
-								<div class="text"><span>Final version of the application marketplace will become available for all users and it will be included into the Smartphone Operating System Update</span></div>
+								<div class="text"><span class="trn">Final version of the application marketplace will become available for all users and it will be included into the Smartphone Operating System Update</span></div>
 							</div>
 						</div>
 					</div>
@@ -407,10 +406,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span>IoT Research</span></h2>
-									<div class="date"><span>JANUARY 2020</span></div>
+									<h2 class="title"><span class="trn">IoT Research</span></h2>
+									<div class="date"><span class="trn">JANUARY 2020</span></div>
 								</div>
-								<div class="text"><span>Research for Internet of Things devices integration with the blockchain</span></div>
+								<div class="text"><span class="trn">Research for Internet of Things devices integration with the blockchain</span></div>
 							</div>
 						</div>
 					</div>
@@ -438,17 +437,17 @@
 			<div class="container">
 				<div class="row ecosystem-rgt-buttons">
 					<div class="col-lg-6 col-md-12 ecosystem-rgt-col">
-						<h2 class="ecosystem-title"><strong>Ecosystem</strong></h2>
-						<p class="ecosystem-sm-txt">Capital multi-assets grant you access to the most innovative project and lead you to the next generation of communication, mining and smartest reward system.</p>
+						<h2 class="ecosystem-title"><strong class="trn">Ecosystem</strong></h2>
+						<p class="ecosystem-sm-txt trn">Capital multi-assets grant you access to the most innovative project and lead you to the next generation of communication, mining and smartest reward system.</p>
 					</div>
 					<div class="col-lg-6 col-md-12 ecosystem-rgt-top">
-						<h3 class="text">Check our documents for more details</h3>
+						<h3 class="text trn">Check our documents for more details</h3>
 						<div class="row">
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href="{{ url('docs/technical') }}">TECHNICAL&#x2004;WHITEPAPER</a>
+								<a class="btn-white trn" target="_blank" href="https://www.mycapitalco.in/docs/technical">TECHNICAL WHITEPAPER</a>
 							</div>
 							<div class="col-lg-6 col-md-6">
-								<a class="btn-white" target="_blank" href="{{ url('docs/crowdsale') }}" >CROWDSALE&#x2004;WHITEPAPER</a>
+								<a class="btn-white trn" target="_blank" href="https://www.mycapitalco.in/docs/crowdsale">CROWDSALE WHITEPAPER</a>
 							</div>
 						</div>
 					</div>
@@ -457,25 +456,37 @@
 					<img src="img/ecosystem-lft-banner.png">
 				</div>
 				<div class="col-sm-6 margin-top-100 ecosystem-rgt-col">
-					<h2 class="ecosystem-rgt-title wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital</strong> highlights</h2>
+					<h2 class="ecosystem-rgt-title wow fadeInUp trn" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000"><strong>Capital</strong> highlights</h2>
 					<ul class="list-group wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
 						<li class="list-group-item wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-							<h2>Privacy on highest levels</h2>
-							<p>End-to-end encrypted communication system based on blockchain. Anonymous payments using zk-SNARKs technology.</p>
+							<h2 class="trn">Privacy on highest levels</h2>
+							<p class="trn">End-to-end encrypted communication system based on blockchain. Anonymous payments using zk-SNARKs technology.</p>
 						</li>
 						<li class="list-group-item wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-							<h2>Real decentralization</h2>
-							<p>With blockchain technology we build the next decentralized communication network of the future. There's no central database, encryption keys are exchanged through user's nodes.</p>
+							<h2 class="trn">Real decentralization</h2>
+							<p class="trn">With blockchain technology we build the next decentralized communication network of the future. There's no central database, encryption keys are exchanged through user's nodes.</p>
 						</li>
 						<li class="list-group-item wow fadeInUp" data-wow-delay="0.2s" data-aos="zoom-in-right" data-aos-duration="1000">
-							<h2>User friendly</h2>
-							<p>Simple to install, easy to use, trustworthy.</p>
+							<h2 class="trn">User friendly</h2>
+							<p class="trn">Simple to install, easy to use, trustworthy.</p>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		
+		<!--
+			<section id="our-partners" class="wow bounceIn"  data-wow-delay="0.2s" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="1000">
+			    <div class="container-fluid">
+			        <div class="row">
+			            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+			                <div class="logos-padding">
+			                    <h2 class="partners-heading">Our Patners</h2>
+			                    <span><img class="partners-img" src="img/patner1.png"></span><span><img class="partners-img" src="img/patner2.png"></span> <span><img class="partners-img" src="img/patner3.png"></span> <span><img class="partners-img" src="img/patner1.png"></span> <span><img class="partners-img" src="img/patner2.png"></span>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>-->
 		<section id="tokensale" class="tokensale-wraper">
 			<div class="container">
 				<div class="row tokensale-rgt-buttons">
@@ -483,8 +494,8 @@
 						<img src="img/eth.png" alt="Ethereum"></img>
 					</div>
 					<div class="col-md-9 ecosystem-rgt-col">
-						<h2 class="ecosystem-title">Crowdsale<strong> Campaign</strong></h2>
-						<p class="ecosystem-sm-txt">Initial Coin Offering (ICO) will be held on the Ethereum blockchain with all data stored on the ETH Blockchain.</p>
+						<h2 class="ecosystem-title trn">Crowdsale<strong> Campaign</strong></h2>
+						<p class="ecosystem-sm-txt trn">Initial Coin Offering (ICO) will be held on the Ethereum blockchain with all data stored on the ETH Blockchain.</p>
 					</div>
 				</div>
 				<div class="container" id="sale-table">
@@ -626,7 +637,7 @@
 			<div class="container-fluid">
 				<div class="row mobile-margin-0 padding-top-50 ">
 					<div class="text-left container">
-						<h1 class="features-heading">Team <span class="features-heading-2"> <strong>Members</strong></span></h1>
+						<h1 class="features-heading trn">Team <span class="features-heading-2"> <strong>Members</strong></span></h1>
 					</div>
 				</div>
 				<div class="container">
@@ -840,7 +851,7 @@
 		<section id="faq" class="wow fadeInDown" data-aos="zoom-in-right" data-aos-duration="1000">
 			<div class="container-fluid padding-faq" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 				<div class="text-center">
-					<h1 class="about-heading-2 margin-none">Our <strong>FAQ</strong> </h1>
+					<h1 class="about-heading-2 margin-none trn">Our <strong>FAQ</strong></h1>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 margin-top-40 faq-main-cont">
@@ -851,73 +862,51 @@
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													What is the project about?
-													</a>
+													<a class="trn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is the project about?</a>
 												</h4>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-												<div class="panel-body">
-													We believe in real privacy, as a former CIA agent Edward Snowden, said once <i>"Privacy is something to protect"</i>, we deeply analyzed the actual situation of today and we found out that all communications these days rely on centralized servers, controlled by groups of persons that can't be entirely trusted. Our project's idea came from Satoshi Nakamoto vision, where data is relayed through different users, becoming private and untraceable.
-												</div>
+												<div class="panel-body trn">We believe in real privacy, as a former CIA agent Edward Snowden, said once <i>Privacy is something to protect</i>, we deeply analyzed the actual situation of today and we found out that all communications these days rely on centralized servers, controlled by groups of persons that can't be entirely trusted. Our project's idea came from Satoshi Nakamoto vision, where data is relayed through different users, becoming private and untraceable.</div>
 											</div>
 										</div>
 										<div class="panel panel-default ">
 											<div class="panel-heading" role="tab" id="headingTwo">
 												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													Where is Capital Technologies & Research incorporated?
-													</a>
+													<a class="collapsed trn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Where is Capital Technologies & Research incorporated?</a>
 												</h4>
 											</div>
 											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-												<div class="panel-body">
-													Capital Technologies & Research SRL is incorporated in Romania. The Team is international, our team members and advisors are located in 4 different countries: Romania, China, United States and Pakistan.
-												</div>
+												<div class="panel-body trn">Capital Technologies & Research SRL is incorporated in Romania. The Team is international, our team members and advisors are located in 4 different countries: Romania, China, United States and Pakistan.</div>
 											</div>
 										</div>
 										<div class="panel panel-default ">
 											<div class="panel-heading" role="tab" id="headingThree">
 												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													What is Capital (CALL) and CapitalGAS (CALLG)?
-													</a>
+													<a class="collapsed trn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What is Capital (CALL) and CapitalGAS (CALLG)?</a>
 												</h4>
 											</div>
 											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-												<div class="panel-body">
-													<b>Capital (CALL)</b> is the main currency used in the Capital Technologies & Research incorporated business. In the crowdsale it will be distributed as an Ethereum Token and when the main minable network launches every user will have to swap their tokens<br>
-													<b>CapitalGAS (CALLG)</b> is the fuel of the main network.
-												</div>
+												<div class="panel-body trn"><b>Capital (CALL)</b> is the main currency used in the Capital Technologies & Research incorporated business. In the crowdsale it will be distributed as an Ethereum Token and when the main minable network launches every user will have to swap their tokens<br><b>CapitalGAS (CALLG)</b> is the fuel of the main network.</div>
 											</div>
 										</div>
 										<div class="panel panel-default ">
 											<div class="panel-heading" role="tab" id="headingFour">
 												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-													What is Capital's business model?
-													</a>
+													<a class="collapsed trn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">What is Capital's business model?</a>
 												</h4>
 											</div>
 											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-												<div class="panel-body">
-													Capital Technologies & Research will develop a decentralised private communication system where users can easily enjoy their private communications. Also, the company will develop a new brand of phones that will have the Capital's application pre-installed, and will make profit from selling of the devices.
-												</div>
+												<div class="panel-body trn">Capital Technologies & Research will develop a decentralised private communication system where users can easily enjoy their private communications. Also, the company will develop a new brand of phones that will have the Capital's application pre-installed and will make the profit from the selling of the devices.</div>
 											</div>
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingFive">
 												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-													What's the difference between traditional end-to-end encryption and blockchain's based end-to-end encryption?
-													</a>
+													<a class="collapsed trn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">What's the difference between traditional end-to-end encryption and blockchain's based end-to-end encryption?</a>
 												</h4>
 											</div>
 											<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-												<div class="panel-body">
-													Traditional end to end encryption protocol, rely on centralized servers that exchanges encryption keys and broadcast communications through them. Hackers impersonate those servers by counterfeiting the real encryption keys with their forged ones, hijacking the communication.
-													<br>Blockchain based communication, solve this problem by replacing the centralized servers with nodes, giving authority back to the people.
-												</div>
+												<div class="panel-body trn">Traditional end to end encryption protocol, rely on centralized servers that exchanges encryption keys and broadcast communications through them. Hackers impersonate those servers by counterfeiting the real encryption keys with their forged ones, hijacking the communication.<br>Blockchain based communication, solve this problem by replacing the centralized servers with nodes, giving authority back to the people.</div>
 											</div>
 										</div>
 									</div>
@@ -930,13 +919,13 @@
 		</section>
 		<section id="contract-source">
 			<div class="container" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-				<h1 class="features-heading margin-top-10">Crowdsale <span class="features-heading-2"> <strong>Contract</strong></span></h1>
+				<h1 class="features-heading margin-top-10 trn">Crowdsale <span class="features-heading-2"> <strong>Contract</strong></span></h1>
 				<script src="https://gist.github.com/capital-technologies/f3b9d77c18159401852d55e492ade46a.js"></script>
 			</div>
 		</section>
 		<section id="press-release" class="margin-20" data-aos="zoom-in-right" data-aos-duration="1000">
 			<div class="container">
-				<h2 class="press-release-title"><span></span>PUBLICATIONS</h2>
+				<h2 class="press-release-title trn">PUBLICATIONS</h2>
 				<div class="row">
 					<div class="col-md-12 margin-top-70">
 						<div id="press-1" class="carousel slide" data-ride="carousel">
@@ -1132,7 +1121,7 @@
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center margin-top-0 padding-contact">
 						<div class="row">
 							<div class="col-md-7 col-lg-7 pull-right col-sm-12 col-xs-12 margin-top-10 border-newsletter text-center contact-main-cont">
-								<h1 class="contact-us-h text-left"> <span>Subscribe</span> to receive updates</h1>
+								<h1 class="contact-us-h text-left trn"><span>Subscribe</span> to receive updates</h1>
 								<div class="row">
 									<form action={{ url ('savenewsletteremail')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
@@ -1358,7 +1347,7 @@
 			</div>
 		</div>
 		<a id="back-to-top" href="#" class="btn back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><img src="img/up.png"></a>	
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114984542-1"></script>
 		<script>

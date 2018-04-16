@@ -70,12 +70,16 @@
       var trn_key = $this.attr("data-trn-key");
       if (!trn_key) {
         trn_key = $this.html();
-        $this.attr("data-trn-key", trn_key);   //store key for next time
+        $this.attr("data-trn-key", trn_key);
       }
-
+	  var trn_holder = $this.attr("data-trn-holder");
+      if (!trn_holder) {
+        trn_holder = $(this).data("placeholder");
+        $this.attr("data-trn-holder", trn_holder);
+      }
       $this.html(that.get(trn_key));
-    });
-    
+	  $this.attr("placeholder", that.get(trn_holder));
+    });  
     
 		return this;
 		
