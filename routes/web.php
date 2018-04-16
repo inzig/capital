@@ -16,14 +16,13 @@
  */
 
 Route::post('purchase', 'CoinpaymentsController@purchaseItems');
-Route::get('technichalwp', function() {
-    return redirect()->to('https://drive.google.com/file/d/1-5JB2vs9T3oYm3gXsXXvJp0zVRUu94Pd/view');
+Route::get('docs/technical', function() {
+    return redirect()->to('https://drive.google.com/file/d/16qnLkfR6WxoITTlqs5IfHpXmlyyHpaP7/view');
 });
 
-Route::get('crowdsalewp', function() {
+Route::get('docs/crowdsale', function() {
     return redirect()->to('https://drive.google.com/file/d/1HPgHL_a_uduJny7TgjJPuNtAKLXDojCX/view');
 });
-
 Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');
 
