@@ -1156,7 +1156,7 @@
 							<div class="col-md-7 col-lg-7 pull-right col-sm-12 col-xs-12 margin-top-10 border-newsletter text-center contact-main-cont">
 								<h1 class="contact-us-h text-left"> <span>Subscribe</span> to receive updates</h1>
 								<div class="row">
-									<form action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
+									<form action={{ url ('savenewsletteremail')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
 									  <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 footer-cont-form form-group no-padding">
 										<input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Enter Email Address" required>

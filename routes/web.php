@@ -27,6 +27,7 @@ Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');
 
 Route::post('savenewsletter', 'AppBaseController@save');
+Route::post('savenewsletteremail', 'AppBaseController@saveemail');
 
 Route::get('terms-and-conditions', function(){
     $lang = request()->get('lang', 'en');

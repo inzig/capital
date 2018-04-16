@@ -36,4 +36,10 @@ class AppBaseController extends Controller
          Newsletter::subscribePending($email, ['FNAME'=>$request->firstName, 'LNAME'=>$request->lastName], 'subscribers');
          return redirect('/');
     }
+    public function saveemail(Request $request)
+    {
+         $email =  $request->newsletter;
+         Newsletter::subscribePending($email);
+         return redirect('/');
+    }
 }
