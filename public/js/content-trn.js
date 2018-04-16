@@ -461,8 +461,8 @@ var dict = {
 	},
 	"Privacy on highest levels": {
 		en: "Privacy on highest levels",
-		ro: "IANUARIE 2020",
-		fr: "JANVIER 2020"		
+		ro: "Confidențialitatea la un nivel superior",
+		fr: "Confidentialité sur les plus hauts niveaux"		
 	},
 	"End-to-end encrypted communication system based on blockchain. Anonymous payments using zk-SNARKs technology.": {
 		en: "End-to-end encrypted communication system based on blockchain. Anonymous payments using zk-SNARKs technology.",
