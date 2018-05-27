@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>ICO - Capital Technologies & Research</title>
+		<title>Capital Technologies & Research</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="capital, technology, research, mobile, android, ios, ico, sale, presale, crowdfunding, decentralization">
-		<meta name="description" content="Capital Technologies & Research ICO">
+		<meta name="description" content="Capital Technologies & Research">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -74,35 +74,35 @@
 				<div class="overlay">
 					<div class="container">
 						<div class="row">
-						<div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 padding-col-md-6 top-left-col">
-							<div class="row" id="main-left">
-								<h2 class="banner-left-title">
-								<span class="trn">First</span> <span class="blue-txt trn">Decentralized</span> <span class='orng-txt trn'>Private</span> <span class="trn">Communication Solution</span>
-								</h2>
-								<div class="col-md-12 text-center padding-progressbar margin-top-60">
-								<h2 class="progress-bar-title-inner trn">Crowdsale stages</h2>
-								<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 margin-top-15 bnr-left-prgres-bg">
-								<div class="c1"><span class="trn">Private sale</span><br>
-									<span>1.5 $</span>
+							<div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 padding-col-md-6 top-left-col">
+								<div class="row" id="main-left">
+									<h2 class="banner-left-title">
+										<span class="trn">First</span> <span class="blue-txt trn">Decentralized</span> <span class='orng-txt trn'>Private</span> <span class="trn">Communication Solution</span>
+									</h2>
+									<div class="col-md-12 text-center padding-progressbar margin-top-60">
+										<h2 class="progress-bar-title-inner trn">Crowdsale stages</h2>
+										<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 margin-top-15 bnr-left-prgres-bg">
+											<div class="c1"><span class="trn">Private sale</span><br>
+												<span>0.35 $</span>
+											</div>
+											<div class="c2"><span class="trn">Pre-sale</span><br>
+												<span>0.5 $</span>
+											</div>
+											<div class="c3"><span class="trn">Main sale</span><br>
+												<span>0.7 $</span>
+											</div>
+											<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">Last week</span> 1 $</span>
+											</div>
+											<div class="progresss progress-bar-style">
+												<div class="progress-bar progress-bar-first" style="width: 7%"></div>
+												<div class="progress-bar progress-bar-second" style="width: 17%"></div>
+												<div class="progress-bar progress-bar-third" style="width: 51%"></div>
+												<div class="progress-bar progress-bar-four" style="width: 25%"></div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="c2"><span class="trn">Pre-sale</span><br>
-									<span>2 $</span>
-								</div>
-								<div class="c3"><span class="trn">Main sale</span><br>
-									<span>3 $</span>
-								</div>
-								<div class="c4"><span class="btn bnr-left-bns-btn"><span class="trn">Last week</span> 4 $</span>
-								</div>
-								<div class="progresss progress-bar-style">
-									<div class="progress-bar progress-bar-first" style="width: 20%"></div>
-									<div class="progress-bar progress-bar-second" style="width: 20%"></div>
-									<div class="progress-bar progress-bar-third" style="width: 30%"></div>
-									<div class="progress-bar progress-bar-four" style="width: 30%"></div>
-								</div>
-							 </div>
 							</div>
-						</div>
-       </div>
 							<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 padding-col-md-6 top-right-col">
 								<div class="subscription-form">
 									<header>
@@ -112,19 +112,19 @@
 									<form id="subForm" action={{ url ('savenewsletter')}} method="post" enctype="multipart/form-data" >
 										<?php echo Form::token(); ?>
 										<div class="input-section email-section">
-											<input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" name="newsletter" required/>
+											<input class="email trn" data-trn-holder="email-field" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" name="newsletter" required/>
 											<div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
 										</div>
 										<div class="input-section first-name-section folded">
-											<input name="firstName" class="first-name" type="text" placeholder="FIRST NAME"/>
+											<input name="firstName" class="first-name trn" data-trn-holder="fname-field" type="text" placeholder="FIRST NAME"/>
 											<div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button first-name"><i class="fa fa-arrow-up"></i></span></div>
 										</div>
 										<div class="input-section last-name-section folded">
-											<input name="lastName" class="last-name" type="text" placeholder="LAST NAME"/>
+											<input name="lastName" class="last-name trn" data-trn-holder="lname-field" type="text" placeholder="LAST NAME"/>
 											<div id="subs" type="submit" class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button last-name"><i class="fa fa-paper-plane"></i></span></div>
 										</div>
 										<div class="success">
-										<p>CHECK YOUR EMAIL</p>
+										<p class="trn">CHECK YOUR EMAIL</p>
 										</div>
 									</form>	
 								</div>
@@ -160,8 +160,8 @@
 								<div class="about-us-content">
 									<p class="trn">vision-text</p>
 								</div>
-								<a target="_blank" href="{{ url('docs/en/technical')}}" class="read-more-btn trn">Read our Technical White Paper</a>
-								<a target="_blank" href="{{ url('docs/en/crowdsale')}}" class="read-more-btn trn">Read our Crowdsale White Paper</a>
+								<a target="_blank" href="https://www.mycapitalco.in/docs/technical" class="read-more-btn trn">Read our Technical White Paper</a>
+								<a target="_blank" href="https://www.mycapitalco.in/docs/crowdsale" class="read-more-btn trn">Read our Crowdsale White Paper</a>
 							</div>
 							<div class="col-md-4 col-lg-4 col-sm-4 text-align-right margin-top-30">
 								<img id="phone-img" class="margin-top-0 iphone-img" src="img/iphone.png" data-aos="zoom-in-right" data-aos-duration="1000">
@@ -248,11 +248,11 @@
 									<div class="date"><span class="trn">TBD</span></div>
 								</div>
 								<div id="road-sale" class="text">
-									<p><b class="trn">Minimum investment</b>: 5000$</p>
-									<p>CALL&#x2004;<b class="trn">Supply</b>: 446,250.00</p>
-									<p>CALLG&#x2004;<b class="trn">Supply</b>: 89,250,000.00</p>
+									<p><b class="trn">Minimum investment</b>: $5000</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 3,123,750</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 624,750,000</p>
 								</div>
-								<div class="note"><span>1.5 $ (1 CALL & 200 CALLG)</span></div>
+								<div class="note"><span>$0.35 (1 CALL & 200 CALLG)</span></div>
 							</div>
 						</div>
 					</div>
@@ -265,10 +265,10 @@
 								</div>
 								<div id="road-sale" class="text">
 									<p><b class="trn">Minimum investment</b>: 0.01&#x2004;ETH</p>
-									<p>CALL&#x2004;<b class="trn">Supply</b>: 1,785,000.00</p>
-									<p>CALLG&#x2004;<b class="trn">Supply</b>: 357,000,000.00</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 7,586,250</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 1,517,250,000</p>
 								</div>
-								<div class="note"><span>2 $ (1 CALL & 200 CALLG)</span></div>
+								<div class="note"><span>$0.5 (1 CALL & 200 CALLG)</span></div>
 							</div>
 						</div>
 					</div>
@@ -281,14 +281,31 @@
 								</div>
 								<div id="road-sale" class="text">
 									<p><b class="trn">Minimum investment</b>: 0.01&#x2004;ETH</p>
-									<p>CALL&#x2004;<b class="trn">Supply</b>: 42,393,750.00</p>
-									<p>CALLG&#x2004;<b class="trn">Supply</b>: 8,478,750,000.00</p>
-									<p><b class="trn">FIRST WEEK PRICE</b>: 3.0&#x2004;$</p>
-									<p><b class="trn">SECOND WEEK PRICE</b>: 3.3&#x2004;$</p>
-									<p><b class="trn">THIRD WEEK PRICE</b>: 3.6&#x2004;$</p>
-									<p><b class="trn">LAST WEEK PRICE</b>: 4.0&#x2004;$</p>
+									<p>CALL&#x2004;<b class="trn">Supply</b>: 33,915,000</p>
+									<p>CALLG&#x2004;<b class="trn">Supply</b>: 6,783,000,000</p>
+									<hr>
+									<p><b class="trn">FIRST&#x2004;WEEK</b></p>
+									<p><b>CALL</b>&#x2004;<b class="trn">Supply</b>: 13,566,000</p>
+									<p><b>CALLG</b>&#x2004;<b class="trn">Supply</b>: 2,713,200,000</p>
+									<p><b class="trn">PRICE</b>: $&#x2004;0.70</p>
+									<hr>
+									<p><b class="trn">SECOND&#x2004;WEEK</b></p>
+									<p><b>CALL</b>&#x2004;<b class="trn">Supply</b>: 10,174,500</p>
+									<p><b>CALLG</b>&#x2004;<b class="trn">Supply</b>: 2,034,900,000</p>
+									<p><b class="trn">PRICE</b>: $&#x2004;0.80</p>
+									<hr>
+									<p><b class="trn">THIRD&#x2004;WEEK</b></p>
+									<p><b>CALL</b>&#x2004;<b class="trn">Supply</b>: 6,783,000</p>
+									<p><b>CALLG</b>&#x2004;<b class="trn">Supply</b>: 1,356,600,000</p>
+									<p><b class="trn">PRICE</b>: $&#x2004;0.90</p>
+									<hr>
+									<p><b class="trn">LAST&#x2004;WEEK</b></p>
+									<p><b>CALL</b>&#x2004;<b class="trn">Supply</b>: 3,391,500</p>
+									<p><b>CALLG</b>&#x2004;<b class="trn">Supply</b>: 678,300,000</p>
+									<p><b class="trn">PRICE</b>: $&#x2004;1</p>
+									<hr>
 								</div>
-								<div class="note"><span>3 - 4 $ (1 CALL & 200 CALLG)</span></div>
+								<div class="note" style="bottom: 1%;"><span>$0.7 - $1 (1 CALL & 200 CALLG)</span></div>
 							</div>
 						</div>
 					</div>
@@ -343,7 +360,7 @@
 									<h2 class="title"><span class="trn">HARDFORK</span></h2>
 									<div class="date"><span class="trn">FEBRUARY 2019</span></div>
 								</div>
-								<div class="text"><span class="trn">Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network). <br>Development of a private operating system for a new brand of smartphones, based on the Android Operating System.</span></div>
+								<div class="text"><span class="trn">Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network).</span></div>
 							</div>
 						</div>
 					</div>
@@ -351,10 +368,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span class="trn">FIRST SMARTPHONE</span></h2>
+									<h2 class="title"><span class="trn">CUSTOM FIRMWARE DEVELOPMENT</span></h2>
 									<div class="date"><span class="trn">MARCH 2019</span></div>
 								</div>
-								<div class="text"><span class="trn">The first smartphone developed by Capital Technologies & Research will become available</span></div>
+								<div class="text"><span class="trn">Development of a private operating system, based on the Android Operating System.</span></div>
 							</div>
 						</div>
 					</div>
@@ -362,10 +379,10 @@
 						<div class="road-map-card false">
 							<div class="road-map-card-inner">
 								<div class="road-map-card-header">
-									<h2 class="title"><span class="trn">SMARTPHONE MASS PRODUCTION</span></h2>
+									<h2 class="title"><span class="trn">SMARTPHONE CUSTOM FIRMWARE</span></h2>
 									<div class="date"><span class="trn">JULY 2019</span></div>
 								</div>
-								<div class="text"><span class="trn">Mass production & distribution of smartphones will start</span></div>
+								<div class="text"><span class="trn">Custom Android OS based on Android Open Source Project (AOSP) for Qualcomm based chipsets</span></div>
 							</div>
 						</div>
 					</div>
@@ -398,7 +415,7 @@
 									<h2 class="title"><span class="trn">PUBLIC MARKETPLACE</span></h2>
 									<div class="date"><span class="trn">DECEMBER 2019</span></div>
 								</div>
-								<div class="text"><span class="trn">Final version of the application marketplace will become available for all users and it will be included into the Smartphone Operating System Update</span></div>
+								<div class="text"><span class="trn">Final version of the application marketplace will become available for all users and it will be included into the Android Operating System Update</span></div>
 							</div>
 						</div>
 					</div>
@@ -432,6 +449,18 @@
 					</div>
 				</div>
 			</div>
+		</section>
+		<section id="future-partners">
+			    <div class="container">
+			        <div class="row">
+			            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+			                <div class="logos-padding">
+			                    <h2 class="features-heading trn">Our <span class="features-heading-2"><strong>Future Partners</strong></span></h2>
+			                    <span><a href="https://www.codeaurora.org/"><img class="partners-img" src="img/partners/code_aurora.png"></a></span><span><a href="https://source.android.com/"><img class="partners-img" src="img/partners/AOSP.png"></a></span> <span><a href="https://www.qualcomm.com/"><img class="partners-img" src="img/partners/qualcomm.png"></a></span> <span><a href="https://signal.org/"><img class="partners-img" src="img/partners/open_whisper.png"></a></span>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
 		</section>
 		<section id="ecosystem">
 			<div class="container">
@@ -474,19 +503,6 @@
 				</div>
 			</div>
 		</section>
-		<!--
-			<section id="our-partners" class="wow bounceIn"  data-wow-delay="0.2s" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="1000">
-			    <div class="container-fluid">
-			        <div class="row">
-			            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-			                <div class="logos-padding">
-			                    <h2 class="partners-heading">Our Patners</h2>
-			                    <span><img class="partners-img" src="img/patner1.png"></span><span><img class="partners-img" src="img/patner2.png"></span> <span><img class="partners-img" src="img/patner3.png"></span> <span><img class="partners-img" src="img/patner1.png"></span> <span><img class="partners-img" src="img/patner2.png"></span>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			</section>-->
 		<section id="tokensale" class="tokensale-wraper">
 			<div class="container">
 				<div class="row tokensale-rgt-buttons">
@@ -510,7 +526,7 @@
 								</div>
 								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
 									<div class="progress">
-										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%">44,625,000 CALL</div>
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">44,625,000 CALL</div>
 									</div>
 								</div>
 							</div>
@@ -520,7 +536,17 @@
 								</div>
 								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
 									<div class="progress">
-										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">7,875,000 CALL</div>
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">5,250,000 CALL</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+									<h4 class="progress-name">Bounty Campaign (CALL)</h4>
+								</div>
+								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">2,625,000 CALL</div>
 									</div>
 								</div>
 							</div>
@@ -594,7 +620,7 @@
 								</div>
 								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
 									<div class="progress">
-										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">$15,155,765.63</div>
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">$3,201,843.75</div>
 									</div>
 								</div>
 							</div>
@@ -604,7 +630,7 @@
 								</div>
 								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
 									<div class="progress">
-										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">$83,356,710.94</div>
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">$17,610,140.63</div>
 									</div>
 								</div>
 							</div>
@@ -614,18 +640,18 @@
 								</div>
 								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
 									<div class="progress">
-										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:45%">$53,045,179.69</div>
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">$11,206,453.13</div>
 									</div>
 								</div>
 							</div>
 							<table class="table">
 								<tr>
 									<th>Soft Cap</th>
-									<th>$4,239,375.00</th>
+									<th>$4,886,437.50</th>
 								</tr>
 								<tr>
 									<td>Hard Cap</td>
-									<td>$151,557,656.25</td>
+									<td>$32,018,437.50</td>
 								</tr>
 							</table>
 						</div>
@@ -680,7 +706,7 @@
 											<span class="img-overlay"></span>
 											<a href="https://www.linkedin.com/in/ionut-firu-116b5915a/"><span class="img-ovly-txt">in</span></a>
 										</div>
-										<p>Firu Gradoe Ionu»õ (CXO)</p>
+										<p>Firu Gradoe Ionu? (CXO)</p>
 										<p id="justify">Ionut is a Microsoft Certified IT Professional Expert, experienced market participant with a demonstrated history of working in the investment management industry with a proven track record. Extensive skill set includes multi asset portfolio management, fund selection, equity valuation, as market making.</p>
 										<div class="text-left">
 											<a href="https://web.facebook.com/tonitonica"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
@@ -696,8 +722,8 @@
 											<span class="img-overlay"></span>
 											<a href="https://www.linkedin.com/in/stani-ionut-daniel/"><span class="img-ovly-txt">in</span></a>
 										</div>
-										<p>Stani Ionu»õ Daniel (Digital Marketing Manager)</p>
-										<p id="justify">Ionu»õ is responsible for setting up and delivering online marketing straits, promotion on social media, finding new ways to promote company‚Äôs technology & image. He is also a marketing analyst, specialized in blockchain market research, applying research findings to optimize marketing strategies as well as enhancing search engine optimization and community engagement.</p>
+										<p>Stani Ionu? Daniel (Digital Marketing Manager)</p>
+										<p id="justify">Ionu? is responsible for setting up and delivering online marketing straits, promotion on social media, finding new ways to promote companyís technology & image. He is also a marketing analyst, specialized in blockchain market research, applying research findings to optimize marketing strategies as well as enhancing search engine optimization and community engagement.</p>
 										<div class="text-left">
 											<a href="https://web.facebook.com/jonn.ckj"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
 											<a href="https://twitter.com/StaniIonut"><i class="fa fa-twitter fa-style twitter" aria-hidden="true"></i> </a>
@@ -710,7 +736,7 @@
 											<span class="img-overlay"></span>
 											<a href="https://www.linkedin.com/in/bogdan-dinel-56329115a/"><span class="img-ovly-txt">in</span></a>
 										</div>
-										<p>C√Ærjaliu Bogdan Dinel (Hardware Marketing Manager) </p>
+										<p>CÓrjaliu Bogdan Dinel (Hardware Marketing Manager) </p>
 										<p id="justify">Bogdan is a team leader with over 7 year experience in marketing & sales at RT Solution (ENEL Partner), the biggest electricity company in Europe.</p>
 										<div class="text-left">
 											<a href="https://web.facebook.com/profile.php?id=100011561677849"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
@@ -751,7 +777,7 @@
 											<span class="img-overlay"></span>
 											<a href="https://www.linkedin.com/in/marti-piciorus-b9a02b82/"><span class="img-ovly-txt">in</span></a>
 										</div>
-										<p>Picioru»ô Marti (Advisor & Investor)</p>
+										<p>Picioru? Marti (Advisor & Investor)</p>
 										<p id="justify">Marti is a blockchain advisor and also business owner at <a href="http://reparatiidecalculatoare.com/">MM IT Solutions</a> an IT company specialized in software & hardware solutions with over 20 employers and yearly revenue over 1.5 mil dollars, located in Bucharest.</p>
 										<div class="text-left">
 											<a href="https://web.facebook.com/marti.piciorus"><i class="fa fa-facebook fa-style fb" aria-hidden="true"></i></a>
@@ -977,8 +1003,8 @@
 									</div>
 								</div>
 							</div>
-							<a data-slide="prev" href="#press-1" class="left carousel-control">‚Äπ</a>
-							<a data-slide="next" href="#press-1" class="right carousel-control">‚Ä∫</a>
+							<a data-slide="prev" href="#press-1" class="left carousel-control">ã</a>
+							<a data-slide="next" href="#press-1" class="right carousel-control">õ</a>
 						</div>
 					</div>
 				</div>
@@ -1035,8 +1061,8 @@
 									</div>
 								</div>
 							</div>
-							<a data-slide="prev" href="#press-2" class="left carousel-control">‚Äπ</a>
-							<a data-slide="next" href="#press-2" class="right carousel-control">‚Ä∫</a>
+							<a data-slide="prev" href="#press-2" class="left carousel-control">ã</a>
+							<a data-slide="next" href="#press-2" class="right carousel-control">õ</a>
 						</div>
 					</div>
 				</div>
@@ -1092,13 +1118,13 @@
 									</div>
 								</div>
 							</div>
-							<a data-slide="prev" href="#press-3" class="left carousel-control">‚Äπ</a>
-							<a data-slide="next" href="#press-3" class="right carousel-control">‚Ä∫</a>
+							<a data-slide="prev" href="#press-3" class="left carousel-control">ã</a>
+							<a data-slide="next" href="#press-3" class="right carousel-control">õ</a>
 						</div>
 					</div>
 				</div>
 				<a target="_blank" href="{{ url('docs/press-releases') }}" >
-					<h2 id="partner-link">+ 200 more</h2>
+					<h2 id="partner-link" class="trn">+ 200 more</h2>
 				</a>
 			</div>
 		</section>
@@ -1154,7 +1180,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 padding-0-60 mobile-footer-padding text-center no-padding">
-						<p class="footer-links"> ¬© 2018 Capital Technologies & Research SRL - All Rights Reserved. <a href="mailto:info@mycapitalco.in">info@mycapitalco.in</a> <br><a id="terms">Terms & Conditions</a> | <a id="privacy">Privacy Policy</a></p>
+						<p class="footer-links"> © 2018 Capital Technologies & Research SRL - All Rights Reserved. <a href="mailto:info@mycapitalco.in">info@mycapitalco.in</a> <br><a id="terms">Terms & Conditions</a> | <a id="privacy">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>
@@ -1166,7 +1192,7 @@
 					<h2>Privacy Policy</h2>
 				</div>
 				<div class="modal-body">
-					<p>Capital Technologies & Research SRL established in Drobeta-Turnu-Severin (Romania; ‚Äúwe‚Äù, ‚Äúus‚Äù or the ‚ÄúCompany‚Äù) is committed to protecting and respecting your privacy according to the Romanian E-Privacy Law (also called the ‚ÄúAct‚Äù), to which reference should be made in full. This policy together with any documents relating to the sale of our Capital (CALL), CapitalGAS (CALLG) and any other documents referred to in it sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.</p>
+					<p>Capital Technologies & Research SRL established in Drobeta-Turnu-Severin (Romania; ìweî, ìusî or the ìCompanyî) is committed to protecting and respecting your privacy according to the Romanian E-Privacy Law (also called the ìActî), to which reference should be made in full. This policy together with any documents relating to the sale of our Capital (CALL), CapitalGAS (CALLG) and any other documents referred to in it sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.</p>
 					<p>Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By visiting <a href="https://www.mycapitalco.in/">https://www.mycapitalco.in/</a> (website) and <a href="https://ico.mycapitalco.in/">https://ico.mycapitalco.in/</a> (website) you are accepting and consenting to the practices described in this policy.</p>
 					<b>INFORMATION WE COLLECT FROM YOU</b>
 					<p>We will collect and process the following data about you:
@@ -1263,11 +1289,11 @@
 					<h2>Terms and Conditions</h2>
 				</div>
 				<div class="modal-body">
-					<p>The following Terms (‚ÄúTerms‚Äù) govern the investment procedure (‚ÄúInvestments‚Äù collectively, and ‚ÄúInvestment‚Äù individually) to Capital Technologies & Research SRL (publicly known as ‚ÄúCapital (CALL) and CapitalGAS (CALLG)‚Äù) by Investors (‚ÄúInvestors‚Äù collectively, and ‚ÄúInvestor‚Äù individually) and the subsequent genesis allocation of transferable cryptographic blockchain-based digital information units called CALLs and CALLGs (‚ÄúCALL‚Äù, ‚ÄúCALLG‚Äù) to Investors. This document is not a solicitation for investment and does not pertain in any way to an offering of securities in any jurisdiction. This document describes the ICO in which the tokens: CALL and CALLG are sold.</p>
+					<p>The following Terms (ìTermsî) govern the investment procedure (ìInvestmentsî collectively, and ìInvestmentî individually) to Capital Technologies & Research SRL (publicly known as ìCapital (CALL) and CapitalGAS (CALLG)î) by Investors (ìInvestorsî collectively, and ìInvestorî individually) and the subsequent genesis allocation of transferable cryptographic blockchain-based digital information units called CALLs and CALLGs (ìCALLî, ìCALLGî) to Investors. This document is not a solicitation for investment and does not pertain in any way to an offering of securities in any jurisdiction. This document describes the ICO in which the tokens: CALL and CALLG are sold.</p>
 					<b>IMPORTANT</b>
-					<p>Ownership of CALL or CALLG during the ICO carry no rights express or implied. Investments in the crowdsale are non-refundable. Investors should have no expectation of mandatory influence over governance of the platform. By participating in the sale of CALL and CALLG, you expressly acknowledge and represent that you have carefully reviewed the Terms and fully understand the costs, and benefits of contributing in the crowdsale and agree to be bound by these Terms. As set forth below, you further represent and warrant that, to the extent permitted by law, you are authorized to invest in the crowdsale in your relevant jurisdiction, are of a legal age to be bound by these Terms, and will not hold CALL/CALLG, its parent and affiliates, and the officers, directors, agents, joint ventures, employees and suppliers of CALL/CALLG or our parent or affiliates, now or in the future and any other member of the Capital Technologies & Research SRL Team (collectively the ‚ÄúCapital Team & Parties‚Äù) liable for any losses or any special, incidental, or consequential damages arising out of, or in any way connected to the sale of CALL/CALLG.</p>
+					<p>Ownership of CALL or CALLG during the ICO carry no rights express or implied. Investments in the crowdsale are non-refundable. Investors should have no expectation of mandatory influence over governance of the platform. By participating in the sale of CALL and CALLG, you expressly acknowledge and represent that you have carefully reviewed the Terms and fully understand the costs, and benefits of contributing in the crowdsale and agree to be bound by these Terms. As set forth below, you further represent and warrant that, to the extent permitted by law, you are authorized to invest in the crowdsale in your relevant jurisdiction, are of a legal age to be bound by these Terms, and will not hold CALL/CALLG, its parent and affiliates, and the officers, directors, agents, joint ventures, employees and suppliers of CALL/CALLG or our parent or affiliates, now or in the future and any other member of the Capital Technologies & Research SRL Team (collectively the ìCapital Team & Partiesî) liable for any losses or any special, incidental, or consequential damages arising out of, or in any way connected to the sale of CALL/CALLG.</p>
 					<b>DO NOT INVEST IN THE CROWDSALE IF YOU ARE NOT AN EXPERT IN DEALING WITH CRYPTOGRAPHIC TOKENS AND BLOCKCHAIN-BASED SOFTWARE SYSTEMS</b>
-					<p>Investments in the crowdsale should be undertaken only by individuals, entities, or companies that have significant experience with, and understanding of, the usage and intricacies of cryptographic tokens, like Bitcoin (‚ÄúBTC‚Äù), Ethereum (‚ÄúETH‚Äù) and blockchain based software systems. Investors should have functional understanding of storage and transmission mechanisms associated with other cryptographic tokens. While the Capital Technologies & Research SRL Team will be available to assist Investors of CALL/CALLG during the sale, the Capital Technologies & Research SRL Team will not be responsible in any way for loss of BTC, ETH, Fiat or CALL, CALLG resulting from actions taken by, or omitted by Investors. If you do not have such experience or expertise, then you should not invest CALL/CALLG or participate in the sale of CALL/CALLG.</p>
+					<p>Investments in the crowdsale should be undertaken only by individuals, entities, or companies that have significant experience with, and understanding of, the usage and intricacies of cryptographic tokens, like Bitcoin (ìBTCî), Ethereum (ìETHî) and blockchain based software systems. Investors should have functional understanding of storage and transmission mechanisms associated with other cryptographic tokens. While the Capital Technologies & Research SRL Team will be available to assist Investors of CALL/CALLG during the sale, the Capital Technologies & Research SRL Team will not be responsible in any way for loss of BTC, ETH, Fiat or CALL, CALLG resulting from actions taken by, or omitted by Investors. If you do not have such experience or expertise, then you should not invest CALL/CALLG or participate in the sale of CALL/CALLG.</p>
 					<b>WARNING: INVESTORS IN THE CROWDSALE MUST BE MADE AWARE OF CERTAIN FACTORS</b>
 					<p>Prior to contributing the crowdsale, you should carefully consider the terms listed below and, to the extent necessary, consult an appropriate lawyer, accountant, or tax professional. If any of the following terms are unacceptable to you, you should not invest in the sale. By contributing in the crowdsale, and to the extent permitted by law, you are agreeing not to hold any of the Capital Technologies & Research SRL Team & Parties liable for any losses or any special, incidental, or consequential damages arising from, or in any way connected, to the sale of CALL/CALLG, including losses associated with the terms set forth below.</p>
 					<b>TERMS AND CONDITIONS</b>
@@ -1293,11 +1319,11 @@
 						</li>
 						<li>
 							Taxation of CALL/CALLG and Taxation Related to the ICO<br>
-							<p>The Investor bears the sole responsibility to determine if the investment of CALL/CALLG with BTC or the potential appreciation or depreciation in the value of CALL/CALLG over time has tax implications for the Investor in the Investor‚Äôs home jurisdiction. By purchasing CALL/CALLG, and to the extent permitted by law, the Investor agrees not to hold any of the Capital Technologies Team & Parties liable for any tax liability associated with or arising from investment in the crowdsale.</p>
+							<p>The Investor bears the sole responsibility to determine if the investment of CALL/CALLG with BTC or the potential appreciation or depreciation in the value of CALL/CALLG over time has tax implications for the Investor in the Investorís home jurisdiction. By purchasing CALL/CALLG, and to the extent permitted by law, the Investor agrees not to hold any of the Capital Technologies Team & Parties liable for any tax liability associated with or arising from investment in the crowdsale.</p>
 						</li>
 						<li>
 							Disclaimer of Warranties<br>
-							<p>THE INVESTOR EXPRESSLY AGREES THAT THE INVESTOR IS CONTRIBUTING IN THE CROWDSALE AT THE INVESTOR‚ÄôS SOLE RISK AND THAT CALL/CALLG IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE (EXCEPT ONLY TO THE EXTENT PROHIBITED UNDER APPLICABLE LAW WITH ANY LEGALLY REQUIRED WARRANTY PERIOD TO THE SHORTER OF THIRTY DAYS FROM FIRST USE OR THE MINIMUM PERIOD REQUIRED). WITHOUT LIMITING THE FOREGOING, NONE OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES WARRANT THAT THE PROCESS FOR CONTRIBUTING IN THE CROWDSALE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
+							<p>THE INVESTOR EXPRESSLY AGREES THAT THE INVESTOR IS CONTRIBUTING IN THE CROWDSALE AT THE INVESTORíS SOLE RISK AND THAT CALL/CALLG IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE (EXCEPT ONLY TO THE EXTENT PROHIBITED UNDER APPLICABLE LAW WITH ANY LEGALLY REQUIRED WARRANTY PERIOD TO THE SHORTER OF THIRTY DAYS FROM FIRST USE OR THE MINIMUM PERIOD REQUIRED). WITHOUT LIMITING THE FOREGOING, NONE OF THE CAPITAL TECHNOLOGIES TEAM & PARTIES WARRANT THAT THE PROCESS FOR CONTRIBUTING IN THE CROWDSALE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
 						</li>
 						<li>
 							Limitations Waiver of Liability<br>
@@ -1314,7 +1340,7 @@
 								<li>acts of civil or military authorities</li>
 								<li>acts by common carriers</li>
 								<li>emergency conditions (including weather conditions)</li>
-								<li>or any similar unforeseen event that renders performance commercially implausible. If an event of force majeure occurs, the party injured by the other‚Äôs inability to perform may elect to suspend the Agreement, in whole or part, for the duration of the force majeure circumstances. The party experiencing the force majeure circumstances shall cooperate with and assist the injured party in all reasonable ways to minimize the impact of force majeure on the injured party.</li>
+								<li>or any similar unforeseen event that renders performance commercially implausible. If an event of force majeure occurs, the party injured by the otherís inability to perform may elect to suspend the Agreement, in whole or part, for the duration of the force majeure circumstances. The party experiencing the force majeure circumstances shall cooperate with and assist the injured party in all reasonable ways to minimize the impact of force majeure on the injured party.</li>
 							</ul>
 							</p>
 						</li>
@@ -1328,7 +1354,7 @@
 						</li>
 						<li>
 							No Waiver<br>
-							<p>The failure of the Capital Technologies & Research Team to require or enforce strict performance by the Investor of any provision of these Terms or the Capital Technologies & Research Team‚Äôs failure to exercise any right under these agreements shall not be construed as a waiver or relinquishment of the Capital Technologies & Research Team's right to assert or rely upon any such provision or right in that or any other instance. The express waiver by the Capital Technologies & Research Team of any provision, condition, or requirement of these Terms shall not constitute a waiver of any future obligation to comply with such provision, condition or requirement. Except as expressly and specifically set forth in this these Terms, no representations, statements, consents, waivers, or other acts or omissions by the Capital Technologies & Research Team shall be deemed a modification of these Terms nor be legally binding.</p>
+							<p>The failure of the Capital Technologies & Research Team to require or enforce strict performance by the Investor of any provision of these Terms or the Capital Technologies & Research Teamís failure to exercise any right under these agreements shall not be construed as a waiver or relinquishment of the Capital Technologies & Research Team's right to assert or rely upon any such provision or right in that or any other instance. The express waiver by the Capital Technologies & Research Team of any provision, condition, or requirement of these Terms shall not constitute a waiver of any future obligation to comply with such provision, condition or requirement. Except as expressly and specifically set forth in this these Terms, no representations, statements, consents, waivers, or other acts or omissions by the Capital Technologies & Research Team shall be deemed a modification of these Terms nor be legally binding.</p>
 						</li>
 						<li>
 							Updates to the Terms and Conditions of the CALL/CALLG ICO<br>
@@ -1336,7 +1362,7 @@
 						</li>
 						<li>
 							Cooperation with Legal Authorities<br>
-							<p>The Capital Technologies & Research Team will cooperate with all law enforcement enquiries, subpoenas, or requests provided they are fully supported and documented by the law in the relevant jurisdictions. In accord with one of the core principles of the Capital Technologies project ‚Äî transparency ‚Äî the Capital Technologies Team will endeavor to publish any legal enquiries upon receipt.</p>
+							<p>The Capital Technologies & Research Team will cooperate with all law enforcement enquiries, subpoenas, or requests provided they are fully supported and documented by the law in the relevant jurisdictions. In accord with one of the core principles of the Capital Technologies project ó transparency ó the Capital Technologies Team will endeavor to publish any legal enquiries upon receipt.</p>
 						</li>
 						<li>
 							Further Information<br>
@@ -1366,11 +1392,6 @@
 			s1.setAttribute('crossorigin','*');
 			s0.parentNode.insertBefore(s1,s0);
 			})();
-		</script>
-		<script>
-			$("#subs").click(function(){
-				$("#subForm").submit();											
-			});
 		</script>
 		<script src="js/jquery.translate.js"></script>
 		<script src="js/content-trn.js"></script>    

@@ -33,7 +33,7 @@ class AppBaseController extends Controller
     public function save(Request $request)
     {
          $email =  $request->newsletter;
-         Newsletter::subscribePending($email, ['FNAME'=>$request->firstName, 'LNAME'=>$request->lastName], 'subscribers');
+         Newsletter::subscribePending($email, ['FNAME'=>$request->firstName, 'LNAME'=>$request->lastName, 'TYPE'=>"Website"], 'subscribers');
          return redirect('/');
     }
     public function saveemail(Request $request)

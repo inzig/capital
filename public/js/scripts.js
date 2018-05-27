@@ -65,6 +65,7 @@ $('.next-button.last-name').click(
   function(){
     $('.last-name-section').addClass("fold-up");
     $('.success').css("marginTop", 0);
+	document.getElementById("subForm").submit();
   }
 );
 function roadmap(){
@@ -91,7 +92,8 @@ function drawChart() {
     var datacap = google.visualization.arrayToDataTable([
         ['', 'Percentage'],
         ['Public Token Sale', 85],
-        ['Founder Team', 15]
+        ['Founder Team', 10],
+		['Bounty Campaign', 5]
     ]);
     var datacapg = google.visualization.arrayToDataTable([
         ['', 'Percentage'],

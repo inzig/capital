@@ -16,21 +16,25 @@
  */
 
 Route::post('purchase', 'CoinpaymentsController@purchaseItems');
-Route::get('docs/en/technical', function() {
-    return redirect()->to('https://drive.google.com/file/d/16qnLkfR6WxoITTlqs5IfHpXmlyyHpaP7/view?usp=sharing');
+Route::get('docs/technical', function() {
+    return redirect()->to('https://goo.gl/VCp3H7');
 });
-Route::get('docs/en/crowdsale', function() {
-    return redirect()->to('https://drive.google.com/file/d/1ETXUZ3Neorpip0M1Re-5guaTYWCNTZVD/view?usp=sharing');
+Route::get('docs/crowdsale', function() {
+    return redirect()->to('https://goo.gl/HTwdQ8');
 });
 Route::get('docs/press-releases', function() {
-    return redirect()->to('https://docs.google.com/document/d/1wXIMJRNXB6OBlSswI4HHU9TRzL-7i2ksCbKdZoi13gA/edit?usp=sharing');
+    return redirect()->to('https://goo.gl/NzSEro');
 });
-Route::get('docs/en/one-pager', function() {
-    return redirect()->to('https://drive.google.com/file/d/1VwGFvrbZ8JqI8fC37f0CB62veScwVhiM/view?usp=sharing');
+Route::get('docs/one-pager', function() {
+    return redirect()->to('https://goo.gl/EkdgbV');
 });
 Route::get('bounty/documentation', function() {
-    return redirect()->to('https://drive.google.com/file/d/14RTP_Za6gmQ6MF1IZ6bi3I22y6AJ68mi/view?usp=sharing');
+    return redirect()->to('https://goo.gl/Y3Qgmy');
 });
+Route::get('bounty/thread', function() {
+    return redirect()->to('https://goo.gl/WR84yK');
+});
+
 Route::get('/', 'IndexController@index')->name('front');
 Route::get('blog/{slug}', 'BlogController@view');
 

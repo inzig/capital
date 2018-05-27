@@ -269,6 +269,11 @@ var dict = {
 		ro: "Rețea de test de tip PoW",
 		fr: "Le réseau de test PoW"		
 	},
+	"NOVEMBER 2018": {
+		en: "NOVEMBER 2018",
+		ro: "NOIEMBRIE 2018",
+		fr: "NOVEMBRE 2018"		
+	},
 	"PRIVATE COMMUNICATIONS": {
 		en: "PRIVATE COMMUNICATIONS",
 		ro: "COMUNICAȚII PRIVATE",
@@ -319,40 +324,40 @@ var dict = {
 		ro: "FEBRUARIE 2019",
 		fr: "FÉVRIER 2019"		
 	},
-	"Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network). <br>Development of a private operating system for a new brand of smartphones, based on the Android Operating System.": {
-		en: "Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network). <br>Development of a private operating system for a new brand of smartphones, based on the Android Operating System.",
-		ro: "Schimbul va deveni disponibil pentru utilizatori, ei vor putea să-și schimbe tokenul Capital (CALL) în rețeaua Proof of Work Equihash, iar CapitalGAS (CALLG) va putea fi mutat în Rețeaua Proof of Work Aragon2d). <br> Dezvoltarea unui sistem de operare privat pentru o nouă marcă de smartphone, bazată pe sistemul de operare Android.",
-		fr: "Swap sera disponible pour les utilisateurs, ils seront en mesure d'échanger leur jeton Capital (CALL) dans le réseau Proof of Work Equihash, CapitalGAS (CALLG) sera également échanger dans le réseau Proof of Work Aragon2d). <br> Développement d'un système d'exploitation privé pour une nouvelle marque de smartphones, basé sur le système d'exploitation Android."		
+	"Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network).": {
+		en: "Swap will become available for users, they will be able to swap their Capital (CALL) token into the Proof of Work Equihash network, CapitalGAS (CALLG) will also swap into Proof of Work Aragon2d network).",
+		ro: "Schimbul va deveni disponibil pentru utilizatori, ei vor putea să-și schimbe tokenul Capital (CALL) în rețeaua Proof of Work Equihash, iar CapitalGAS (CALLG) va putea fi mutat în Rețeaua Proof of Work Aragon2d).",
+		fr: "Swap sera disponible pour les utilisateurs, ils seront en mesure d'échanger leur jeton Capital (CALL) dans le réseau Proof of Work Equihash, CapitalGAS (CALLG) sera également échanger dans le réseau Proof of Work Aragon2d)."		
 	},
-	"FIRST SMARTPHONE": {
-		en: "FIRST SMARTPHONE",
-		ro: "PRIMUL SMARTPHONE",
-		fr: "PREMIER SMARTPHONE"		
+	"CUSTOM FIRMWARE DEVELOPMENT": {
+		en: "CUSTOM FIRMWARE DEVELOPMENT",
+		ro: "DEZVOLTAREA UNUI FIRMWARE MODIFICAT",
+		fr: "DEVELOPPEMENT D'UNE FIRME MODIFIEE"		
 	},
 	"MARCH 2019": {
 		en: "MARCH 2019",
 		ro: "MARTIE 2019",
 		fr: "MARS 2019"		
 	},
-	"The first smartphone developed by Capital Technologies &amp; Research will become available": {
-		en: "The first smartphone developed by Capital Technologies & Research will become available",
-		ro: "Primul smartphone dezvoltat de Capital Technologies & Research va deveni disponibil",
-		fr: "Le premier smartphone développé par Capital Technologies & Research sera disponible"		
+	"Development of a private operating system, based on the Android Operating System.": {
+		en: "Development of a private operating system, based on the Android Operating System.",
+		ro: "Dezvoltarea unui sistem de operare privat, bazat pe sistemul de operare Android.",
+		fr: "Développement d'un système d'exploitation privé, basé sur le système d'exploitation Android."		
 	},
-	"SMARTPHONE MASS PRODUCTION": {
-		en: "SMARTPHONE MASS PRODUCTION",
-		ro: "PRODUCTIA IN MASA A TELEFOANELOR",
-		fr: "PRODUCTION DE MASSE SMARTPHONE"		
+	"SMARTPHONE CUSTOM FIRMWARE": {
+		en: "SMARTPHONE CUSTOM FIRMWARE",
+		ro: "FIRMWARE PERSONALIZAT PENTRU TELEFOANE",
+		fr: "SMARTPHONE FIRMWARE CUSTOM"		
 	},
 	"JULY 2019": {
 		en: "JULY 2019",
 		ro: "IULIE 2019",
 		fr: "JUILLET 2019"		
 	},
-	"Mass production &amp; distribution of smartphones will start": {
-		en: "Mass production & distribution of smartphones will start",
-		ro: "Producția și distribuția în masă a smartphone-urilor va începe",
-		fr: "La production en série et la distribution de smartphones vont commencer"		
+	"Custom Android OS based on Android Open Source Project (AOSP) for Qualcomm based chipsets": {
+		en: "Custom Android OS based on Android Open Source Project (AOSP) for Qualcomm based chipsets",
+		ro: "Sistem de operare personalizat pentru platfoma Android bazat pe Android Open Source Project (AOSP) pentru chipset-urile Qualcomm",
+		fr: "Système d'exploitation Android personnalisé basé sur le projet Android Open Source Project (AOSP) pour les jeux de composants basés sur Qualcomm"		
 	},
 	"PRIVATE MARKETPLACE": {
 		en: "PRIVATE MARKETPLACE",
@@ -394,9 +399,9 @@ var dict = {
 		ro: "DECEMBRIE 2019",
 		fr: "DÉCEMBRE 2019"		
 	},
-	"Final version of the application marketplace will become available for all users and it will be included into the Smartphone Operating System Update": {
-		en: "Final version of the application marketplace will become available for all users and it will be included into the Smartphone Operating System Update",
-		ro: "Versiunea finală a pieței aplicațiilor va deveni disponibilă pentru toți utilizatorii și va fi inclusă în actualizarea sistemului de operare al dispozitivelor inteligente",
+	"Final version of the application marketplace will become available for all users and it will be included into the Android Operating System Update": {
+		en: "Final version of the application marketplace will become available for all users and it will be included into the Android Operating System Update",
+		ro: "Versiunea finală a pieței aplicațiilor va deveni disponibilă pentru toți utilizatorii și va fi inclusă în actualizarea sistemului de operare Android",
 		fr: "La version finale du marché des applications deviendra disponible pour tous les utilisateurs et sera incluse dans la mise à jour du système d'exploitation des téléphones intelligents."		
 	},
 	"IoT Research": {
@@ -488,6 +493,11 @@ var dict = {
 		en: 'Team <span class="features-heading-2"> <strong>Members</strong></span>',
 		ro: 'Membrii <span class="features-heading-2"> <strong>Echipei</strong></span>',
 		fr: 'Équipe <span class="features-heading-2"> <strong>Membres</strong></span>'		
+	},
+	'Our <span class="features-heading-2"><strong>Future Partners</strong></span>': {
+		en: 'Our <span class="features-heading-2"><strong>Future Partners</strong></span>',
+		ro: 'Viitorii <span class="features-heading-2"><strong>Parteneri</strong></span>',
+		fr: 'Notre <span class="features-heading-2"><strong>Futurs partenaires</strong></span>'		
 	},
 	"Our <strong>FAQ</strong>": {
 		en: "Our <strong>FAQ</strong>",
