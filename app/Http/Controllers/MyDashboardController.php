@@ -13,6 +13,7 @@ use Flash;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Stripe;
+use DB;
 
 class MyDashboardController extends Controller
 {
@@ -143,7 +144,8 @@ class MyDashboardController extends Controller
     public function transactions()
     {
         $user = Auth::user();
-        $transactions = $user->transactions;
+        // $transactions = $user->transactions;
+        $transactions = DB::table('cp_transactions')->get();
         $wallets = $this->walletRepository->findByField('user_id', Auth::id())->keyBy('type')->all();
         return view('dashboard.transactions', compact('wallets' , 'transactions'));
     }

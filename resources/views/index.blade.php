@@ -160,8 +160,8 @@
 								<div class="about-us-content">
 									<p class="trn">vision-text</p>
 								</div>
-								<a target="_blank" href="https://www.mycapitalco.in/docs/technical" class="read-more-btn trn">Read our Technical White Paper</a>
-								<a target="_blank" href="https://www.mycapitalco.in/docs/crowdsale" class="read-more-btn trn">Read our Crowdsale White Paper</a>
+								<a target="_blank" href="{{ url('docs/en/technical')}}" class="read-more-btn trn">Read our Technical White Paper</a>
+								<a target="_blank" href="{{ url('docs/en/crowdsale')}}" class="read-more-btn trn">Read our Crowdsale White Paper</a>
 							</div>
 							<div class="col-md-4 col-lg-4 col-sm-4 text-align-right margin-top-30">
 								<img id="phone-img" class="margin-top-0 iphone-img" src="img/iphone.png" data-aos="zoom-in-right" data-aos-duration="1000">

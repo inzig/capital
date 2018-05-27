@@ -6,23 +6,33 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Transactions History</h3>
             </div>
-            <div class="box-body">
-                <table class="table table-hover table-striped table-responsive">
+            <div class="box-body" >            
+                <table style="overflow-x:auto;" class="table table-hover table-striped table-responsive">
                     <thead>
                     <tr>
                         <th>Date/Time</th>
-                        <th>Coins Paid</th>
-                        <th>Tokens Received</th>
-                        <th>Status</th>
+                        <th>currency1</th>
+                        <th>currency2</th>
+                        <th>amount</th>
+                        <th>address</th>
+                        <th>buyer_email</th>
+                        <th>buyer_name</th>
+                        <th>item_name</th>
+                        <th>status_text</th>
                     </tr>
                     </thead>
                     <tbody>
                     @forelse($transactions as $transaction)
                         <tr>
-                            <td>{!! $transaction->dated or '' !!}</td>
-                            <td>{!! $transaction->amount or '' !!} {!! $transaction->currency or '' !!}</td>
-                            <td>@if(!empty($transaction->actual_tokens)) {!! $transaction->actual_tokens !!} @else {!! $transaction->estimated_tokens !!} estimated @endif</td>
-                            <td>@if(is_null($transaction->is_approved)) Pending @elseif($transaction->is_approved == 1) Approved @else Disapproved @endif</td>
+                            <td>{!! $transaction->created_at or '' !!}</td>
+                            <td>{!! $transaction->currency1 or '' !!}</td>                            
+                            <td>{!! $transaction->currency2 or '' !!}</td>                            
+                            <td>{!! $transaction->amount or '' !!}</td>                            
+                            <td>{!! $transaction->address or '' !!}</td>                            
+                            <td>{!! $transaction->buyer_email or '' !!}</td>                            
+                            <td>{!! $transaction->buyer_name or '' !!}</td>                            
+                            <td>{!! $transaction->item_name or '' !!}</td>                            
+                            <td>{!! $transaction->status_text or '' !!}</td>                            
                         </tr>
                     @empty
                         <tr>
